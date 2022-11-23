@@ -1,0 +1,87 @@
+1. ChatBot Notes
+---------------
+ref : https://drive.google.com/file/d/1giwMsIu781iI38f4nQarDRvPFomGU3KI/view
+
+------------
+
+* Design Choices :
+
+1. Automated Que-Ans System with Large Text-Corpus (like Wikipedia)
+   Domain Specific Automated Q&A
+
+   - Here large amount of data avail, we need to train model & then ans que based on trained model
+
+2. Information Retrieval Type of ChatBots
+   - Question Pair Similarity Kinda Stuf
+
+   In Google Search also when you ask some que, there is some internal techniqye
+   to find similar questions behind the scenes
+
+   - Here we need to try to find similar query & then reply accordingly
+
+3. Flow Chart Based System
+
+   - Most popular & widely used chatbots
+   - IVR's are also Flowchart based system
+       \
+        User can inp via numeric Keypad (ie 1, 2, 3 )
+
+   - Instead of numeric pad, Speech can also be used (ie Glorified IVRs)
+
+
+* End-to-End Conversational Engines :
+  -----
+  -> 2 Metrics : F1 Score & Exact Match
+
+  - Is the ans given by my BOT is exact same as Human Given Ans
+
+  SQuaD
+   - Paragraph & Question-Ans
+
+  > BERT
+  ------
+   - For images we can do transfer learning (from Inception, ResNet ) Kinda Network
+     Is there something equivalent available for text
+
+* Info-Retrieval :
+  ---
+   - Question-Ans System
+      LSTM based , Bi-dir LSTM
+
+* Flow-Chart based ChatBot :
+  ----
+  - Simple to Design them
+  - There are many tools
+
+  -> DialogFlow (Google's Flowchat based ChatBot System)
+      - Google NLP is very strong (so it suits bets with DialogFlow)
+
+  -> RASA
+      - Gives complete control
+      - internally used Spacy, NLTK
+
+=> Most usecases dont need Advance algorithm as they just follow a simple flowchat.
+
+  Terms :
+
+  1. Intent
+  2. Actions
+
+* Named Entity Recognition
+  ----
+  - It's a NLP task
+  - Uses LSTM
+
+  LSTM is standard technique for NLP today (compare to CRF (conditional Random Fields), or Hiden Markov Model)
+
+
+* Dialog Control :
+
+  Context Stack :- similar to call-stack of programming
+    - here contextual of Chatbot conv is considered
+
+
+* BlackBox & WhiteBox Testing
+  --------------------
+  BlackBox :- only concerns inp & output
+  WhiteBox :- get into code inside between inp & out

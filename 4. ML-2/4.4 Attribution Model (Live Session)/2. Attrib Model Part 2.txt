@@ -1,0 +1,93 @@
+2. Attrib Model in Marketing Part 2
+----------------
+
+-> The linear Reg Model are Additive
+
+=> The problem with Shapely value is its exponential time complexity
+
+=> All is about tradeoff between Complexity & Rigorous
+- Transition Matrix
+=> Simple Markov Model will ignore Timer Series !
+
+-> Historical Data Analyzing is done Iteratively & Not once
+-> Intent is easily captured whilst searching
+
+----------
+
+1. Game Theoritic   (SOTA)
+2. ML-based
+3. Markov- Chain  (Classical Stats)
+4. Survival Analysis (Classical Stats)
+
+NOTE :
+  number of states (#states) = number of channels
+
+
+* Markov Chains :
+  ----------
+  - Graph
+  - Transition Probabilities
+
+  Property :- `MemoryLess`
+
+  MemoryLess :
+   -> Going to next stage depends only on previous stage & not all previous states
+   -> Conditional Probability on previous state (not all previous states)
+   -> History dont matter
+   -> Simplify the math | Simplifying assumption (ie every state depends on prev state only)
+   -> Easier to tackle
+
+  Removal Effect :
+    - Overall (with focused State) - Conversations (without focused State)
+
+  Drawback of Markvo Chains :
+    - Memoryless assumption
+    - less regorous
+
+
+* `Markov Chains` vs `Shapely Values` :
+  ---
+  => Tradeoff between Computation Complexity & Mathematic Rigour
+
+  Markov Chains are Computationally less Complex/expensive whereas they are less mathematically rigorous
+  on the other side
+  Shapely Values are Computationally more Complex but they are more mathematically rigorous
+
+  Shapely Values := Mathematically very rigorous technique
+
+  -> Markvo Chains are kinda similar to Naive Bayes
+
+  * Cyclic Purchase Channel/Probability & Thresold :
+    ---
+    -> You can define some thresold after which you can stop proceeding furthers (ie for eg stop showing ads)
+       thresold can be some probability val (for Eg 1e-6)
+
+
+* Survival Analysis For Attribution :
+  ------------
+  - primarily was created in Health Care Domain
+
+  - Healthcare Analytics
+    Eg survival of patient
+
+  * Survival Function := 1 - PDF
+    ---
+     As time passes, prob of patient being not alive increases
+
+  * Hazard Function :
+    ---
+    -> What is happening to patient in small time (isnatnt of time) after some time T
+    -> You can represent Hazard Func as a Survival Func
+
+       - S`(t)/ S(t)
+
+* Survival Analysis :
+  ---
+  - Ding Univariate plot for Survival Analysis
+
+  - Organic Search vs Paid Search
+
+
+* Cox (Proportional Hazard Regression Models)
+  ---------
+  - Multiplicative Linear (Additive) Model

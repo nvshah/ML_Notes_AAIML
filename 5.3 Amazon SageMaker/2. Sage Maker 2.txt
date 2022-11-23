@@ -1,0 +1,72 @@
+2. Sage Maker 2
+------------
+ref : https://drive.google.com/file/d/1qIo2RDxNJbCGF_cbagdyRAKwkq5ellFk/view
+
+---------------------------
+
+AWS -> Everything that gets permanently stored will be in S3
+
+=> Docker Container will be killed after the Job is done !
+   So anything you want to persist should be moved to S3 as well
+
+Container := new Compute Component
+
+=> transformer() is terminology used in sagemaker for Inferencing
+
+SageMaker Terminology  <--
+
+For Inferencing => transformer
+    Training => Estimator
+    PreProcessing => processor
+
+------------
+
+* Data Wrangler
+  - From multiple resources
+
+* Containerization & Docker :
+  ---
+  - Modern Strategy to create compute resources on the fly
+  - More Compute Resources & More Ram
+
+
+1> PreProcess Data using Containers
+
+2> Experiments :
+   - collection of processing & training jobs related to a project
+
+   - multiple trials
+     each trial :- Data -> Pre-Proc -> HyperParam -> Model
+
+   Tracking :
+   ---
+   - Its imp to keep track of params & what data you are using !
+
+   Trial :
+   ----
+
+   -> When you do fit() then sagemaker will spawn new container (ie via Docker)
+      inorder to train the Model seperately (ie Compute seperatley)
+
+
+* Images :
+  ---
+  Linux img or any other thing we want on our Compute ie Container
+
+
+* Batch Inference :
+  ---
+
+* Real time Inference :
+  ---
+  - Deploy as realtime API's
+  - Elastic Inference
+
+* AWS Model Endpoint :
+  ---
+  - Endpoint Configuration
+
+
+* Docker :
+  ---
+  - You can spinoff Virtual Instances just via Config files

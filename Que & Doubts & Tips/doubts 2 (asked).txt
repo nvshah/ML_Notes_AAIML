@@ -1,0 +1,17 @@
+doubts 2 (asked)
+---------------
+
+
+Q1) LinearRegression() & SGDRegressor()
+
+    -> https://stackoverflow.com/questions/66643225/what-is-the-difference-between-linearregression-and-sgdregressor
+
+
+Q) SGDRegressor, Does alpha & eta0 needs to be kept same all the time ??
+   What is the Difference betwee Learning Rate & Regularization Parameter ?
+
+   =>  \
+   Learning Rate is a Tuning parameter in an optimization algo that determines the
+   step size at each iteration while moving towards minima
+
+   Regularization param is a control on your fitting parameters

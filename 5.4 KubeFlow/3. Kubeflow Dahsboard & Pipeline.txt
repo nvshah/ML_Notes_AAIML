@@ -1,0 +1,20 @@
+Kubeflow Dahsboard & Pipeline
+
+ref : https://drive.google.com/file/d/1jPv8p2Dj79fnTFeIaO6DoFGH8ZxTIuq2/view
+
+---------
+
+* MiniKube
+  HyperKit
+
+Imp Components :
+ - Pipelines, Katib, KF-Serving
+
+* Notebook Servers
+
+* KubeFlow Pipeline
+
+* Global variable & Context String :
+  ----
+
+* Kubeflow Pipeline KFP -> DSL (domain specific lang)

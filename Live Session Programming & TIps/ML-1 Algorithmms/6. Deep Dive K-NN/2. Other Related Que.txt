@@ -1,0 +1,13 @@
+2. Other Related Que
+
+* Bagging : (Decision Tree)
+  - Helps to reduce the Variance while not impacting the Bias
+
+* Linear Regression :
+  - tries to fit a line
+
+* SVM :
+  - If you have a good kernel, SVM is good method
+
+Q) What is Kernel in SVM (Intutively) ?
+    -> Way to define new distance metric between 2 points

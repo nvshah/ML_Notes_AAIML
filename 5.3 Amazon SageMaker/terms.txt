@@ -1,0 +1,7 @@
+terms
+
+* mpi  // message parsing interface
+
+* Quantum Computing
+
+* AutoScale vs Elasticity

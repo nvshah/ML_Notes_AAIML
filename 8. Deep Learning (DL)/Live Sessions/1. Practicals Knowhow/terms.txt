@@ -1,0 +1,10 @@
+terms
+
+- Custom layers
+- Gradient Tape
+
+- Computational Graph
+
+- GLUE
+
+- NER (Name Entity Recogniton)

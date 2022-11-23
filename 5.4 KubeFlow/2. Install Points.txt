@@ -1,0 +1,51 @@
+2. Install Points
+-----------------
+ref : https://drive.google.com/file/d/1tib-gQty4E9nw4vq2cmyxeyCQjjr2hrq/view
+
+-> Kubernetes uses Yaml file
+-> EKS is tied to AWS
+
+-> ssh  // for remotely login to a box
+
+---------------------
+
+- KubeCTL   // CLI for Kubernetes
+
+- AWS CLI
+
+- EKS Command line tool
+
+- M5 Large Box
+
+- KFCTL (For Kubeflow commandline)
+
+-> Kubeflow deployment on Kubernetes (EKS) Cluster !
+
+-> Kubeflow can be deployed on either AWS or GCP
+
+On AWS -> EKS (Amazon Elastic Kubernetes Service) (is for Kubeflow)
+   GCP -> GKE (Google Kubernetes Engine)
+   Azure -> AKS (Azure Kubernetes Service)
+
+The kubernetes is open source software so it can available from any platform !
+
+* Normal Kubernetes Structure
+  \
+   Kubernetes -> Kubleflow -> Dashflow
+
+* Micro K8S (on your Laptop)
+  ------
+  - Minimal, light weight Kubernetes you can run on any platform
+  MicroK8S runs on Ubuntut system (ie suggested by Canonical)
+   |
+   & on top of MicroK8S it runs Kubeflow
+
+
+* Pod :
+  ---
+  - Collection of related Container
+
+
+* KubeFlow can be Deployed at 2 Major Places
+  1. Kubeflow on AWS    (or other cloud provider platform)
+  2. Kubeflow on Laptop

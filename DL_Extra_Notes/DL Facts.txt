@@ -1,0 +1,9 @@
+DL Facts
+
+-> Transformer are replacing the LSTM or Bidirectional LSTM
+
+-> The industry standard for Object Recognition is ImageNet Dataset
+
+* Updating & Training in Realtime (ie Feedback Loop)
+  ---
+  REMEMBER : Logistic Regression Model can be incrementally trained & build

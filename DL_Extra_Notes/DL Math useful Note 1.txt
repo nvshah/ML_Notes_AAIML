@@ -1,0 +1,33 @@
+DL Math useful Note 1
+
+----------------
+
+* Function Composition & MLP :
+  -------
+   -> MLP is just graphical way to represent the Function Composition
+   
+   Funnction Composition :- 
+       F(G(x)) 
+       G(F(x))  // G of F of x
+
+
+* Hill Descent :
+  --------
+
+
+* Polynomial of Matrices :
+  -----
+  -> It suggests what is max path length possible between given 2 vertices !
+
+  In Graph Theory,
+  -> Polynomial such as A^1, A^2, A^3, ... A^k
+      \
+       helps to decide what can be max path length from vertext Vi -> Vk
+
+
+* Laplacian (Maths)
+  ----
+  You can think Laplacian as modified version of Adjacency Matrix
+  - Capture both Degree & Neighborhood Information
+
+  L := D - A

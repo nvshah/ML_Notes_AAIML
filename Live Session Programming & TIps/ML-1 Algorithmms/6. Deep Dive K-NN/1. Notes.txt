@@ -1,0 +1,195 @@
+1. Notes
+---------
+ref: https://drive.google.com/file/d/1uOXN6ZqrnYgPCfoDhje741X_rZCn1d4u/view?usp=drive_open
+
+
+(Deep Dive KNN) // 12.2
+
+=> When we do use Euc Dist, then curse of dimen crops in (& KNN we cannot use for High-Dimen)
+
+-> Hamming Dist application is Error-Correcting-Code
+
+-> Data Structure: KDtree, LSH, BruteForce
+
+   KD Tree -> Fewer Dimension
+   LSH   -> Good for Higher Dimen
+
+-> Deal with Outlier :
+   - Regularization
+   - RANSAC
+
+________________________________
+
+-> KNN is also called as `Lazy Learner Algorithm`
+
+
+Q1) KNN Intutively ??
+
+Q0) How to find optimal K ? -> Cross Validation
+
+
+Q2) Cases where KNN would not perform well ?
+
+   -> In High Dimen Data
+      (If you are using Eucledian Distance - then it may not work (because of Curse of Dimen)
+
+      If you are using other distance param - then it may work
+
+   -> High Space & Time Complexity
+      (Not good for Low Latency application)
+
+
+Q2.1) Where should we prefer using Manhatten distance over Euc Distance ??
+   Manhatten Dist -> Absolute Val Diff
+
+   -> In high dimen
+   -> Manhatten distance is less prone to outlier
+
+   Why Square is causing trouble (in Euc Dist)
+   -> because the diff is amplified/accentuated because of square term
+      whereas in case of Manhatten Dist (ie Absolute diff) it wont scale much comparatively
+
+
+Q3) How Manhatten Distance & Euc Distance is related/diff than "Minkowski Distance" ?
+    ->
+
+Q4) Where do we use Hamming Distance ??
+
+    -> Doesnt suffer Curse of Dimen
+    -> Application based on Strings
+    -> used for Text Similarity
+
+    -> Used in TeleCommunication for "Error Correcting Code"
+
+
+Q4.1) What is Cosine Similarity ?
+
+    -> Measures the Angular Similarity (ie Directional Similarity)
+    -> Cosine Sim is not impacted as much by the dimensions of the data
+    -> Cosine Sim is impacted less by dimension as compare to Euc Dist
+
+
+Q5) Why distance is not much impacted in Logistic Reg but impacted more in KNN ??
+
+   Logistic Reg
+     -> We are using majorily Hyper-Plane (Pi)
+     -> Instead of stressing on distances more, we are using Side of Plane more
+     -> So here we are much more care about on which side rather than
+        Distance
+
+     -> Expects Linear Seperable (Assumption)
+
+
+   Whereas in KNN,
+     -> We are computing many distances (ie between points)
+     -> Here we much care about distance rather than any particular side
+
+     -> (Assumption) Concept of Locality
+         - Within locality all points are there belongs to same class
+
+
+Q6) What is Cosine Sim, Where it is used ?
+
+   -> Cosine Sim is used & popular with text data
+   -> Cosine sim is used often when we have High Dimen Data
+   -> When you care more about how different direc (ie Angular Diff ) is there
+
+Q7) Derive Reln between Cosine Sim & Euc Dist ?
+
+Q8) KNN better application ?
+
+    -> Model or Missing Value Imputation  // KNN is used often in such scenario
+
+Q9) KD Tree over LSH (When to prefer) ??
+
+    -> LSH is randomized based approach
+       LSH works for Higher dimen data
+
+    -> KD tree is used extensively for Computer Vision
+       KD tree is used in 3D Map as well
+
+       When dimen is small > You can use KD Tree
+
+       Eg Google Maps > You can use KDTree to find the nearest neighbors
+
+
+Q10) When to choose which K ?
+
+    -> Knee Point/ Ankle Point
+    -> Loss vs K Plot
+
+Q11) Why LogN in KD-Tree ?
+    ->
+
+Q12) Which Metric When ?
+
+    -> AUC : When you concern ordering of val & not val itself
+    -> log-loss : when prob val is imp
+
+    -> Prec-Recall : Accuracy is Imp
+
+Q13) What happen to decision surface when k changes ??
+
+Q14) When we do not use Random Split to create train, test & CV data ??
+
+Q15) How to obtain optimal Weights in KNN ?
+
+
+[**IMP]
+Q16) Is there way to reduce variance without touching K ? (Bagging With KNN) <=
+    -> Bagging
+
+    Bagging : (Decision Tree)
+    - Helps to reduce the Variance while not impacting the Bias
+
+[**IMP]
+Q17) SVM & KNN (Similarity):
+
+    - SVM + RBF (Kernalized SVM) has some similarity with KNN
+
+[**IMP]
+Q18) What is Kernalized KNN ?
+
+    -> KNN + SVM
+
+    Q) What is Kernel in SVM (Intutively) ?
+       -> Way to define new distance metric between 2 points
+
+    So now What is Kernalized KNN ?
+    -> Instead of using Euc Dist, or Manhattern Dist in KNN
+       If you use Kernel
+       then it is called Kernalized KNN
+
+
+Q19) What when test & train auc are very different (ie difference is high) ?
+
+    -> test & train set data difference
+    -> If you have high diff in train & test AUC => your train & test data are very different
+
+    -> If yout train & test data are fundamentally very different then
+       no model can do anything
+       Model can do better as long as train & test data are similar or close to similar
+
+
+Q20) How effective is LOF in detecting Outlier for High Dimen Data ?
+
+    -> Locality Outlier Factor
+    -> LOF is based on KNN
+       So try to avoid LOF for High dimen data (because internally it uses Euc-Dist)
+
+    -> There are other powerful techniques
+       - Regularization
+       - RANSAC
+
+Q21) Misconception about PCA ?
+
+    => Dont Split data (train-test) first & then later apply PCA to individual // this is incorrect
+    => You must first apply PCA & then do train-test split & likewise things
+
+Q22) Data Leakage Problem ?
+
+    -> You must not see test data before training
+    -> So apply BOW on train data (individually), train & get final BOW (from train data)
+       then using that BOW, we can get repr for test data &
+       then improve model accordingly
+

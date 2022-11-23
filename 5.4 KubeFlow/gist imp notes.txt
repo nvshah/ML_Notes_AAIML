@@ -1,0 +1,16 @@
+gist imp notes
+
+Q) Random vs Grid vs Baysian Optimisation ??
+
+   In Random Search we take some val randomly from some presumed distribution
+
+   In bayesian Optimization it does what is a Black Box Optimization
+
+
+-----------
+
+
+* KubeFlow
+  - Kaitb    ( For Hyperparameter tuning advanced & better)
+  - KF Serving
+  - KF Pipeline

@@ -1,0 +1,68 @@
+1. Sage Maker 
+--------------
+ref Video Num : 2.17 Part1
+https://drive.google.com/file/d/1RvCbHXDII8ysdqIpRRohBHaBZLVXdanm/view
+
+=> Using SageMaker You can speedup your Idea -> Product
+
+___________
+
+=? End-to-End ML platform on Amazon
+   - Data acquistion
+   - Data preparation
+   - Data Analysis
+   - Modeling
+   - Deploy/Productionization
+   - Monitoring
+
+* On-Premise ML
+
+  - You will get prepaired on cloud
+
+* Tool :- KubeFlow is a tool for End to End ML (if you dont want to use SageMaker)
+
+Journey :- OnPremise -> Cloud + Tools
+
+* FeatureStore
+
+* Google Colab Eg :
+  ----
+  - Cloud based Notebook Server
+  - Only 1 part of ML -> Notebook Server
+
+* Data wrangler : helps to get data (ie from Data Warehouse, Database)
+
+
+-----------------
+
+* Amazon SageMaker Studoio
+
+=> SageMaker internally uses S3 & EC2 extensively
+
+* EC2 :-
+  - Virtual Machines
+
+* S3 :-
+  - Buckets
+  - Distributed Disk Management
+
+* boto :-
+  - library to work on AWS administrative works
+
+=> Whenever you do some work in studio, store your work in S3,
+   because Virtual Box allocated to you will not preserve the State or your code
+
+   Create S3 bucket for permanent Storage
+      \
+       -> Store & Folder/File Structure
+
+* SageMaker vs EC2 :
+  -----\
+  EC2 -> provides you a virtual Box (Raw Compute)
+  SageMaker -> Orchestrates everything for ML (internally does Virtual Box things)
+
+* KubeFlow :-
+  ---
+  -> If you want to migrate your codebase in future then you can use KubeFlow
+     For Eg migrate to GCP cloud
+            migrate to Azure Cloud

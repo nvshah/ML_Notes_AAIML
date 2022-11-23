@@ -1,0 +1,72 @@
+Notes 1 KubeFlow Archi & Components :
+----------------------------------
+
+* KubeFlow
+------------
+- End-to-End ML
+- MLOps (DevOps for Machine Learning)
+
+- TFX (Tensorflow X)
+  - Kubeflow is based on TF-extend
+
+-> Kubeflow is a ML-toolkit
+
+- built on top of Kubernetes
+- Easy to use (UI/Config files)
+
+Kubernetes :- Orchestration Software (K8S)
+
+=> All in one system for your ML parts (OPS)  [KubeFlow]
+   - You can create ML Workflow
+   - You can create a Data pipeline
+
+* Alternatives to KubeFlow
+  -----
+  - Apache Airflow (Generic Workflow Management System)
+    -> Not optimised for ML
+    - Standard Software Eng System for Worflow
+
+    Whereas Kubeflow specifically design for Machine learning
+
+  - AWS SageMaker
+    -> Fully managed end-end service
+    -> If whole company works on AWS entirely (then choose SageMaker)
+    but
+      If company need flexibility of Cloud then go with Kubeflow
+
+      With Kubeflow we have flexibility (ie now GCP, tomorrow Azure)
+
+* Kubernetes :
+  ---
+  - Container-Orchestraion System (via Yaml Config Files)
+  - Consider it like a master node that will control all the nodes having Container Runtime on it running
+    (ie Worker nodes multiple)
+
+
+* Fairing (Tool)
+  ----
+  - Package for Train/Deploy
+
+  Katib :- Core component of Kubeflow (primarily for HyperParameter Tuning)
+
+* Kubeflow Pipelines : -> can help to create Workflow
+
+
+* Famous Components:
+  --------------
+
+=> KF Serving
+
+     Istio : Does kinda Traffic Managing/Monitoring (ie kinda Load Balancing)
+     KNative : For Low Latency API like system
+
+    -> KF serving is simplifying the process for us for entire KubeFlow EcoSystem
+
+=> Katib :
+   - Hyper-Param Tuning System
+   - Neural Archi Search (NAS)
+
+=> Training Operator :
+   - Any ML Library
+
+=> Multi Tenancy

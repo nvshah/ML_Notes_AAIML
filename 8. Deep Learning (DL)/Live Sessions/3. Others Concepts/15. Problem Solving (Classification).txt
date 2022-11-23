@@ -1,0 +1,43 @@
+15. Problem Solving (Classification)
+-----------------------------------
+ref : https://drive.google.com/file/d/1pnQk1TtrEHRphutGEEZUQPUOIfhlPKax/view
+
+1)
+-> Gaussian NB assumes Conditional Probab of Feature to be Normal (Gaussian) Distributed, not features themselves
+-> Linear Regression assumes that Data lies on or around some Hyper-Plane
+   - Yes it does assumes that Errors are Gaussian Distributed
+
+2)
+-> IDF will change when document is removed  (for some words)
+-> TF-IDF can be used to provide the vector representation for each word/document in a corpus
+
+3)
+-> TSNE is a non-convex optimization problem
+-> TSNE can be used for Dimen-Reduction Techniqye
+
+
+4)
+-> Larger K value makes KNN Underfit
+-> Standardization : Scaling & Stretching
+   Spearnman-Rank Correlation is not affected by Standardization
+
+-> Scaling of high dimension vectors will not affect cosine similarity between them
+=> The dimensionality of bias term will always be a constant in every epoch of mini batch SGD
+   or Lineanr Regression
+
+-> Your Pearson Correlation Coeff can have 0 value & still they may be Correlated
+
+=> Pearson Coeff takes care of Linear Correlations, not non-linear correlation
+   (like Sinusoidal,Circular, etc...)
+
+
+13)
+Parameters that are learnable during BPTT (back Propogation through time) in RNN
+- Weights in the Computationof Hideen State
+
+
+14)
+-> 2 Diff ROC curve can have same value AUC value
+=> In SVD, Rank of Matrix = #Non-Zeros Rows
+=> Min & Max value Gini Index can take is [0, 0.5]
+   Min & Max value Entropy can take is [0, 1]

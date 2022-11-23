@@ -1,0 +1,13 @@
+ref files
+
+Notes and tutorials for the 4 live sessions can be found here:
+
+1. Architecture and Components: https://drive.google.com/file/d/1F8-u0VfpXLBMDuQB5wB4JfriVqlBBkow/view?usp=sharing
+
+2. Installation on AWS and on Laptop (using Microk8s): https://drive.google.com/file/d/1tib-gQty4E9nw4vq2cmyxeyCQjjr2hrq/view?usp=sharing
+
+3. Reference links used in 3rd live session:  https://drive.google.com/file/d/1jPv8p2Dj79fnTFeIaO6DoFGH8ZxTIuq2/view?usp=sharing
+
+4. Installation using MiniKF(recommended): http://codelabs.arrikto.com/codelabs/minikf-kale-katib-kfserving/index.html#0
+
+5. Tutorial notes for Pipelines, Katib & KFServing: http://codelabs.arrikto.com/codelabs/minikf-kale-katib-kfserving/index.html#0

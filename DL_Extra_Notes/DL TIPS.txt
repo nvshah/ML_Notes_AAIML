@@ -1,0 +1,54 @@
+DL TIPS
+
+=> while doing it keras & tensorflow way, you can use Violin Plots to see distribution of Weight among diff Hidden Layers
+
+=> Data Augmentation is esp used for Image Dataset 
+   \
+    used mostly in CNN
+
+=> Initial layers in CNN often deal with the task of detecting the Borders, Common Shapes & Likewise
+   (which is common among all tasks esp when we talk about Images)
+
+=> Keep Small Learning Rates when you FineTune Your Model
+
+=> Machine Translation esp have long term dependencies
+
+=> Padding primarily meant for Batch Update, in LSTM (thus it can speed up update process)
+
+=> TensorFlow/Keras :- allows to add diff regularization at diff layers
+
+* Dropout & Conv Layer & Fully Connected Layer :
+  -------
+  -> compare to 2 Conv layer, chances of dropout being present between 2 fully connected layers is more
+     because
+     there are more weights variable between 2 FC-layers, comparatively
+     So need some sort of Regularization
+
+=> If you are overfitting the model then add the dropout
+
+=> Better tip is to add Dropout after every Fully Connection Layer !!
+
+*) BLUE Score :- specialized metric for transformation of sentences mesaurement
+
+
+-> Whenever you see Sequence/Timer-Series Data you must always click about
+   - RNN, Attention, Transformer, LSTM, etc...
+
+   Whenever you see about Image Data
+   - CNN,
+
+=> Whenver You have small amount of Data -> You must look for Transfer Learning
+
+   Few Samples of Data => Transfer Learning
+
+=> Whenever you have audio data consider using Spectograms (instead of Fourier Transforms)
+
+-> Gradient Clipping : is used primararily to avoid exploding gradient problem in Recurrent NN
+
+
+
+---------------
+
+-> Convolution is concept borrowed from Signal Processing
+
+-> YOLO helps to do Object Detection pretty well via Bounding Box

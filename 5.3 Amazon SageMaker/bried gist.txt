@@ -1,0 +1,33 @@
+bried gist
+
+* SageMaker vs EC2 :
+  -----\
+  EC2 -> provides you a virtual Box (Raw Compute), basic things
+  SageMaker -> Orchestrates everything needed for ML (internally does Virtual Box acquiring things)
+
+
+* Azure ML is alternative to AWS Sagemaker
+
+
+* Normal Steps :
+
+  Data -> Pre-Proc -> Hyper-Param -> Model
+
+* Estimator is for Model
+  Processor is for PreProcessing
+
+* Elastic Kubernetes Service | Elastic Container Service
+
+* Serverless Compue -> Amazon Lambda
+
+=> Master Nodes & Worker Nodes
+   Master Node is considered as 0
+
+
+* AutoScale vs Elasticity
+
+
+* Random/Grid Search vs Bayesian Optimisation :
+  ----
+  -> Unlike Random/Grid Search What Bayesian Optimisation does is it consider previous
+     Experiment & some bayes theorem to pick next candidate for Hyper-Parameter

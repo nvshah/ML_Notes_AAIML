@@ -1,0 +1,65 @@
+notes
+-----
+ref : https://drive.google.com/file/d/1m7_43kBSXwcVT39mFquBhFU7dGHpWeAa/view
+
+
+=> Not every distb can be convert to Normal
+
+=> Monte Carlo Simulations is mostly used when you have uncertainity in
+   your inputs
+
+-------------
+
+* Monte Carlo Idea came from Physicians
+
+
+
+* Common Example :
+  - Estimate value of PI using randomization
+
+* What does Monte Carlo Simulation means ??
+  -> To its nearest it is `Stochastic Simulation`
+
+     Stochastic := Probabilistic
+      \
+      to arrive to a result (computtaionally)
+
+* Key Aspects :
+  ---
+  - uncertainty in inputs (ie so we have distribution of it)
+  - ability to sample from input distributions
+  - As the input is uncertain (Random Variable) so Output will be likewise (ie Random Variable)
+
+
+* How to sample from given input distributions (Which are not Known)
+  - One Idea is Proportional Sampling !
+
+* Inverse Transform Sampling :
+  ------------------------
+  - Help to sample
+
+* Monte Carlo Simulations Application
+  ----------------
+  -> There can be some certain & some uncertain variables
+
+  1.  Logistic & Supply Chain :
+  - Some of random variables may be Certain
+
+  2. Manufacturing :
+
+  3. Trading (Finance)
+
+
+__________________
+
+* Application (Monte Carlo)
+  Q) When Monte Carlo ??
+
+  -> As long as you have uncertainties in input variable &
+     As long as you have mapping func between inp & out in given domain
+
+
+* What when Inverese Func are not avail ?
+
+  -> You can use emperical CDF
+  -> else you can use MCMC  (Markov Chain Monte Carlo)

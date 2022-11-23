@@ -1,0 +1,7 @@
+Gist Remember
+-----------
+
+There are 2 Solving Techniques (ie for discovering Weights)
+
+1) OLS (Ordinary Least Squares) -> LinearRegression()
+2) SGD (Gradient Descent)  -> SGDRegressor()

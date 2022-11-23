@@ -1,0 +1,19 @@
+4. Kubeflow Pipeline
+-------------------
+
+ref : https://academy.arrikto.com/#0
+
+_____________________________________
+
+-> Graph Viz of Pipeline or
+   Yaml file for Pipeline
+
+* Kale  (For Kubeflow Pipelines)
+  ---
+  Notebooks -> Pipelines -> Serving
+
+  - Helps to define the pipeline in Kubeflow
+    (alternative ot kfp or dsl)
+
+
+  Kale => Katib => KFServing

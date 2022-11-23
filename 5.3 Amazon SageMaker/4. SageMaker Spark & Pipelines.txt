@@ -1,0 +1,62 @@
+4. SageMaker Spark & Pipelines
+-----------------------------
+ref : https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-spark/index.html
+
+=> Training Instances  & Serving Instances (Ednpoints)
+
+---------
+
+* AWS Glue :
+
+* Serverless Compute
+  ----
+  - No need to worry about getting resrc, killing resrc & getting infrastructure
+
+  AWS Lambda
+  -> With lambda you dont need to focus much on Docker, Kubernetes, etc...
+
+  - We dont need to know how many instances are gathered or acquired
+  - Automatic acquire resources & automatic kill later when no need to use
+
+* Server-based vs Serverless ETL :
+  ----
+  Serverless ETL : (AWS Glue)
+   - What you want to do
+
+   - Where (ie Inpu & Output)
+
+   -> No Infra Management
+
+   :) AWS GLUE
+      - glue internally uses Spark
+
+* AWS EMR : (Elastic Map Reduce)
+  -------
+  - alternative to get rid of Hadoop/Spark setup
+
+  -> It will give you Boxes with Spark preinstalled on it
+
+* Hive :
+  ---
+  - Distributed Sql EcoSystem
+
+* SparkML vs Sklearn :
+  ---
+  Users perspective (its almost same)
+  but
+  underhood SparkML may use distributed box for training
+
+
+-----------
+
+* SageMaker Pipelines :
+  ----
+
+  Pipeline :- DAG
+
+  Preprocessing Step -> Training Step ->
+
+* Model Registry :
+  ---
+  - All metadat about Model is stored in this
+

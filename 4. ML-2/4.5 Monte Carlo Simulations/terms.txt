@@ -1,0 +1,5 @@
+terms
+
+- Inversion Transform Sampling
+- Markov Chain Monte Carlo (MCMC)
+- Metropolis Hastings Algorithms (When direct sampling is harder)

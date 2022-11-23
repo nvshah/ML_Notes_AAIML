@@ -1,0 +1,12 @@
+Remember
+
+-> Learning Rate is used during Optimization Process
+
+=> Forward/Backward Feature Selection is techniqye that is model-agnostic 
+   (ie it can be used for any model)
+
+* Most of the ML algo works base don some assumptions they made for their algorithm technique
+  Eg
+  Naive Bayes -> Conditional Probability
+  KNN  -> Concept of Locality (ie Nearby points belong to same group)
+  Logistic Reg -> Linearly Seperable (Almost)

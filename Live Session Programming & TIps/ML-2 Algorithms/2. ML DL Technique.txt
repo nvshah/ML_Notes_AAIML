@@ -1,0 +1,114 @@
+2. ML DL Technique
+------------------
+6.7 Which ML/DL techniqye to use where ??
+
+-> Pick Technique as per need (ie No Favorite technique)
+
+----------------
+
+Q1) Text classif & Multi-Class Classif :
+    ---
+    We use TFIDF for vectorization
+
+    q. Why KNN not works ?
+     -> because of TFIDF, we have many classes & we are operating in high dimen space
+        & In High dimen spaces KNN for such case may not work well
+
+    q. Text data works well with Naive Bayes ??
+      -> because Naive bayes works well in High dimen data (good baseline model)
+
+    q. Why Logistic Reg ?
+      -> works well in High Dimen
+
+    => Instead of Simple Logistic Regression, We will use Softmax Classifer
+       because
+       Logistic Reg works only for binary & for multi we need to do One vs Rest
+       Now
+       Inorder to avoid One vs Rest we use Softmax Classifier (ie that will do multi-class classif for us)
+
+    q. Why DT not work ?
+       -> Decision Tree wont work on high dimen data !
+
+    => For Feature Eng Purpose we can use technique like (SOTA)
+       BERT,
+       GPT
+
+    q. Why not SVM ?
+
+       -> use Softmax Classif than SVM
+
+Q1.1) Naive Bayes vs Softmax Classif ??
+-----
+  -> NB :- make assumption (conditional Independent)
+     Softmax Classif :- Just Linear Classifier in High Dimen space
+
+
+----
+
+Q2) Lots of unlabelled text data & we want to extract insights from it ?
+
+   Ans. BERT + Clustering + Manual Analysis (Manual Labelling)
+
+   -> BERT-Vec  // for encoding
+     (In compare to Word2Vec, BERT-Vectorizers are better)
+
+   Techniques
+   ->
+     Clustering (Hierarchical)
+
+   * Topic Modelling (LDA)
+   -----
+   -> LDA techniques are no more powerful
+   -> You can do topic Modelling with Deep Learning techniques
+
+   * Summarization :
+   ----
+   - is not easy for entore text data
+   - But you can summarize the cluster individually
+
+   * WordCloud is another idea
+   -----
+   - another good viz approach
+   - very impactful in biz context
+
+   - alternative : "TSNE-Viz"
+
+   * Sentiment Analysis :
+   ----
+   - Aspects
+      \
+       What each cluster is all about
+       For Eg 1 Cluster : Battery Life (related comments)
+
+     -> Aspects are actually discovered through clustering
+
+
+------------
+
+Q3) Find outliers in Time Series Data ??
+    Eg Sale of Product for Stores over time period, need to find outliers in this !
+
+    -> You can use RANSAC to make more Robust model
+       You can apply RANSAC on top of your core model
+
+    -> Ransac can make robust model, It cannot train model for you
+       So if you have too many outliers use RANSAC
+
+
+Q4) Speech ?
+
+    - HMM
+    - LSTM
+    - Transformer // Recent SOTA (More used)
+
+
+Q5) Images ?
+
+    - CNN
+    - FewShot Learnings
+    - ImageNet Training - Transfer learning
+    - Skip Connection (CNN)
+    - Efficient Net
+    - Vision Transformers
+
+    - Obj Detection

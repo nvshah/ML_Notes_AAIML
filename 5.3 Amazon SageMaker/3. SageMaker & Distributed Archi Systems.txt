@@ -1,0 +1,86 @@
+3. SageMaker & Distributed Archi Systems
+------------------------
+
+-> Libraries like XgBoost has inherently Distributed Functionality
+- XgBoost, Pytorch, Tensorflow, such packages are implicitly distributed
+
+=> Each GPU has its own VRAM (which is shared among many processor in that GPU)
+
+=> GradientTape is a mechanism via which you will have control over Gradient Descent
+
+=> Master Node is considered as 0
+
+=> Model Parallelism is only effective & importance when your Model doesnt fit in VRam of GPU
+
+-----
+* Quantum Computing
+* AutoScale vs Elasticity
+______________
+
+* Model Parallelism vs Data Parallelism
+
+Q) How would you achieve Data Parallelism ??
+--------------------
+* Parameter Server Mechanism
+
+* All Reduce Scheme
+  Ring Based Scheme
+
+[REMEMBER]
+=> Hadoop & Spark made life easier in Distributed System
+   Sameway
+
+   SageMaker & XGBoost made life easier for ML-Guys
+   - (in terms of lower layer details)
+
+* Model Parallelism :
+---------------
+ - Distributed Weights across GPU's
+
+2 Kinda Node :-
+ Compute Node &
+ GPU Node
+
+ Why to do Model Parallelism ??
+ -> GPU's have VRAMs
+    &
+    when a model cannot be fit inside such VRAMs we need to do Model Parallelism via multiple GPUs
+
+ With Cloud BOX :- (Cloud Computing)
+   - we can easily get 128GB RAM
+
+* SageMaker Model Parallelism :
+  ---
+  - In context of DL (because DL has 1000 or billion of parameters)
+  -> Automated Model Splitting
+
+* Automated Model Splitting
+  -------
+  DL :-
+  -> DL archi is broken up into DAG (ie Directed Acyclic Graph)
+  -> Once you create Graph you know what operations need to be perfomed
+
+  -> So you know about all operations in Entire DL architecture
+
+  So what SageMaker AutoModel Model Splitting does is
+   use High End CPU to create the DL Tensorflow DAG
+   &
+   Use that DAG to decide the Optimal Split for weights
+
+  => So there are lot of theories & ideas involves behind splitting of weigths
+     such as Computer Design, Compiler Design, Graph Theory, OS, ...
+
+* Pipelined Execution :
+  ----------
+
+* Horvod For Model Parallelism
+  ----
+   useful when we have machine with multiple GPUs
+
+
+* XgBoost in Distributed Fashion on SageMaker :
+  -------
+  Fully Replicated
+  Sharded by S3
+
+  XGBoost Tree method
