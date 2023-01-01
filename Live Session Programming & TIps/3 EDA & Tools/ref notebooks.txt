@@ -1,6 +1,6 @@
 ref notebooks
 
-[Dimen Reduction]
+[Dimen Reduction Code Walktrhough]
 https://colab.research.google.com/drive/135woMyKwnVRLV63Czp0zdsKmss9E3fN5
 
 [EDA TIPS Basics Steps]
@@ -8,3 +8,9 @@ https://drive.google.com/file/d/1PeMVoFgzvJ8oWbCVT-6Chjay0xlnVN5x/view
 
 [Tableau 1]
 https://drive.google.com/file/d/1P4u95zAZ5xQ3Ur9VNQV2N_MMwYay8rsC/view
+
+[Seaborn Code walkthrough]
+https://colab.research.google.com/drive/1bW7SEZk4FjsnEmIqnvQY77yfKVDlj5BR
+
+[Basics of Linear Algebra CodeWalkthrough]
+https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/4171/code-walkthrough-live-session-on-basics-of-linear-algebra-for-aiml/2/module-2-data-science-exploratory-data-analysis-and-data-visualization

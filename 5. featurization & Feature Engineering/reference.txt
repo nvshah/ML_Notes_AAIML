@@ -1,3 +1,10 @@
 reference
 
 kaggle.com/category/winnners-interviews/
+
+[Feature Engineering]
+https://towardsdatascience.com/beyond-one-hot-17-ways-of-transforming-categorical-features-into-numeric-features-57f54f199ea4
+
+https://www.analyticsvidhya.com/blog/2020/08/types-of-categorical-data-encoding/
+
+https://machinelearningmastery.com/one-hot-encoding-for-categorical-data/

@@ -1,5 +1,9 @@
 Construct DT
 
+=> You should eye towards High Info Gain Going down (ie Constructing) DT
+
+_______________
+
 -> Info Gain breaking dataset using diff feature for Y
 
    compare Information Gain for f1, f2, f3,... & pick one with highest Information Gain

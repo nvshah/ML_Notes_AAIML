@@ -1,0 +1,20 @@
+1.1 Graph Terminologies
+--------------------
+
+-> In this Case studies we use only directed graph
+
+=> Graph is set of vertices & edges
+
+* Vertex :
+
+* Edges/Links :  (Pair of 2 vertices)
+    - Friendships
+    - Followers/Followee
+
+  Directed & UnDirected Edges
+  ---
+  -> used esp for follow/followee
+
+* DAG : Directed Graph
+
+* Path : sequence of valid edges (from src to dest)

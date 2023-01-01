@@ -1,5 +1,6 @@
 ref : http://scikit-learn.org/stable/modules/calibration.html   
 
+ref : https://www.youtube.com/watch?v=FkfDlOnQVvQ // Calibration of Model concept
 --------
 
 => average in case of {binary values} = probability of val being 1
@@ -20,19 +21,56 @@ _____________
 => Calibration Model works when Probability Estimation comes in picture
     - to make Probbaility Estimation better
 
+
 * Calibration of Models
  --------------
 
  Task : Given Model M
-
+        let say f() is a decision func
+        then
          f(Xq) -> Yq  // Yq may not be actual probability
 
          We want to calculate P(Yq=1|Xq) & P(Yq=0|Xq)
 
+ NOTE :
+ Every time its not necessary that you will get probabilistic inference or output from your model
+ but
+ what if we want the probbailistic interpretation for our prediction given query point
+
+-> In other words If we want to find the probabilistic stats info (ie about the distribution of
+   prediction (output)) given the query points & decision_function
+
+* Naive Bayes (Recap)
+------
+ -> In NB, when we find the probabilities for given Query Points, for each individual class
+    That probability is not exact probability
+    But that is proportional Probability
+
+So when we say f(Xq) = Yq`,
+these Yq` may or may not be actual probabilities
+
+So When we want the Exact or most appropriate probabilities, idea of Calibration Crops in !
+
+Q) What is Calibration ?
+---
  Calibration is a stage where model is already trained & you want to check its calibre for classes
   - what is probability of prediction = 1 would be found by calibration model
 
 => Calibration can be useful when you have probabilistic Outputs of your classifier
+
+Q) Why we need Calibration ?
+
+   -> Consider most popular metric for classif (probability perspective esp) :- log-loss
+
+   Now log-loss depends on the Pi (ie individual probability )
+   |
+   If this probability goes wrong then log-loss would also be wrong/affected
+
+   So Normally Eventhough when our model gives probabilistic output for query point Xq
+   We
+   Want to check on top of that how steadfest is that prediction (ie probability of getting same output for same query point)
+   everytime
+________
 
  * Process :
    ----

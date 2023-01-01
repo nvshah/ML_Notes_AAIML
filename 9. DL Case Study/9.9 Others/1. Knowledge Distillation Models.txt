@@ -1,6 +1,12 @@
 1. Distillation Models
 ----------------------
-ref : https://drive.google.com/file/d/1GjDTiX42GBofpm6QcJNYFL7lP6t8ss1O/view
+ref: Module 8 LS :- #15.27
+ref :
+[NOTES] https://drive.google.com/file/d/1GjDTiX42GBofpm6QcJNYFL7lP6t8ss1O/view
+
+[Knowledge Distillation] https://arxiv.org/pdf/2006.05525.pdf
+[Distil Knowledge NN] https://arxiv.org/pdf/1503.02531.pdf
+[Distil Bert] https://arxiv.org/pdf/1910.01108.pdf
 -----
 
 

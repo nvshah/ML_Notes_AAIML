@@ -1,0 +1,17 @@
+gist
+
+Q) What is Diff between { TFIDF, BOW } & {Word2Vec, Glove} ??
+
+   -> TFIDF, BOW :- Accounts Local Context &
+                    Find Features accordingly
+                    & They provide then numeric/decimal val to those features for each sentence
+                      (Which we called it Weights ie TFIDF Weights to each words)
+
+   -> Word2Vec, Glove :
+       |
+       -> here Global context is accounted (alongwith local context)
+          +
+          So Vector for each word is discovered (either via Word2Vec & GLOVE)
+          &
+          then if we need to account Local context info then we can provide
+          the weights to those vector representation via either {TFIDF, BOW}

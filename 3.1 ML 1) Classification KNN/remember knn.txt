@@ -1,0 +1,6 @@
+remember knn
+
+* When It Comes KNN :-
+   -> You must ponder about concepts of distances, similarities
+      &
+      Bunch of other algorithms

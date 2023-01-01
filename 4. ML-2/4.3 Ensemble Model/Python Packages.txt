@@ -15,7 +15,9 @@ Python Packages
     \
      { learning_rate, n_estimators, max_depth, subsample }
 
-
+       loss :-
+         a. deviance,
+         b. exponential  // AdaBoost
 ________
 
 * sklearn.ensemble

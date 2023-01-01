@@ -22,3 +22,15 @@ Amazing Tips-Facts
 * MF as Optimization Problem :
   -----
    - Advantage :- able to account other system biases easily
+
+* SVD & Featurization :
+  ------
+  SVD helps to get lower-dimen features for a Point
+  Now
+  via SVD we get 2 Matrix i.e Left Singular Matrix & Right Singular Matrix
+  We can use both of these matrix constituting 2*k dimen in total for single data point
+
+  k-features from Left Singular Matrix
+  k-features from Right Singular Matrix
+
+  Hence 2*k features all in all for Single Data Point

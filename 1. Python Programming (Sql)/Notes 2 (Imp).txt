@@ -1,0 +1,7 @@
+Notes 2 (Imp)
+
+* Pandas & Sql
+  ----
+  -> StackOverflow Tag Predictor
+
+  https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3229/edadata-loading/7/module-6-machine-learning-real-world-case-studies

@@ -1,6 +1,9 @@
 1. Session 1
 
 * Graph Neural Networks & Geometric Learning :
+
+(ref: Module 8 LS:- #15.20)
+
 ----------
 
 - BiPartite Graph

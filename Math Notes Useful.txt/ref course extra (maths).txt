@@ -1,3 +1,26 @@
 ref course extra (maths)
 
 - edx -> fundamental of statistics
+
+
+[Immersive Linear Algebra]
+http://immersivemath.com/ila/index.html
+
+
+[Why Cosine used]
+https://www.quora.com/Why-is-cosine-used-in-dot-products-and-sine-used-in-cross-products
+
+
+[L0, L1, L2 Norms]
+https://montjoile.medium.com/l0-norm-l1-norm-l2-norm-l-infinity-norm-7a7d18a4f40c
+
+
+[Statistical testing]
+https://github.com/raj-shr-git/statistical_testing_python
+
+
+Math | ML
+https://web.ma.utexas.edu/users/m408m/Display12-5-3.shtml
+
+[Log Probabiities]
+https://chrispiech.github.io/probabilityForComputerScientists/en/part1/log_probabilities/

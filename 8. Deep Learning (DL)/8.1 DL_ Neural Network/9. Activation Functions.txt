@@ -2,6 +2,12 @@
 ----------------------
 ref :- Blog -> Ronny Restrepo  (http://ronny.rest/blog/post_2017_08_10_sigmoid/)
     :- Pdf : https://drive.google.com/file/d/1o0B3sPwiC8aCp4a_locFfSD9753CA-tm/view
+Blog -> Ronny Rest
+[Derivation of Sigmoid]
+https://drive.google.com/file/d/1o0B3sPwiC8aCp4a_locFfSD9753CA-tm/view
+
+[Derivation on tanh]
+https://drive.google.com/file/d/1aHH4uDIb5SPe3DXLd_capSREkoj77Cdn/view
 ----
 
 

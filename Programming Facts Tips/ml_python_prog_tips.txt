@@ -55,6 +55,10 @@ Tips :-
 
 * To find correlation between 2 Columns :- df.corr()
 
+* To Compute Norm of an Vector :
+   -> np.linalg.norm
+   -> sklearn -> metrics -> eucledian_distance  // L2 Norm
+
 
 ------------------------
 

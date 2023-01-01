@@ -1,0 +1,24 @@
+1. Calibration Rvamp (gist)
+
+
+Let f(Xq) = Yq`
+Now this Yq` need not to be exact probability every time
+So When we want the Exact or most appropriate probabilities, idea of Calibration Crops in !
+
+
+* Calibration is a stage in Model prep, where
+  given that you have already trained the model
+  & You want to calibrate it S.T. You get actual probabilities of classes 1 & classes 2
+
+
+* Calibration :
+  ---
+  is about finding confidence in our prediction
+
+  i.e let say model predicts the probability of 0.8
+  then often 80% of time it turns to 1
+  Now
+  Calibration will test how often does this is true (exactly)
+
+  So we want to know what will be probability that it will be exactly p given that
+  query point & its probabilistic prediction output

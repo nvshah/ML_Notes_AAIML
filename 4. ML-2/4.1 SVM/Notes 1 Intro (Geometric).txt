@@ -11,7 +11,16 @@ _____
 
 Key Idea :- Find Hyper-plane that seperates points as widely as posible
 
-=> Such plane is called as Margin-Maximizing Hyper-plane
+[MINE UNDERSTANDING DEDUCING] <--**
+Q) Why SVM focus on finding Margin Maximizer Hyper-Plane ??
+
+ -> Because We have seen in Logistic Regression, that the closer the point to
+    Seperating Hyper-Plane, the lesser confidant we are about its belonging
+    |
+    So SVM take learning from the Logistic Regression & Tries to mitigate that
+    conundrum via finding such seprating plane that has possibly maximum Margin
+
+=> Such plane is called as "Margin-Maximizing Hyper-plane"
 
 -> We want to find the plane s.t. if we take 2 other planes parallel to this base plane
     ie one parallel plane touches boundary pt of 1 class

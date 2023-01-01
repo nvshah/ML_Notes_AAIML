@@ -1,0 +1,9 @@
+4.8 Design & Build a ChatBot From Scratch
+---------------------------------
+
+video : https://www.youtube.com/watch?v=ImzRs8eORsM
+Notes :
+https://drive.google.com/file/d/1ZNxivs8zyiMHLPjKECbcPFwOsLDUceSS/view?up=sharing
+
+----------
+//TODO

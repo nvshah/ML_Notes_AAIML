@@ -20,9 +20,50 @@ Q) How is SVM related to Logistic Reg ?
  -> Log-Reg : Feature Engineering Explicitly
     SVM  : Feature Engineerig implicilty via Kernel-Trick
 
+Q) Why SVM focus on finding Margin Maximizer Hyper-Plane ??
+
+ -> Because We have seen in Logistic Regression, that the closer the point to
+    Seperating Hyper-Plane, the lesser confidant we are about its belonging
+    |
+    So SVM take learning from the Logistic Regression & Tries to mitigate that
+    conundrum via finding such seprating plane that has possibly maximum Margin
+
+_____________
+DOUBTS
+
+Q) Dual Form & HyperParameters
+
+   Firstly in Primal Form I undertood that its kinda else other algo to solve
+   Loss Optimization Problem
+   Where we need to find optimal Weights [W] & Optimal Bias [B] inorder to get SVM classification
+
+   In this case HyperParam would be as usual to other algo such as Linear Regression
+   i.e
+   1. C or Lemma (Regularization Param)
+
+   Now When it comes to Dual Form
+   then concept of 2-points similarity crops in & Kernel Function concept is breeded up
+   But
+
+   Let say RBF Kernel
+   then We have seen in lecture notes that it has 2 Hyper Param
+
+   1. C or Lemma (Regularization Param)
+   2. Sigma (HyperParam of Kernel Func)
+
+   QUE
+   In the Dual Form Optimization Problem I've not seen anywhere the Regularization Param
+   then
+   How come this C param works with Dual Form Eqn ??
+
 
 -----
 
 Q) SVM Regressor vs Classifier ??
 
 Q) SVM Primmal to Dual Form (MAth Way ) ??
+
+Q) SVC vs LinearSVC ??
+
+
+________

@@ -1,6 +1,7 @@
 11 Data Augmentation 
 -------------------
-
+ref
+https://hazyresearch.stanford.edu/snorkel/blog/tanda_figs/data_aug_basic.png
 ------
 REMEMBER
 

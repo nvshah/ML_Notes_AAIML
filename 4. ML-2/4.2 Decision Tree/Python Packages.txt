@@ -7,7 +7,10 @@ Imp attrib :-
      DecisionTreeClassifier 
         \
          {split, max_depth,
-           min_samples_split, min_samples_leaf }
+           min_samples_split, min_samples_leaf
+           max_features
+           feature_importances_
+           }
 
 Median Absolute Error is more Robust to Outliers
 

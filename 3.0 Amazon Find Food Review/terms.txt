@@ -11,6 +11,7 @@ Sparse Vector
 Corpus
 Bag of words   // technique for text -> vector
 Binary BOW
+GLOVE Vectors
 trivial(less imp | more common) words, non-trivial words
 
 Text-Preprocessing
@@ -30,3 +31,5 @@ Avg W2V, tfidf w2v
 
 Sparse Matrix
 Sparsity of matrix
+
+GLOVE

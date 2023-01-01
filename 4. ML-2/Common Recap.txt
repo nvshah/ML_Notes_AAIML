@@ -1,0 +1,8 @@
+Common Recap
+
+-> All basic algo can be formulated as Loss func  + Reg Term
+
+-> In case of Logistic Regression or SVM, as we cant exactly predict the 0-1 Loss
+   So we are approximating the 0-1 Loss with Logistic Loss & Hinge Loss respectively.
+
+

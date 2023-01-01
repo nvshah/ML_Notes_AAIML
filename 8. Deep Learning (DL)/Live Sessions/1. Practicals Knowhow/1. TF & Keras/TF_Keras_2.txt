@@ -2,6 +2,7 @@ TF_Keras_2
 
 Sec :- Live Session | Code Walkthrough 2
 
+ref: Module 8 LS :- #15.1
 ref : https://colab.research.google.com/drive/1rGteQeqNEEtft8k3MMdRbWxoXPqf0_l9
 
 ----

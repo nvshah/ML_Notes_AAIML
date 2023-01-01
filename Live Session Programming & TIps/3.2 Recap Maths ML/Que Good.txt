@@ -1,0 +1,10 @@
+Que
+---
+
+Q) Why Cos(Theta) is used and not Tan(Theta) ??
+
+   tan()  -> -inf to +inf
+   cos()  -> -1 to 1
+
+
+Q) For Sample Variance Why do we use n-1 ?  // (Bias of an Estimator)

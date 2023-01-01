@@ -6,6 +6,16 @@
    -------
     argmax(f(x)) = argmin(1/f(x))
 
+-> REMEMBER
+
+   In Dual Problem Formulation
+
+   The Only variable we are concern about solving is lemma or alpha
+   because
+   The weight & bias depends on lemma or alpha (post constrained optimized form)
+   Thus
+   If we have optimal lemma or alpha, we can easily compute the optimal weight & optimal bias
+
 -------------------
 
 

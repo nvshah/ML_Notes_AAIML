@@ -12,5 +12,14 @@ https://drive.google.com/drive/folders/1c50Q5RcmdpMYj1jCPc3ShOE2y4G8G2ez
 [Taxi Demand Prediction]
 https://drive.google.com/drive/folders/1okdoeVcz6peAgJRrBC1Hnx1o7zD3OhYE
 
+[StackOverflow Tag Predictor]
+https://drive.google.com/drive/folders/149ZLCNqL4WBdp-7Y3eHxcMHHhVvIWRSW
+
+[Microsoft Malware Detection]
+https://drive.google.com/file/d/1AkGyaHA0QRM6QXMhTJrYaHrCGcVFTpsS/view
 
 
+Live Sessions
+
+[Ad Click Prediction]
+https://drive.google.com/file/d/1zXwR5HWeBdkKuCUw0YyJ-k0IwXwEYGHT/view

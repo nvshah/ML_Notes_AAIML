@@ -36,3 +36,6 @@ numpy stack tips
 
 10) To do One Hot Encoding (diff way then Sklearn) => np_utils.to_categorical(X, k)  // k is # categories
 
+11) To print the feature_names (ie Column Names) => dir(df_instance)
+
+12) Dataframe to Csr (Sparse Matrix) => csr_sparse_matrix = df.sparse.to_coo().tocsr()

@@ -1,0 +1,26 @@
+revision Que
+
+
+Revision Questions:
+
+    What are ensembles?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3081/what-are-ensembles/4/module-4-machine-learning-ii-supervised-learning-models
+
+    What is Bootstrapped Aggregation (Bagging) ?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3082/bootstrapped-aggregation-bagging-intuition/4/module-4-machine-learning-ii-supervised-learning-models
+
+    Explain about Random Forest and their construction?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3083/random-forest-and-their-construction/4/module-4-machine-learning-ii-supervised-learning-models
+
+    Explain about Boosting?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3089/boosting-intuition/4/module-4-machine-learning-ii-supervised-learning-models
+
+    What are Residuals, Loss functions and gradients ?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3090/residuals-loss-functions-and-gradients/4/module-4-machine-learning-ii-supervised-learning-models
+
+    Explain about Gradient Boosting?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3091/gradient-boosting/4/module-4-machine-learning-ii-supervised-learning-models
+
+    What is Regularization by Shrinkage?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3092/regularization-by-shrinkage/4/module-4-machine-learning-ii-supervised-learning-models
+
+    Explain about XGBoost?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3094/xgboost-boosting-randomization/4/module-4-machine-learning-ii-supervised-learning-models
+
+    Explain about AdaBoost?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3095/adaboost-geometric-intuition/4/module-4-machine-learning-ii-supervised-learning-models
+
+    How do you implement Stacking models?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3096/stacking-models/4/module-4-machine-learning-ii-supervised-learning-models
+
+    Explain about cascading classifiers. ?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3097/cascading-classifiers/4/module-4-machine-learning-ii-supervised-learning-models

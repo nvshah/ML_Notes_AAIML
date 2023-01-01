@@ -1,12 +1,15 @@
 1. Notes
 ---------
+ref: Module 8 LS :- #15.10
 ref : https://drive.google.com/file/d/1Cclec5P5cyjiyW5pAwuRjYWh1QV4aHRJ/view
 
 -------------
 
 => Transformer at the core are attention based models
 
-- jax
+- jax :- perform autograd
+   |
+   Speedup ML
 
 * CNN -> Transformer based models for Computer Vision
 
@@ -18,16 +21,29 @@ Vision Transformers :
 ----
 -> For Computer Vision (for Images)
 -> Its not better than SOTA (State of the Arts) CNN
--> Transformer based NLP
+-> Transformer based [similar to NLP]
 -> No Convolution
 -> Low Power Computation
 -> Encoder Only Model (Pure)
 
 -> It is standard BERT alike model
 
+* In Transfomrer [NLP]
+  |
+  For given token we need to compute how much attention to provided to rest of tokens
+  So
+  For given token it need to compute the attention weights for rest all.
+
+  This will be n_C_2  // where n is total number of tokens
+  &
+  this is quadratic Complexity
+
+So If we follow same idea for Image, then let say for 640*640 size image
+We will need to compute comb(640*640, 2)
+
 -> For Attention based model, it has high quadratic complexity because there include Combinations
 
-* Key idea :
+* Key idea : (hack inorder to avoid many attention weight computation)
   --
   Patches
   -> In NLP we operate on Word level Granularity
@@ -40,12 +56,20 @@ Vision Transformers :
   Why Patches -> because otherwise if we do pixel level Granularity
      (ie compare each pixel with rest then it would be computationally not efficient)
 
+  =? Instead of operating at Pixel Level Granularity, We will operate at Patch Level Granularity
+
+* So for Inp Img there will be 2 basic things performed ! :
+  1) Vec for each patch
+  2) PE for those patch
+
+  Vec + 1D-PE(learnable)  := Corresp to each patch will go further in above levels
 
 * Flattening Patch
   ---
   Patch -> Flattened Patch (Vector)
 
   -> By this you will loose locality information
+  -> So you will loose some of the information in this process
 
 * Linear Projections of Flattened Patch :
   ---
@@ -53,8 +77,15 @@ Vision Transformers :
   -> Learnable Weight Matrix
   -> It's kinda Embedding layer
 
-* 2D Positional Encoding :
+* 1D Positional Encoding :
   ---
+  2 Options
+  a) static sin() base dPE
+  b) Learnable Position Enc
+     |
+     Instead of having the fixed/static PE, we will have learnable PE
+     which can be learned via BackProp
+
   -> learn positional weights/vectors
   -> We can find similarity between each cell
 
@@ -62,14 +93,26 @@ Vision Transformers :
 
 => Simple 1D pos-encoding @ input is enough
 
+[Observation]
+=> Learned Position Vectors (PE) are capturing the Patch Positions as well
+    |
+    It can find the relation between these patches on its own
+    without the Human Training !
+
+=> Instead of Standard Activation Func RELU, they have used GELU
 
 * GELU :
   ---
   - Activation Function
   - variation of RELU -> GELU, ELU
   - smoother RELU
+    GELU & ELU are smooth approx of RELU
 
   => In Transformer Encoder, MLP, they are using GELU
+
+* Hybrid Archi :
+  ----
+  -> Used VIT (Vision Transf) with CNN
 
 
 * BIT : ResNet CNN based:
@@ -77,3 +120,22 @@ Vision Transformers :
   - BIT is state of the art ResNet based model.
 
 => Vision Transformer requires significantly larger amount of dataset comparatively to CNN based models
+
+
+* VIT is checked on ImageNet Dataset
+  ---
+  SOTA := ResNet based CNN
+
+REMEMBER :
+----
+-> For VIT, you are not giving any prior info about Structure of an Image
+   Whereas
+   In case of Convolution, its design for such purpose
+   (ie Pooling, etc ...)
+
+
+-----------------
+
+* JAX :- library to perform AutoGradients
+   \
+    This will speedup tensor based machine learning

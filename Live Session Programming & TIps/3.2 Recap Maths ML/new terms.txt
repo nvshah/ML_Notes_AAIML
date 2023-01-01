@@ -1,0 +1,16 @@
+new terms
+--------
+
+* VIF  // For Linear Funciton
+
+* Radius of a Curvature
+
+* Occam's razor
+
+* Generalized Linear Models
+
+* Stratified Sampling
+
+* Z/T Test
+
+* Rank Tests   // Comparing Distb

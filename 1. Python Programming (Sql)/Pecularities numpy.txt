@@ -195,3 +195,5 @@ Tip -> `%timeit {expr}`   //can be used in Jupyter NB to calculate avg times
   np.linalg.norm() // linear algebra
 
   np.flatnonzero()
+
+  np.vectorize()

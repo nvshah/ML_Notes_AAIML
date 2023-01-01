@@ -1,0 +1,30 @@
+Common Tests in Statistical Tests
+
+1) Get the T_obs   // From Observed Experiments
+
+2) Define the Null Hypothesis
+
+3) Define the Alternative Hypothesis
+
+4) Define the Test Statistics
+
+   Decide which sided test you gonna perform ?
+   i.e Left-Sided (One Sided)
+       Right Sided
+
+       Two-Sided
+
+       -> Often this decision depends on the Alternative Hypothesis &
+          Distribution of Test Stats given the Null Hypothesis
+
+5) Compute P-val
+
+   P-Val := As Extreme As T_Obs
+
+
+* Test (Classical) :-
+  Z-test,
+  T-test
+  Z-Proportional test,
+  ChiSquare Test
+  ANOVA

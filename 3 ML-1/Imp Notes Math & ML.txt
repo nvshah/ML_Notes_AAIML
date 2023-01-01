@@ -1,0 +1,112 @@
+Imp Notes Math & ML
+
+GIST :- EDA & Math
+-----
+1. feature - this is dimension in Coordiante system
+2. data points - are value of axis
+3. class label - are points(vector) in coordinate system
+
+4. EDA - use to visualize the class label in cordinate system , with feature as an axis and data points as cordinate
+5. if only 2 feature are given i.e - 2-Dimension -- use scatter plot
+6. if 4-6 feature are given i.e. - upto 6 dimension - use pair plot(type of scatter plot)
+
+7 . box plot, voilin plot, contour plot also works upto 2 dimension , and this gives the probability and statistics information
+
+8. Linear algebra - we use this to differentiate , different type class label . . we can write condition .
+9 . Dimensionality reduction - we use this to convert higher dimensional data to upto 2 dimension or desired dimensions.
+
+
+[Why Cosine used]
+https://www.quora.com/Why-is-cosine-used-in-dot-products-and-sine-used-in-cross-products
+
+
+Q) Dot Product
+
+Two vectors are orthogonal if the angle between them is 90 degrees.
+Thus, using (**) we see that the dot product of two orthogonal vectors is zero.
+Conversely, the only way the dot product can be zero is if the angle between the two vectors is 90 degrees
+(or trivially if one or both of the vectors is the zero vector).
+
+
+Q) Euc Dist & Cosine Dist
+
+Both euclidean and cosine distance gives us similarity only. How these similarity are measured is different. It is like if you are using goniometer which is used to measure angles between two points then it is cosine distance
+while if you are using simple ruler to measure distance between two points then it is euclidean distance.
+
+
+Q) Why Cos is used | Dot Product ??
+
+"The dot product is the size of the projection of one vector (u in the diagram) onto another one (v),
+scaled by the size of the 2nd one.
+ As such, ????cosθ is the function that gives you the size of the projection.""
+
+dot product = product of vector in the same direction
+
+the significance of "cos(theta)" in dot product is to calculate the projected distance of one vector upon the other vector.
+A*B*cos(theta) ===> projected distance of vector A on vector B = A*cos(theta)
+
+And since vectors are directional in nature so we need to project the vector onto another
+to calculate its component in that direction and in this process we cos function is helpful.
+
+If the 2 vector's dot product = 0 then they both are orthogonal vectors.
+If the dot product between the normal weight vector and the data point = 0 in Logistic Regression based Classififcation problem then thet data point is not a +ve or -ve data point it's polarity is nuetral.
+
+=> An intuitive explanation is that the dot product uses cos to measure “how parallel” two vectors are (cos0=1)
+
+Q. [Graphical Intution Eqn of Plane]
+https://math.stackexchange.com/questions/1770206/geometric-intuition-of-the-equation-of-a-plane
+
+________
+
+Q) What is a Normal Vector
+   -> A vector that is normal to a plane is known as the normal vector.
+      In a simple way, let us consider earth as a plane(In reality earth is a curvature)
+      then every cell phone tower which is placed at exactly 90 degrees with the plane is known as normal vector
+      to the earth.
+
+Q) Why W is Perpendicular to HyperPlane ??
+
+   -> We have to assume 'W' to be perpendicular to the hyperplane
+      because a hyperplane can be represented only in terms of a vector that is perpendicular to it.
+
+
+Q) how to find out on which direction my perpendicular vector points
+
+   -> There are many ways to find the direction of the vector.
+      One way is by finding the angle with respect to the horizontal axis and then using this to find the direction.
+      Please refer here https://ibb.co/9Hn7b2z .
+      I have assumed w is normalized to unit length (we can always do that by dividing each component of the vector
+      by its length ). We now has the cosine of the angle between the w and the x-axis unit vector.
+      Please refer here https://www.mathsisfun.com/algebra/trig-four-quadrants.html .
+      With the sign of the cosine , we can know in which quadrant the w vector lies.
+      So, essentially it says the direction.
+      This is a easier method to know which direction the w vector is pointing.
+
+----
+
+Q) Plane & Line
+  -> whether a line passes through origin or not , w vector is always normal to the plane
+  -> We will take the dot product, but it will be always equal to the intercept.
+     In case of a plane passing through the origin, the intercept value is zero, that is why dot product is zero.
+
+Q) Does Line Feature has 1 or 2 Dimen
+   https://gis.stackexchange.com/questions/239667/does-line-feature-have-one-or-two-dimensions
+
+Q) 2 Vectors Parallel
+https://math.stackexchange.com/questions/187304/why-are-two-vectors-that-are-parallel-equivalent/187308#187308
+
+Q) Distance between 2 HyperPlanes
+https://math.stackexchange.com/questions/1484272/distance-between-two-hyperplanes
+
+Q) Signed Distance from a line plane
+https://stackoverflow.com/questions/29444874/function-for-signed-distance-from-a-line-plane-with-a-front-vector
+
+
+Q) What is a Normal Vector
+   -> A vector that is normal to a plane is known as the normal vector.
+      In a simple way, let us consider earth as a plane(In reality earth is a curvature)
+      then every cell phone tower which is placed at exactly 90 degrees with the plane is known as normal vector
+      to the earth.
+
+Q) Z-Score vs T-Score
+https://math.stackexchange.com/questions/1350635/when-do-i-use-a-z-score-vs-a-t-score-for-confidence-intervals

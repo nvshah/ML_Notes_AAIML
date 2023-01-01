@@ -9,7 +9,8 @@ BASIC
    then use Padding techniqye
 
 => Kernels are typically Square Matrix for most Image Processing
-
+     |
+     Kernels are also called as Filters
 
 -----------
 

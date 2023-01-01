@@ -1,0 +1,25 @@
+Revision Que
+
+Revision Questions:
+
+    Explain about Content based and Collaborative Filtering?
+    https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3290/content-based-vs-collaborative-filtering/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+    What is PCA, SVD?
+    https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3292/matrix-factorization-pca-svd/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+    What is NMF?
+    https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3293/matrix-factorization-nmf/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+    How to do MF for Collaborative filtering ?
+    https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3294/matrix-factorization-for-collaborative-filtering/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+    How to do MF for feature engineering.?
+    https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3295/matrix-factorization-for-feature-engineering/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+    Explain relation between Clustering And  MF?
+    https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3296/clustering-as-mf/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+    What is Hyperparameter tuning. ?
+    https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3297/hyperparameter-tuning/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+    Explain about Cold Start problem.?
+    https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3299/cold-start-problem/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+    How to solve Word Vectors using MF?
+    https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3300/word-vectors-as-mf/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+    Explain about Eigenfaces. ?
+    https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3301/eigen-faces/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+

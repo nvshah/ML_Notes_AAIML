@@ -3,6 +3,7 @@
 
 
 ---------
+=> XGBoost is an impl of GBDT
 
 * XGBoost
   -------

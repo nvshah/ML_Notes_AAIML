@@ -4,3 +4,6 @@ terms
 - ELU
 
 - Patch
+
+- Positional Encoding (Sin/Cos)
+

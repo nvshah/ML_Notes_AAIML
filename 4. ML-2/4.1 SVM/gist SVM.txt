@@ -2,6 +2,9 @@ gist SVM
 
 -------------
 
+We generally use SMO(sequential minimal optimization) algorithm to solve SVM problem.
+---
+
 -> Assumption ||w|| not to be always 1
 
 -> Hyper-Param Notation 
@@ -15,7 +18,10 @@ gist SVM
 
 => Feature Transformation is partially replaced by finding the right/appropriate Kernel
 
--> The best library for SVM is libsvm
+-> The best library for SVM is `libsvm`
+
+   libsvm impl :- sklearn.svm.SVC
+   there is one more impl for linea SVM :- LinearSVC
 
 ------------
 
@@ -36,7 +42,7 @@ Hyper Params :- { C, sigma, epsilon }
     					S.T. 1 - Yi*(W^T*Xi + b) >= zeta_i   // zeta_i >= 0
 
 * Hinge Loss Interpretation :
-
+  ------------
 Kernel Function :- equivalent to Similarity Function
 
 -> The most imp idea in SVM is Kernel Trick

@@ -15,3 +15,15 @@ https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be
 
 [IMDB Sentiment Classification]
 https://drive.google.com/file/d/1iWpQBiZO95pfOWLdaG6qKwA27d_Q-EDg/view
+
+
+____________
+
+Videos
+
+[Illustrated Guide LSTM & GRU]
+https://www.youtube.com/watch?v=8HyCNIVRbSU
+
+
+[Derivation LSTM num of Params]
+https://www.youtube.com/watch?v=l5TAISVlYM0

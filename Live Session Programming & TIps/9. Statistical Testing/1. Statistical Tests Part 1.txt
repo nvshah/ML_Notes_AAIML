@@ -1,0 +1,140 @@
+1. Statistical Tests Part 1
+---------------------------
+ref : https://drive.google.com/file/d/1gSLM1N7_XyePQea3MEjQjBBlEjE1oz3Y/view
+Module 2 LS :- #14 (10.14)
+
+
+=> We cannot judge if some test is parametric or non-parametrix just only based on
+   type of test-statistic distribution
+
+=> Your Alternative Hypothesis & Test Statistics define the P-val formulation
+
+=> You have to always think (whilst doing p-val)
+   that if you are doing
+   1 sided test or
+   2 sided test
+   depending on understanding what is your Null Hypothesis & What is your Alternative Hypothesis
+
+=> Always choose your null hypothesis that you can simulate
+
+=> We must know & consider the Distribution of Test-Statistiscs
+_____________
+
+* Test (Classical) :-
+  Z-test,
+  T-test
+  Z-Proportional test,
+  ChiSquare Test
+  ANOVA
+
+* Test Statistic :
+  - Something we measure during our experiment
+  - Test Statistic is sensible
+  - Its behavior (ie val) may vary as per null hypothesis or Alternative Hypothesis
+
+* Null Hypothesis :
+  ----
+  You select Null Hypothesis in such a way that
+  either
+  a. You can simulate the null hypothesis & can get the test statistics
+  or
+  b. You have the Distribution of the Test-Statistics
+
+  Ultimately you want some info in terms of Test-Statistics (maybe it is via value or distribution form)
+
+* P-Val :
+  ----
+  You have 2 main things
+  1) T_obs (ie already observed stats that is independent)
+  2) Null Hypothesis
+
+  Now when you predict the T_obs given null hypothesis then it will be called as p-val
+  & This phenomenon is called as Hypothesis Testing
+
+  Eg If Coin is Fair (ie our Null Hypothesis), then P(head) = 1/2
+     Now
+     Given this (Fair Coin) what is probability that Coin will turn 65 times head in 100 experiments/trials
+
+[REMEMBER]
+ => Test-Statistics follows the Distribution type
+    &
+    Under Null Hypothesis, we know the Test-Statistics so we can use the Mathematical Machinery
+
+
+* When to reject Null & not ?
+-------------------------
+  -> Let say there are 2 Universe
+     1 of Null Hypothesis
+     &
+     another of an alternative hypothesis
+
+     Now if you get very lower probability for your test statistics then your alpha (ie benchmark)
+     then you dont want to live in the world where there are less chances !
+     So
+     Thus we reject the Null Hypothesis in such case
+     &
+     Move to another (ie alternative) Universe !
+
+    By default at first we choose to live in Null Hypothesis World
+    & once the p-val is < the significance (alpha), we decide to reject the Null-Hypothesis (World)
+    & accept the alternative one !
+
+* KS Test :
+  ------
+  -> Non-Parametric test
+  In KS test, the test statistics follow a Konglomorov distribution
+
+
+* Permutation Test :
+  ------
+  -> Non Parametric test
+  -> We do not have theortical distribution of test-statistic
+
+=> Formulation of p-val depends on an alternative hypothesis & test-statistics
+
+
+
+* Left Sided test :
+  Right Sided Test
+  2 Sided Test
+
+  P-val formulation for either of type of test depends on alternative hypothesis
+
+  You have 2 things
+    a. Null Hypothesis (H0)
+    b. Alternative Hypothesis (Ha)
+
+  So normally while computing the Test-Statistics via
+  Plotting PDF (ir Graph)
+  Null Hypothesis Lies on one end (ie let say Left)
+  &
+  Alternative Hypothesis lies on other end (ie. let say Right)
+
+  This wont be always the case but often the case
+  Sometimes
+  Alternative Hypothesis includes both the end (ie Eg >= & <= conditions at same time !)
+
+2 Sided Test
+=> Most often those are symmetric 2 sided test
+=> Non-Symmetric 2 Sided test are unique cases
+
+* P-val & alpha :
+  ---
+  You compare your p-val with the alpha
+  if it is less :- then you reject null hypothesis
+  else :- reject alternative hypothesis
+
+=> For null hypothesis you must use such case where your probability is definitive !
+=> Always choose your null hypothesis that you can simulate
+
+______
+
+* KS Test :
+  ------
+  - Generally used to compare 2 distb (similarity)
+  - Konglomorov Distb
+
+  Test Statistics :- Suprememum of absolute value of the Gap !
+
+  NOTE :- If both the distb overlap completely. i.e similar almost
+          thus test-statistics (ie supremum gap = 0)

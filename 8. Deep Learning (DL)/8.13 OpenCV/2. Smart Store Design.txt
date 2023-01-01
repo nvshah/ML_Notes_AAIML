@@ -1,6 +1,10 @@
 2. Smart Store Design
 ---------------------
+ref: Module 8 LS :- #13.2
 
+[Notes]
+https://drive.google.com/file/d/1NYEvayVzXiv0HiTv7K91LM6HhuPkGXfX/view
+https://pdfhost.io/v/xuzsJiFD2_2_Design_and_build_a_Smart_Store
 
 --------
 

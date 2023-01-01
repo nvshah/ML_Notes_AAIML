@@ -19,7 +19,8 @@ https://www.youtube.com/watch?v=vwYmrKDvnlg
 ----------
 Resource (PDFS)
 
-Ronny Restrepo PDF Sigmoid
+Ronny Restrepo PDF Sigmoid | [Derivation of Sigmoid]
 https://drive.google.com/file/d/1o0B3sPwiC8aCp4a_locFfSD9753CA-tm/view
 
-
+[Calculating Derivation of TanH]
+https://drive.google.com/file/d/1aHH4uDIb5SPe3DXLd_capSREkoj77Cdn/view

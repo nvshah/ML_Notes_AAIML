@@ -19,3 +19,7 @@ ML Python Programing Tips 2
 
 => Do use LogSpace for finding HyperParam (ie like Regularization Param)
    [Eg Logistic Regression + Grid Search => Here you can use np.logspace() for 'C' param]
+
+
+* You can perform standardization & model declaration in 1 step via
+  make_pipeline()

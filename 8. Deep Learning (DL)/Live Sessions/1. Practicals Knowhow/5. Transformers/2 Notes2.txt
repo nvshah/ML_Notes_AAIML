@@ -1,5 +1,9 @@
 2 Notes2
 -------
+ref: Module 8 LS :- #15.8
+https://colab.research.google.com/github/dlmacedo/starter-academic/blob/master/content/courses/deeplearning/notebooks/tensorflow/transformer.ipynb
+
+__________-
 
 -> Dense Layer underneath are just Matrix multiplications
 

@@ -57,3 +57,9 @@ Q) LogisticRegression Modelling
    if loss == "hinge" the it is SVM.
 
    LogisticRegression() & SGDClassifier(loss='log') are same almost
+
+
+----------
+
+https://www.quora.com/Why-is-logistic-regression-called-regression-if-it-doesnt-model-continuous-outcomes
+https://stats.stackexchange.com/questions/127042/why-isnt-logistic-regression-called-logistic-classification

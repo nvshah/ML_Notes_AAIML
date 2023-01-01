@@ -1,0 +1,14 @@
+doubt
+
+Q) sklearn difference between accuracy_score() & score() ??
+
+   -> One is Training Score (ie scroe())
+      &
+      other helps to check Testing score (ie accuracy_score())
+
+
+Q) ROC-AUC Curve Significance ??
+   How to interpret it ??
+
+   -> ROC Curve is esp useful in Binary Classif
+   -> It is compared with benchmakr 45% straight line

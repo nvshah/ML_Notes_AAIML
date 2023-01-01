@@ -1,5 +1,7 @@
 TF_Keras_1
 ------------
+ref: Module 8 LS :- #15.1
+https://colab.research.google.com/drive/1wCZnBKZqsblAuPLmSKEReRcmoMyQ4Quv
 
 ---
 lib useful :

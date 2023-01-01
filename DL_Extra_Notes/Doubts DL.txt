@@ -3,3 +3,8 @@ Doubts Dl
 Q1) What is Embedding vs Feature Repr (Encoder-Decoder)
 
 Q2) PRELU vs RELU
+
+
+Q3) What is FineTuning ?
+
+    > Using one pre-trained model for another purpose

@@ -30,3 +30,5 @@ ____________
 _____
 MIMP :
 *=> Thus converting categorical fetaure to numerical feature helps us to get rid of Data Sparsity
+
+    Data Sparsity :- Small Splitting Records in case of many Levels in a Categorical Feature

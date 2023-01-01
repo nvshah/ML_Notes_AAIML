@@ -1,5 +1,7 @@
 Tips
 
+=> Gensim is very popular model for Word2Vec
+
 -> Given any problem if you can convert it to Vector then we can leverage power of Linear Algebra
 
 -> Log is called a monotonnic function

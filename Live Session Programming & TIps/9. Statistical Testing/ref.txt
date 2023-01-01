@@ -1,0 +1,23 @@
+ref
+
+[Statistical Testing] (Module 2 Section Statistical Testing)
+https://drive.google.com/file/d/1Uz_vwePMhG0ajBEJNocoPaqU__eYCNYu/view
+
+------------
+
+[Statistical Test Part 1]
+https://drive.google.com/file/d/1gSLM1N7_XyePQea3MEjQjBBlEjE1oz3Y/view?usp=sharing
+
+[Statistical Test Part 2]
+https://drive.google.com/file/d/1dFHtckEZK08xWT1oeOJgbNY6ZcEWHaPV/view
+
+[Statistical Test Part 3]
+https://drive.google.com/file/d/1GchSZvs2gv6eaN4vVNm1ayH2nx2DFAJr/view
+
+-------------
+
+[Test Statistics]
+https://www.scribbr.com/statistics/test-statistic/
+
+[REPO Content Statistics Test]
+https://github.com/raj-shr-git/statistical_testing_python

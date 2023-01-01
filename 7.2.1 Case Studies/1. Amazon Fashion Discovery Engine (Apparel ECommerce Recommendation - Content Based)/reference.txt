@@ -1,0 +1,17 @@
+reference
+
+* AAIML Ipynb NB Content
+
+  [ApparelRecSys]
+  https://drive.google.com/drive/folders/0BwNkduBnePt2VWhCYXhMV3p4dTg?resourcekey=0-Vgtkgj7Gt5ShPsGa7SAQ0A
+
+_____________
+
+* Data Acquisition (Amazon)
+   - amazon product advertising api
+
+
+* Files :
+  ---
+
+ 1) AppliedAIWorkShop.ipynb

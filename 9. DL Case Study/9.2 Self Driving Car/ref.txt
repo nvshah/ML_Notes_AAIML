@@ -1,6 +1,23 @@
 ref
 
+Notebooks
+[AutoPilot Tensorflow]
+https://drive.google.com/file/d/1QiEgrF7OMNgAkoO4f7pm6vWpVb7Em2cW/view
+
 comaai :- https://github.com/commaai/research
 udacity :- https://github.com/udacity/self-driving-car/tree/master/datasets
 baidu :- http://www.baidu.com/search/error.html?tc=24445524042452573450052821
-*sullychain :- https://github.com/SullyChen/Autopilot-TensorFlow
+*sullychain :- https://github.com/SullyChen/Autopilot-TensorFlow  <--** [Used in Course]
+
+
+-------------
+Others
+
+[Nvidea Self Driving Cars]
+https://devblogs.nvidia.com/deep-learning-self-driving-cars/
+
+-------------
+Book
+
+[End to End Self Driving Car]
+https://arxiv.org/pdf/1604.07316.pdf

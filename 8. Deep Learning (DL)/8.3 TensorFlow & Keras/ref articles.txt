@@ -14,3 +14,18 @@ ref articles
 
 [COlab] 
 https://research.google.com/colaboratory/faq.html
+[Colab Intro]
+https://colab.research.google.com/
+
+
+--------------
+Pract Notebooks
+
+[Tensorflow_Softmax_Classfier]
+https://drive.google.com/file/d/1cYvTo2mcBpBU2XIihDhbDUGrfrkzwgCp/view
+
+[MLP tensorflow]
+https://drive.google.com/file/d/1tIEOPJiJtMzStFai47UyODdQhyK9EQnQ/view
+
+[MNIST Clasif in Keras]
+https://drive.google.com/file/d/1PMyn9bgjDzhaBm2NO3YQ1f0m-Y2SmZe4/view

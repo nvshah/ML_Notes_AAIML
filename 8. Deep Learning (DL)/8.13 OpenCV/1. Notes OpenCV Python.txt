@@ -3,6 +3,8 @@
 ref :-
 - https://www.youtube.com/watch?v=SgzPF0_dLMY
 - https://colab.research.google.com/drive/1TH0acCAGg6R3ZYJSvJ4HSsX2Y2EcO1CQ?usp=sharing
+
+ref: Module 8 LS:- #13.1
 _____________
 
 - Gaussian Mixture Model + K-Means

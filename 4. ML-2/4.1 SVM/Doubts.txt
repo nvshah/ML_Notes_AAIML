@@ -1,0 +1,19 @@
+Doubts 
+
+Q) Why in Dual Form There is no mention of Weights & Bias but only alpha (or lemma i.e Langrange Multiplier )
+   ??
+
+[REMEMBER]
+   In Dual Problem Formulation
+
+   The Only variable we are concern about solving is lemma or alpha
+   because
+   The weight & bias depends on lemma or alpha (post constrained optimized form) for its optimal val directly
+   Thus
+   If we have optimal lemma or alpha, we can easily compute the optimal weight & optimal bias
+
+   So we do not need Gradient Descent to compute the optimal weights & optimal bias
+   as both depends directly on optimal lemma
+
+   So we just need to put efforts to find optimal lemma or alpha
+   This efforts may be led tp Gradient Descent or any other optimization techniqye to find best alpha/lemma

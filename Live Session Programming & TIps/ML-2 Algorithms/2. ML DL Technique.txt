@@ -1,5 +1,6 @@
 2. ML DL Technique
 ------------------
+(Module 4 LS :- #7)
 6.7 Which ML/DL techniqye to use where ??
 
 -> Pick Technique as per need (ie No Favorite technique)

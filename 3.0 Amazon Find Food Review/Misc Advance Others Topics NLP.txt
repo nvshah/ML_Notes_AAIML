@@ -1,0 +1,8 @@
+Misc Advance Others Topics NLP
+
+ref : https://realpython.com/python-nltk-sentiment-analysis/
+
+* Sentiment Scores :
+  -----------------
+  NLTK -> SentimentIntensityAnalyzer()
+

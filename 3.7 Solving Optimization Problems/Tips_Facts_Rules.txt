@@ -1,0 +1,9 @@
+-> In optimization 
+     min f(x) = max -f(x)
+
+     min f(x) = max 1/f(x)
+     
+
+=> In Logistic Regression the Parameters are founded via these 2 techniques
+   a. MLE (Maximum Likelihood Estimation)
+   b. Gradient Descent

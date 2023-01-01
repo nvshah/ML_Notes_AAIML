@@ -3,8 +3,7 @@ reference code
 [NB classifier multi-nomial]
 https://www.ritchieng.com/machine-learning-multinomial-naive-bayes-vectorization/
 
-
-
+https://ml-cheatsheet.readthedocs.io
 
 -----------
 

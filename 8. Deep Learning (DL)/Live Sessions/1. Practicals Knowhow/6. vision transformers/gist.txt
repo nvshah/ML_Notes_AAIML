@@ -1,5 +1,28 @@
 gist
 
+JAX => Library for performing auto-gradients
+  \
+   speedup the Tensor Operations based MLP
+
+Basic idea :
+----
+Image Inp -> is broken into patches
+[Patch is small chunk of Image, analogous to tokens in sentence]
+
+Now for each Patch We will compute 2 info :
+ a) 1-Dimen Positional Encoding
+ b) Patch Vector Representation
+
+ NOTE:
+ Though Patch is Image & We need 2-Dimen to represent Positional Encoding
+ for matrix kinda structure,
+ Here we will opt for Learning 1-Dimen PE instead of simple static sin/cosine based PE
+
+ So Positional Encoding Vectors are also learned by the model
+
+___________________
+
+
 => Use Transformer base models alike BERT to perform Computer Vision
    instead of standard ResNet or CNN based
 
@@ -8,5 +31,7 @@ gist
 
    -> So in Fixed PE -> It is fixed via Sin/Cosine Wave
       But here we want to learn that instead fixing
+
+   -> 1-Dimen Positional Encoding is learned by the Model
 
 => Let model figure out Positional Encoding vector

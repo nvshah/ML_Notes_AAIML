@@ -4,7 +4,7 @@ ref : https://drive.google.com/file/d/13Qpgvgav78aarA-4z3nOLS8KKtxd3mvY/view
 
 * Generative Pre Training (GPT)
 --------------------------------
-
+ref: Module 8 LS :- #12.1
 -------
 
 
@@ -51,6 +51,9 @@ RECAP
 
      So its Decoder Only Stacked
 
+* Language Model : (LM)
+  - You pretrained the model to predict the next word
+
 * GPT1 Language Model :
   ---
   - You pre-trained with next word prediction
@@ -89,7 +92,9 @@ RECAP
 
   Zero Shot Learning :-
    - Only PreTrain & No FineTune
-   - So now finetuning required after Pre-Training
+   - So now no finetuning required after Pre-Training
+
+  -> Simple lang model can work (without any finetuning) on a good set of task !
 
 
 * Generative Model with Priming :
@@ -152,9 +157,12 @@ Takeaway
      Mapping in dataset (gen from larger one)
 
 
+* Applications (GPT) | (BERT vs GPT)
+  ----------------------------------
 => For Generative Purpose : GPT models are often used
 
    For Text-Encoding Vector : BERT is often used (as it has ability to look bidirectionally)
+
 
 
 * USE (Universal Sentence Encoder)

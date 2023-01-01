@@ -14,14 +14,16 @@ cs229.stanford.edu/notes2020spring/cs229-notes3.pdf%C2%A0
 
 *Dual Form of SVM
  --------
-
  Primal Formulation of SVM = Soft Margin SVM   // (Constraint Optimization Problem)
+
+ In Optimization World, the primal form can be represented in different formulation
+ (ie Dual Formulation)
 
  Solving Primal Formulation = Solving Dual Formulation 
 
 argmax for alpha := ...
 
- after finding alpha we can use it to compute f(Xq)
+ after finding alpha we can use it to compute f(Xq), (ie Our Inference Function or Query Point Function)
 
  For SV     :- alpha_i > 0
  For Non-SV :- alpha_i = 0

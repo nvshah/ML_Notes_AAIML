@@ -1,5 +1,8 @@
-1. Linear Reg Prob
+1. Linear Reg using Prob & Stats
 ----------------
+Module 3 :- #8
+
+_______________
 
 Problem :- Given Data Point, -> (Xi, Yi)
            Find weight vector W & intercept b

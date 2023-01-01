@@ -11,7 +11,11 @@ CNN (Visual)
 
 * Connvolution Operation
 - https://en.wikipedia.org/wiki/Sobel_operator
+- https://en.wikipedia.org/wiki/Grayscale#/media/File:Beyoglu_4671_tricolor.png
 
+* Convolution Layers
+  [Convolution Networks Pool]
+  https://cs231n.github.io/convolutional-networks/#pool
 
 * [Derivative of max-pooling]
 - https://www.quora.com/How-are-the-parameters-of-max-pooling-represented-in-the-weights-nodes-of-a-neural-network
@@ -20,20 +24,32 @@ CNN (Visual)
 https://web.archive.org/web/20201126174628/https://engmrk.com/lenet-5-a-classic-cnn-architecture/
 https://www.kaggle.com/code/blurredmachine/lenet-architecture-a-complete-guide/notebook
 
+https://github.com/DustinAlandzes/mnist-lenet-keras/blob/master/lenet.py
+
 * ImageNet
 https://en.wikipedia.org/wiki/ImageNet
 https://www.kaggle.com/c/imagenet-object-detection-challenge
 
+* Data Augmentation :
+https://hazyresearch.stanford.edu/snorkel/blog/tanda_figs/data_aug_basic.png
+
+* Convolution Layer in Keras
+https://keras.io/api/layers/convolution_layers/
+https://keras.io/api/layers/pooling_layers/
+https://keras.io/api/layers/core_layers/#flatten
+https://github.com/DustinAlandzes/mnist-lenet-keras/blob/master/lenet.py   //[Code Kears Mnist]
 
 * AlexNet
 https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf
 https://i0.wp.com/ramok.tech/wp-content/uploads/2017/12/2017-12-31_01h31_40.jpg
-http://euler.stat.yale.edu/~tba3/stat665/lectures/lec18/notebook18.html
+
+http://euler.stat.yale.edu/~tba3/stat665/lectures/lec18/notebook18.html   <--IMP
 
 * VGGNet
-https://github.com/fchollet/deep-learning-models/blob/master/vgg16.py
 https://www.quora.com/What-is-the-VGG-neural-network
 https://arxiv.org/pdf/1409.1556.pdf
+
+https://github.com/fchollet/deep-learning-models/blob/master/vgg16.py <-- IMP
 
 * ResNet
 https://arxiv.org/pdf/1512.03385.pdf
@@ -50,3 +66,15 @@ https://blog.keras.io/building-powerful-image-classification-models-using-very-l
 * (Keras :- Img Classif Models 3 Strategies)
 https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
 
+------------
+Pract Notebooks
+
+[Code Eg MNiSt Dataset]
+https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
+
+
+--------------------------------
+PDFs Books
+
+[DL Tutorials]
+http://www.iro.umontreal.ca/~bengioy/talks/DL-Tutorial-NIPS2015.pdf

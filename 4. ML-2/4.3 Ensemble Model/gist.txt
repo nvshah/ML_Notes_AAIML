@@ -2,6 +2,8 @@ gist
 
 -------
 
+=> Best GBDT impl is XgBoost rather than sklearn.ensemble.GradientBoostingClassifier
+
 => RF gives huge performance lift compare to simple DT based model
 
 => Randomization is key idea in RF to reduce Variance

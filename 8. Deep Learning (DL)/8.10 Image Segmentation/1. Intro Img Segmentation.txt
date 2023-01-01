@@ -1,6 +1,8 @@
 1. Intro Img Segmentation
 -------------------------
-
+ref : Module 8 LS :- #10.1
+[Notes]
+https://drive.google.com/file/d/10dEyA-pihetIY3SxU2rgdnQkdcC_svfg/view
 
 ----------
 REMEMBER

@@ -4,3 +4,10 @@ distil.pub // Graph Neural Networks
 
 [Notes]
 https://drive.google.com/file/d/1HHcOb82CGw9Z5mQGS26jGWplkLA5MlD8/view
+
+
+-------
+Pract
+
+[GNN Citations Nb]
+https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/graph/ipynb/gnn_citations.ipynb

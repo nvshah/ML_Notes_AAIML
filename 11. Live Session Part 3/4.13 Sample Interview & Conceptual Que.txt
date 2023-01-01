@@ -1,0 +1,4 @@
+4.13 Sample Interview & Conceptual Que
+
+[Inverted Index]
+https://medium.com/@igorkopanev/a-brief-explanation-of-the-inverted-index-f082993f8605

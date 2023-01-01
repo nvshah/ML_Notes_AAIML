@@ -1,9 +1,13 @@
 ref
 
+[Char RNN Keras]
+https://drive.google.com/file/d/1RFeSemr8k4ykbvb3x2nByMapPxN-OaM5/view
+
+____________________
+
 https://folkrnn.org/
 https://soundcloud.com/trivedigaurav/char-rnn-composes-long-composition
 https://soundcloud.com/sigur-ur-sk-li/neuralnet-music-1
-
 
 https://www.trivedigaurav.com/blog/machines-learn-to-play-tabla/
 https://www.abcjs.net/abcjs-editor.html
@@ -28,3 +32,8 @@ https://www.trivedigaurav.com/blog/machines-learn-to-play-tabla-part-2/
 [LSTM MIDI Music Gen]
 https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5
 https://github.com/Skuldur/Classical-Piano-Composer
+
+[Neural Nets for Genrating Music]
+https://medium.com/artists-and-machine-intelligence/neural-nets-for-generating-music-f46dffac21c0
+
+https://magenta.tensorflow.org/

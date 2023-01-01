@@ -1,5 +1,7 @@
 General ML Notes
 
+=> IN ML/DL, many alog & things works on some basic assumptions
+
 -> In ML model & featurization are inter-related
 
 -> Domain Knowledge & Feature Engineering are equally imp in ML as framing a Model/Aglo

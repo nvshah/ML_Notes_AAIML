@@ -5,3 +5,9 @@ https://www.analyticsvidhya.com/blog/2017/09/30-questions-test-k-nearest-neighbo
 
 [KNN]
 https://drive.google.com/drive/folders/1tMYRWzbrSMxQ7aQ5mc8Qf4190gPSt5fy
+
+[KD Tree]
+https://www.wikiwand.com/en/K-d_tree
+
+[KNN Code Sample]
+https://drive.google.com/drive/folders/1tMYRWzbrSMxQ7aQ5mc8Qf4190gPSt5fy

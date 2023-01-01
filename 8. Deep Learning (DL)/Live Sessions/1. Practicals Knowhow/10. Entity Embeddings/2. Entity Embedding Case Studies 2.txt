@@ -1,5 +1,11 @@
 2. Entity Embedding Case Studies 2
 ------------------
+ref: Module 8 LS :- #15.19
+
+https://drive.google.com/file/d/17aZiYUHMP7zxn2YCWoEUdVYV0KsWgSDd/view
+
+__________________
+
 - Frame feature market place
 - Tensorflow on Yarn
 

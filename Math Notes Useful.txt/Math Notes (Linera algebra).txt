@@ -11,3 +11,8 @@ Math Notes (Linera algebra)
 * Derivative & Optimization
   ---
    Derivative = 0 => minima, maxima or saddle point
+
+
+* Quadratic Optimization is complex and harder than Simple Linear Optimization
+   |
+   When unknown terms are Quadratic (Squared), then it is called Quadratic Optimization

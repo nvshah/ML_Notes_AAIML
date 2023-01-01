@@ -1,5 +1,6 @@
 5. Batch Normalization
 ----------------------
+ref : https://arxiv.org/pdf/1502.03167v3.pdf
 
 ----
 => When Distribution of Diff Batches are almost Same in Deep NN,

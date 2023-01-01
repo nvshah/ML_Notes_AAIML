@@ -1,6 +1,7 @@
 4. Convolution over RGB images (Color Images)
 ----------------------------
-
+ref :
+https://en.wikipedia.org/wiki/Grayscale#/media/File:Beyoglu_4671_tricolor.png
 
 ------
 

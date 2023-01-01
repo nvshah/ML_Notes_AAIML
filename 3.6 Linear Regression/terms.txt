@@ -13,3 +13,6 @@ Ridge, Laso, ElasticNet regularization
 RanSac
 
 Regressors  // X ie Data pt
+
+
+Maximum Likelihood Estimation

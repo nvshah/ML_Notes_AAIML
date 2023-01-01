@@ -17,3 +17,9 @@ https://stackoverflow.com/questions/45384185/what-is-the-difference-between-line
 
 [In depth Param Tuning SVC]
 https://medium.com/all-things-ai/in-depth-parameter-tuning-for-svc-758215394769
+
+[SVM Mathematics In Depth]
+https://ankitnitjsr13.medium.com/math-behind-support-vector-machine-svm-5e7376d0ee4d
+
+[Dual Form]
+https://medium.com/@sathvikchiramana/svm-dual-formulation-7535caa84f17

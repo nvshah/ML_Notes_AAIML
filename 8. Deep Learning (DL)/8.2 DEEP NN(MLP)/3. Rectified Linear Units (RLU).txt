@@ -1,5 +1,7 @@
 3. Rectified Linear Units (RLU)
 ----------------------------
+[ImageNet Classif]
+http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf
 
 -----
 TERMS

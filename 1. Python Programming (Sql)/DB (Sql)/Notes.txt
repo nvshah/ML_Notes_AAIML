@@ -87,6 +87,8 @@ Terminologies
 => result-set : a set of rows that form a result of a query alongwith col-names & metadata	
 
 -> Logical Operators
+    |
+    Wildcard Matched (LIKE, SAME)  :- {%, _}
 
 => aggregate-func : perform some operation on set of rows & return aggregated values
 
@@ -100,6 +102,14 @@ Terminologies
      Inner Join   :-  `ON`
      
      Outer join :- {left, right, full}
+         \
+          LEFT := include all left table rows (with missing right side filled NULL)
+          RIGHT := include all right table rows (with missing left side filled NULL)
+          FULL := include all left & right table rows (with missing filled NULL)
+
+    -> One of the most time taking operations in SQL is JOIN
+
+    -> Indexing can be useful to make Joins Efficient
 
 => Sub Queries : Alternatives to Join (to work & get data from inter-dependent tables) 
                  Inner-Most to Outer-Most
@@ -108,6 +118,17 @@ Terminologies
 
    Correlated Sub-Queries : Here for each row sub-query is run again
                             Outer-Most to Inner-Most
+
+      -> Using information from outer-query inside nested sub-query.
+
+      -> Correlated Queries may be executed diff then nested queries
+         i.e
+         In Nested Queries Right -> Left
+         In Correleated    Left -> Right
+
+      -> Here sub-query is run/executed many times for an entire query
+         Whereas in
+         Normal case, it may be executed only once !
 
 
  * Data Manipulation Language :

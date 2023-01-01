@@ -37,12 +37,16 @@ https://pbpython.com/pandas-qcut-cut.html
 [MultiNomial Distributed Data]
 https://www.statisticshowto.com/multinomial-distribution/`
 
+[Bessels Correction]
+https://en.wikipedia.org/wiki/Bessel%27s_correction
+
 ---------
 Study
 
 [Intercept] https://www.youtube.com/watch?v=1rJ5c95MWBQ
 [Hypothesis Testing] https://www.youtube.com/watch?v=2VE6AZPS6bI&t=1s
 [Hypothesis testing] https://drive.google.com/file/d/1KUKGRyN3lTuh_R6DzvXBoqRZJh83I-tZ/view
+[P-val for KS Test] https://www.youtube.com/watch?v=C04oZK6I5k4
 
 Linear Algebra extra ref : 3b1b youtube
 Calculus : 3b1b youtube

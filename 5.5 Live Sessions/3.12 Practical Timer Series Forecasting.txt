@@ -1,0 +1,200 @@
+1. Practical Timer Series Forecasting
+------------------------------------
+
+ref: Module5-LS-#3.12
+
+Note : https://drive.google.com/file/d/1uKesFvRBycdqwJSOWDfQ52GqsnJttr_2/view
+Research :
+https://arxiv.org/abs/1709.01907
+blob:https://www.semanticscholar.org/584d5d2e-e781-4c7b-9b1e-cc4c353c4f1b
+
+`Fb Prophet` Library // For Time Series Forecasting
+___________
+Terms
+
+- Special Events Forecasting
+  Anomalies Forecasting
+
+- Recurrent Dropout  // Dropping out over time
+  Dropout  // Standard Dropout
+
+- Bayesian DL
+- change point
+_________
+
+LSTM :- { Complex Non-Linear Models, Long-Term Data }
+
+ARIMA is basically Linear Reg Model finetuned for needs of time series
+  |
+  -> includes Auto Regressors & Moving Averages
+
+[NOTE]
+=> For any Deep Learning Model if you want some kinda Confidence Interval as Output
+   then Dropout is the cheap core Idea/Option !
+
+=> Dropouts based ideas are more powerful
+___________
+
+* Anomaly Detection in Time Series
+----------
+Eg Sudden Something Fall in Server Utilisation !
+  - Server Went down
+  - Latency issue
+  - maybe minor spike of fraud
+
+You wanna detect such anomalies
+
+Suggestions :
+  - Moving Avg Window
+  - ARIMA  // Linear Models
+  - Tree Based Models
+  - LSTM
+
+  In case of ARIMA & Tree based,
+  you gonna consider last k vals instead of looking at last all vals
+
+  Whereas
+  In LSTM, they can consider long term data & can find pattern in long term data
+  LSTM can transfer info in long term data
+
+  LSTM can also build extremely non-linear model
+
+  On the Other hand disadvantage with Tree based Model or ARIMA like model
+  is that those are fundamentally Linear models
+
+  If we have very large number of features (let say 1000) then tree based models
+  will starts failing
+  Tree based Model may not scale very well
+
+=> LSTM model can look at time series which is thousands of time deep or long &
+   can be very complex non-linear model
+
+* ARIMA is basically Linear Reg Model finetuned for needs of time series
+  |
+  -> includes Auto Regressors & Moving Averages
+  -> Moving Avg is ther in ARIMA
+
+* LSTM :=
+   - uses all history data & predict the future data
+   - There is no window concept in it
+   - There is no Moving Avgs kinda thing in LSTM
+
+   -> The whole power of LSTM is lost if you feed it some random data
+
+   - LSTM unit has also bunch of operators {sigma, tanh, ...}
+
+Que :- How to Predict the 95% Confidence Interval @test-time  using dropout ??
+IDEA :- Use Dropout with LSTM !
+
+* DropOut :
+  ---
+  - At Train time
+  - Skip Some Operations at train time (to avoid Overfitting)
+
+  Dropout of 0.1 means 10 % of all connection weights were ignored or dropped out here !
+
+* Randomization & Dropout | Runtime :
+----
+ let say dropout rate := 0.1 (ie 10%)
+ So In each iterations of an Epoch,
+ Some random connections are being getted dropped out, (During Train Time) !
+
+ So We will get Some different output or vary in output consecutively
+ & thus
+ @test time we can get some confidence interval instead of exact val for estimate
+ of y_t+1
+
+ So Each of the val will be somewhat different from another
+ (As at the train time some random amount of subset of connection were dropped)
+
+ &
+
+ Among these different output values I will compute the 95% CI,
+ & this output becomes my bootstrap samples
+         |
+         estimate we get after randomized dropout happens at train time
+         iteratively
+
+
+Final Idea :
+----------
+-> Thus we will use LSTM with Dropout
+-> LSTM makes sure we use all t-1 data
+-> Dropout takes care of Randomization (to get Confidence Interval Output of estimate)
+
+   It will try to predict y_t+1 100 times with random connections being dropped of
+   eahc time
+   // NOTE Here 100 is just count determining the #times the y_t+1 is predicted/estimated
+
+-> Then after this experiment is performed
+   We will have 100 values for y_t+1 produced by randomized dropouts (via LSTM)
+
+   (This will become our BootStrapped Samples)
+
+   Now thus we will compute 95% CI over this 100 obtained values
+      \
+        2.5th percentile <-> 97.5th percentile
+
+NOTE : This vals may not be Gaussian Distributed !
+
+
+**-->
+[NOTE] | [IMP]
+=> For any Deep Learning Model if you want some kinda Confidence Interval as Output
+   then Dropout is the cheap core Idea/Option !
+
+   So Remember if you need some kinda Confidence Interval in output then
+   Dropouts is the Core/Basic/Cheap Idea (At first cut in mind)
+
+There maye be alternative
+- Baysian DL
+   -> predict Mu & Sigma for point
+
+
+* Recurrent Dropouts :
+  ---------------
+  -> Are more powerful when you know that there are some missing data in actual time series
+     So
+     If you know that there are missing data then its good to simulate the missing data
+     via Recurrent Dropouts
+
+
+* FB Prophet (library)
+  ---------
+  - library from fb for Time Series Forecasting
+
+  It breaks time series into this way
+   a) g(t) := trend function
+       - Just capture trend part of time series
+
+   b) s(t) := Seasonility
+       - try to work out with seasonality pattern
+         Eg {daily, weekly, monthly,...}
+
+   c) h(t) := special holidays
+
+   => FB Prophet is an alternative to ARIMA or similar Time-Series Forecasting Models
+      (alike LSTM)
+
+
+* Fourier Transform :
+  -----
+  -> For given repeating time series, what Fourier Transform says
+     that I can represent it in terms of sin & cosine
+
+
+____________
+
+=> One way to compute Confidence Interval from statistical standpoint
+   is to pose the error as a normal distribution
+
+   For Eg in Linear Regression (MLE)
+               |
+               You can pose the bias term as error (normally distributed)
+
+   => Your Square Loss in Linear Regression comes from Maximum Likelihood Estimation
+      (ie MLE)
+
+   => You define your variance as avg squared error of trained samples
+   => As long as you have enough train data this works well
+     in terms of predicting the confidence interval

@@ -6,6 +6,9 @@ ref :
 [LSTM]
 http://colah.github.io/posts/2015-08-Understanding-LSTMs/
 
+[Illustrated Guide LSTM]
+https://www.youtube.com/watch?v=8HyCNIVRbSU
+
 ------
 Terms
 

@@ -1,4 +1,12 @@
 ref
 ---
+Miscellaneous 5 :- #16
 
 https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-spark/index.html
+
+
+Notes (PDF)
+[1]
+https://drive.google.com/file/d/1RvCbHXDII8ysdqIpRRohBHaBZLVXdanm/view
+[2]
+https://drive.google.com/file/d/1qIo2RDxNJbCGF_cbagdyRAKwkq5ellFk/view

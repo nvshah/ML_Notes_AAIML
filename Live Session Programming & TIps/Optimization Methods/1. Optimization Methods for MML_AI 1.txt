@@ -1,5 +1,7 @@
 Optimization Methods for ML/AI 1
 ------------------------------
+Module 3 LS :- #5
+_________
 
 =>  as iteration num increases, Loss Function L has to reduce 
 -> Remove MultiCollinearity is good thing in Linear Regression

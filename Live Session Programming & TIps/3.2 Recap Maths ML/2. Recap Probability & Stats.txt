@@ -1,0 +1,158 @@
+2. Recap Probability & Stats
+-----------------------------
+ref: https://drive.google.com/drive/u/0/folders/1ckWCqHz2bV20SFN82cExu_5zfWAU3lca
+
+_____________________________________________
+
+Terms
+
+- Conditional Probability
+- Generalized Linear Model
+
+- CLT
+- Proportional Sampling, Stratified Sampling
+- Degree of Freedoms (DOF)
+
+=> Outlier is term that is problem specific
+
+=> Central Limit Theorem is Theorem of Nature. Its not used to test if something is Normal or not !
+
+Z/T Test : Compare Means
+
+=> All Random Val need not always be Gaussian or Uniform
+
+-----------
+
+Q) Why is Gaussian more useful ??
+----------------------------
+ -> Gaussian is more useful in Physics
+ -> Widely found distribution in nature & spotted by physicians
+
+ Application
+ - In Linear Reg, Error (y - y`) is assumed to be Gaussian
+
+ -> Most of the time its used as assumption to make the math simple or to make the math work !
+
+    So Its aoccuring or not occuring is secondary, but
+    its widely used because mathematician & statascian are most used to it because of an assumption
+
+ -> 68-95-99.7
+     \
+     this kinda % we can achieve via Log-Normal as well !
+
+ NOTE :
+ Generalized Linear Model (GLM) doesnt assume Linear Reg Error's to be Gaussian Distributed !
+ - In such case math can get tricky
+
+
+Q) Which Distribution to Use Where ?
+------------------------------
+   1. PDF/Histogram -> check if skewed or not (ie Symmetric)
+
+   2. QQ Plot -> With Popular Distributions  {Gaussian (Normal), Log-Normal, Beta, ...}
+
+   3. Outlier, ScatterPlot
+
+REMEMBER
+=> Central Limit Theorem is Theorem of Nature. Its not used to test if something is Normal or not !
+
+   If QQ Plot doesnt works then you need Hypothesis Testing
+   (QQ Plot will narrow down but it may not always be conclusive enough)
+
+* Hypothesis Testing   (Approach 1 - to Find the Distribution)
+  -------------------
+  KL test
+  Ad-test for normality // Specialized test :- Anderson Garlen test
+
+
+* Binomial Distribution :
+  ----------
+  - When there is 2 cases straight away
+    Eg Person misses flight
+    |
+    Binomial include Bernoulli at multiple trials
+
+
+* Binomial & Poisson :
+  ----
+  Poisson :- #Events per unit time
+
+  So When n is so large in Binomial, we can say its Poisson if probability remanisn constant in each trial
+
+  -> Poisson is approximation to Binomial (when n is large)
+__________
+
+* CLT (Center Limit Theorem)
+  ---------------------
+  -> Samples from any Distb (with Mean & SD), will have/follow Gaussian Distb
+
+  Application
+  -> When you want to estimate the mean (in some range/interval) of some Distb that has finite mean & finite SD
+
+  Confidence Interval :
+  ----
+  95% CI, means If I repeat expirement many times then 95% of time I will get in this range
+
+  -> If you have some Random Variable X with finite mean & finite Standard Deviation
+     then the sampling distb of the same variable is Gaussian
+     that is what suggested by CLT
+
+  => CLT in practice is used to prove the theorems
+  => It is extremely useful to give an estimate of a mean for a random variable whose distb we dont know
+     except for the fact that it has finite mean & finite standard deviation !
+
+
+* Proportional Sampling & Stratified Sampling:
+  -------------------------------------------
+  -> Proportion :- ratio is preserved
+
+     Stratified :- opposite to proportion sampling (ie same size from each class)
+                   ie For Data ReBalancing
+
+
+* A/B testing :
+  ------
+  -> It is a process of determining what is better & what is not !
+
+  -> Does something works ?
+     - to get this que ans we use A/B testing !
+
+  Z/T Test : Compare means
+
+  -> Comparing Distb :- `KS Test`
+
+
+* Degree of Freedoms : (DOF)
+  ----
+  - Often heard/occured in T-test or Chi-Square test
+  -> You can think it as parameter of Test()
+     (To understand it at facade level)
+     mathematically it is more rigorous & has math reasoning!
+
+
+* P-val :
+  -----
+  - Probability of Observing my test Statistic under Null Hypothesis, Given some test Stats
+
+  - What would be Probability of Observing my Test Stats (Which is already Observed under Null Hypothesis)
+    as extreme as or more given null hypothesis
+    |
+    P(observing T_obs as extreme as or more | Null-Hyp)
+
+
+___________________
+
+[**IMP---]
+Q) For Sample Variance Why do we use n-1 ?
+
+   ref : Bias of an Estimator (Wikipedia)
+
+   -> Because originally in calc, expected val of Sample variable is not getting equal to population variance
+      ideally
+      When you take samples of population & compute variances
+      then avg val of expected val of that sample's variance must be equal to population variance
+      But
+      Mathematicall it was not
+
+      Now when n-1 was used in formula whilst division, It worked
+      (based on Strongest Rigorous Argument)

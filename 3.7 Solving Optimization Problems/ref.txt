@@ -1,0 +1,17 @@
+ref
+
+---------
+* Extra Articles
+
+[Gradient Descent vs Langrange Multiploers]
+https://math.stackexchange.com/questions/2521305/gradient-descent-versus-lagrange-multipliers
+
+[SVM Primal & Dual Form Optimization]
+https://ankitnitjsr13.medium.com/math-behind-support-vector-machine-svm-5e7376d0ee4d
+
+
+------
+Extra
+
+Math | ML
+https://web.ma.utexas.edu/users/m408m/Display12-5-3.shtml

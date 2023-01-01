@@ -11,11 +11,15 @@ ML basic Practical Remembrance
                  
                  CountVectorizer   // Convert data-point into numerical array in simple 
 
+                 OrdinalEncoder()  // For Categorical Input Variable
+                 LabelEncoder()  // For Categorical Target Variable
 
   Numerical :- Standardization
                Normalization | MinMaxScaler
 
                MinMaxScalar = Normalizationn with l1-norm
+
+  Text :- TfidfVectorizer(), CountVectorizer()
 
 [MetaData & Models]
 => Every Model will have the MetaData File (ie most probably json file)
@@ -36,3 +40,7 @@ ML basic Practical Remembrance
    -> How it will help ?
       - So that we can get varied value of Regularization Parameter
       - Thus helps to get robust regularization param in less time (as compare to LinSpace)
+
+
+* Converting Dataframe to Sparse Matrix
+  df.sparse.to_coo().to_csr()

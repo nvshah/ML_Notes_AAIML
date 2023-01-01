@@ -6,3 +6,28 @@ Q Why we tends more towards Gaussian Distribution ??
 
 Q What is purpose of T distb ??
 -> It's meant for small sized sample when std-dev is not known
+
+Q). while Calculating Standard Deviation for Samples, There Instead of n, They Used n-1..Can you Explain Why?
+-> It is related to Bessel's correction refer
+   https://en.wikipedia.org/wiki/Bessel%27s_correction
+
+
+Q) Similarity between 2 Images
+   https://stackoverflow.com/questions/25977/how-can-i-measure-the-similarity-between-two-images
+
+
+Q) Better Evaluation Metric
+   https://towardsdatascience.com/iou-a-better-detection-evaluation-metric-45a511185be1
+
+
+Q) What is a Normal Vector
+   -> A vector that is normal to a plane is known as the normal vector.
+      In a simple way, let us consider earth as a plane(In reality earth is a curvature)
+      then every cell phone tower which is placed at exactly 90 degrees with the plane is known as normal vector
+      to the earth.
+
+Q) Why W is Perpendicular to HyperPlane ??
+
+   -> We have to assume 'W' to be perpendicular to the hyperplane
+      because a hyperplane can be represented only in terms of a vector that is perpendicular to it.
+

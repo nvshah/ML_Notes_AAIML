@@ -137,3 +137,11 @@ NOTE =>
     Logistic Reg works only for binary & for multi we need to do One vs Rest
     Now
     Inorder to avoid One vs Rest we use Softmax Classifier (ie that will do multi-class classif for us)
+
+
+_______________________________
+
+* [MLE & SGD]
+=> In Logistic Regression the Parameters are founded via these 2 techniques
+   a. MLE (Maximum Likelihood Estimation)
+   b. Gradient Descent

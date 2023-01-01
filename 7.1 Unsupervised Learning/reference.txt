@@ -1,6 +1,6 @@
 reference
 
-[K-means ]
+[K-means ] | [Clustering Analysis]
 https://cs.wmich.edu/alfuqaha/summer14/cs6530/lectures/ClusteringAnalysis.pdf   
 
 [DbScan Advantages]
@@ -8,5 +8,19 @@ https://en.wikipedia.org/wiki/DBSCAN#Advantages
 
 -----------------
 
-[Determine K in clustering]
+[Determine K in clustering] | Elbow Method
 https://www.youtube.com/watch?v=WllcNCKWfgc
+
+
+--------
+
+Pract
+
+Agglomerative Clustering
+https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering
+https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering
+
+
+DbScan Cluster
+https://scikit-learn.org/stable/auto_examples/cluster/plot_dbscan.html#sphx-glr-auto-examples-cluster-plot-dbscan-py
+https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html

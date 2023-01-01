@@ -8,6 +8,12 @@ ref resource
 
 [Smart Store]
 https://drive.google.com/file/d/1NYEvayVzXiv0HiTv7K91LM6HhuPkGXfX/view
+https://pdfhost.io/v/xuzsJiFD2_2_Design_and_build_a_Smart_Store  // custom snips
+
+---
+
+[Smart Retail Analysis]
+https://github.com/intel-iot-devkit/smart-retail-analytics
 
 ---------
 
@@ -16,3 +22,21 @@ tools
 - MediaPipe
 
 
+------
+Others
+
+[OpenCV Best Website]  <----**IMP
+https://pyimagesearch.com/
+
+[Keras vs Open CV]
+https://data-flair.training/blogs/keras-vs-opencv/
+
+[Blur & Anonimize the Face]
+https://pyimagesearch.com/2020/04/06/blur-and-anonymize-faces-with-opencv-and-python/#:~:text=Applying%20face%20blurring%20with%20OpenCV,%2Fvideo%20(image%20source).&text=Deep%20learning%2Dbased%20face%20detectors.
+
+[OpenCV & Text Recog | tesseract]
+https://pyimagesearch.com/2018/09/17/opencv-ocr-and-text-recognition-with-tesseract/
+
+
+https://analyticsindiamag.com/10-opencv-projects-to-check-out-in-2020/
+https://www.analyticsvidhya.com/blog/2020/09/18-open-source-computer-vision-projects-beginners/

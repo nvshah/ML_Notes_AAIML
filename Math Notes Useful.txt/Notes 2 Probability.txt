@@ -10,3 +10,18 @@ While MAD is less influence by an Outliers
    Time it takes between your phone calls ie at t1 & next at t2 is often represented by exponential distb
 
 => In statistics you need to make assumptionns to move further in derivations
+
+REMEMBER
+=> Central Limit Theorem is Theorem of Nature. Its not used to test if something is Normal or not !
+
+
+* Binomial & Poisson :
+  ----
+  Poisson :- #Events per unit time
+
+  So When n is so large in Binomial, we can say its Poisson if probability remanisn constant in each trial
+
+  -> Poisson is approximation to Binomial (when n is large)
+     |
+     Hence Poisson makes sense when n is too large in Binomial Distb
+     Where in such case only we need to approximate the Binomial Distb

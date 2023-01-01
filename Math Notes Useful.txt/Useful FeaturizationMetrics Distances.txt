@@ -1,0 +1,12 @@
+Useful Featurization/Metrics Distances
+------------------
+
+* Below are the metrics/techniques can be useful for Featurization
+
+1) Jaccard Distance (Set Similarity Mesaure) | (Intersection Over Union)
+2) Otsuka-Ochiai coefficient (Cosine Distance)
+
+
+* Graph Data :
+  ---
+  -> Page Rank becomes one of the imp criteria when considering Directed Graph Structures

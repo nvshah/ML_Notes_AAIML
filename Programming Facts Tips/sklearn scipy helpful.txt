@@ -16,6 +16,8 @@ sklearn
   - LogisticRegression()
   - SGDClassifier()
 
+  - make_pipeline()   // perform  standardization & model declaration in 1 step
+
 
 scipy  
   

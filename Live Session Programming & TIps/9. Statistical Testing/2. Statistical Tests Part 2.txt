@@ -1,0 +1,98 @@
+2. Statistical Tests Part 2
+---------------------------
+ref : https://drive.google.com/file/d/1dFHtckEZK08xWT1oeOJgbNY6ZcEWHaPV/view
+-----------
+
+=> If dataset is small & if it meets some conditions, then
+   Z-test & T-test are more better than permutation test
+
+=> Your Test Statistic must be Sensible
+
+=> CLT works for sample mean & it doesnt works for sample medians
+
+=> Often T statistics follow the Normal distribution
+=> For medians, we can use Permutation test
+
+- Placebo Controlled Test
+
+---------
+
+Framework Steps
+
+1. Data, task, Define H0, Ha carefully
+2. Experiment
+   Design/Use Sensible test statistic (T)
+3. Using T & (H0, Ha) decide if its one-sided test or two-sided test
+
+4. p-val := P(T is as extreme as T_obs|H0)
+              |
+              To do this you need distribution of test-statistics under Null hypothesis
+   You need distb of T <=** MIMP
+
+5. Significance Level (alpha)
+
+
+* Permutation test vs (Z-Test, T-Test)
+  ----------
+  When your dataset is small & it meets some conditions, then Z-test or T-test is preferred
+  but
+  when your dataset us large & there are no assumptions then permutation test makes sense (ie is better)
+
+
+* Z-Test (Standard Normal Variate)
+  ------
+
+  Assumptions (In Practice)
+  -> If my Samples are known & if its reasonably large then we can estimate its standard deviation
+     to population's standard deviation !
+
+  => Test Statistics follow Z-distribution (ie Normal N(0, 1) Distb) under Null Hypothesis
+
+  - 2 Sided Hypothesis Test
+
+
+* T-test :
+  -------
+  - Often when < 30
+  - When we have very little data & we cannot apply Z-test
+  - When we dont know Population standard deviation
+
+  (Eg Medicine is such area where you cannot have large test size because otherwise if we
+      use large test than there is risk everyone can die)
+
+  - we use Samples
+
+  -> Test Statistics tends to follow t-distb (with degree of freedoms)
+
+  Degree of Freedom
+  -----------------
+  (Degree of Freedoms is used generally when data is of small size
+   because small size data can impact the distribution greatly)
+
+  => When data is small, then very minor change can impact distribution easily
+
+  => So when you have small data, DOF becomes relevant
+
+  => Often DOF is a function
+
+  => As DOF incr, T-distb becomes behaving alike Normal Distb (ie Z-distb)
+
+
+* Compare Means ?? (which Test)
+  -----------------
+  If sample sizes are small :- T-test
+  else :- Z-test
+
+
+* Z-Proportional Test :
+  -----------------
+  - Instead of comparing means, the Z-Proportional Test compares the proportions
+
+  -> Test statistics follows the Z-Distribution
+
+
+Q) A/B Test vs Hypothesis Test ??
+  ------
+  A/B test :- helps to setup
+
+  Hypothesis :- Helps to make a decision about reject or keep hypothesis

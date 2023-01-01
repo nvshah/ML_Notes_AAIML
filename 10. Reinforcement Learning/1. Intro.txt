@@ -1,5 +1,7 @@
-1. Intro
+1. Reinforcment Learning
 --------
+ref: Module 10 sess :- #3.1
+
 ref : https://drive.google.com/file/d/1OTGlN_pBe9ZuVpPmkirsJMOgFSs2AuCh/view
 
 => Richard Bellman invented both classical DP & Reinforcement Learning's Bellman Eqn

@@ -1,0 +1,15 @@
+Terminologies and Concepts
+-------------------------
+
+* Dataset
+* Query Point
+* Unit Vector
+
+* Eqn of Line
+  - General Form <-> Slope-Intercept Form
+
+* Eqn of Plane
+
+* Dot Product & Cross Product
+
+* Projection & Arithmetic Eqn

@@ -1,0 +1,140 @@
+3. Statistical Testing 3
+-----------------------
+
+Terms
+
+Contigency Table
+
+_________________
+Fact
+
+-> Pearson who found the way to compare 2 numerical vals (ie Correlation Coef)
+   |
+   has also discovered test to compare 2 non-numerical (ie categorical values) ie. `Chi-Square Test`
+
+-> Test statistics is sensible
+   once it behaves differently significantly between Null Hypothesis & Alternative Hypothesis
+
+=> Once we know that it is Right Tailed Test &
+   We have the T_obs
+   We can compute the p-val
+
+NOTE : (Test Type Selection MiSconfusion)
+-> When deciding the type of test you gonna perform, if in an altrnative hypothesis its
+   kinda not equal to scenario then its not necessary that all the time you need to go with
+   the `Two-Sided Test`
+
+=> Linear Reg is complex version of ANOVA
+_________________
+
+* Parametric Test vs Non-Parametric Test :
+  ------------
+  Z-Prop Test is good example of Parametric Test
+  because it made some assumptions about the Population
+
+  Whereas Chi-Square Test is example of Non-Parametric Test
+  because it do not made any assumptions about the Population !
+
+
+* Chi-Square Test (tes of Independence)
+  ----------
+  - Test motive is to compare 2 non-numerical (ie Categorical) features !
+
+  - ChiSquare test if 2 categorical variable are independent of one another or not ! ?
+
+  - used when dependent variable & other variable for which we are checking the 'Test of Independence'
+    Both of them are 'Categorical'
+
+  -> One good thing about Chi-Square test is that It made no assumptions about the Population !
+     Thus it is `Non Parametric Test`
+
+  Pearson proved this
+  -> Test statistic follows Chi-Square distribution (Under Null Hypothesis) !
+
+REMEMBER :
+-> Test statistics is sensible
+   once it behaves differently significantly between Null Hypothesis & Alternative Hypothesis
+
+  -> Chi-Square Distribution Func has only 1 attribute ie K <- degree of freedom
+
+      K := (#rows-1) * (#columns-1)   // rows & columns of contigency table
+
+
+* ANOVA :
+----------
+ - K-Samples Test
+
+ - In case of Z-test, we can compare only 2 group of samples,
+   ANOVA helps to test multiple groups of samples at once !
+
+ - In Z-test we compare means of only 2 samples whereas
+   In Anova we compare means of k samples !
+
+ -> There are some assumptions for ANOVA
+    - Each group's observation follows Gaussian
+    - Each group's variance is same
+    - All observations are independent of one another
+
+    These assumptions helps to prove us mathematical reasons
+
+ Test Statistics in ANOVA is bit complex
+
+  -> Test Statistics follows F-Distb with 2 params | under null hypothesis
+
+  -> F = MSB / MSW
+
+     MSB :=
+       sum f Square distance between group means
+       Inter Group Variance | Avg Variance among means of each group
+
+     MSW :=
+       Sum of Square distance within group means
+       Within each group Variance | Avg Variance across each group
+
+     MSB := Depends on the mean of each group
+          = ie How far is the mean of each group at distant from each other (adjacent) collectively
+
+     MSW := Focus on variance of each group
+          = & compare collectively the variance across all groups
+
+     If variance from each group is low, that means
+     that I'm more confident about means I got from each group !
+
+  -> The farther away the group(k samples) distributions are the F value increases
+     (because MSB is kinda Variance of group's means
+
+  -> We want F to be high fot Alternate Hypothesis
+
+  In case of
+     Null Hypothesis :=
+       -Your each sample distb must overlap with each other
+       - F val becomes small (as MSB decr)
+
+       - Left Side of Plotted PMF or Distb Plot
+
+     Alternate Hypothesis :=
+       - There is diff in group mean
+       - MSB incr; hence F also incr
+
+       - Right Side of Plotted PMF or Distb Plot
+
+  When Variance of (Means of each group) is low
+  &
+  Variance across each group is high,
+  You tend to accept Null Hypothesis (ie that all groups have almost similar effect)
+
+  On the othr hand when Various across each group reduces then you starts tending towards
+  the Alternating Hypothesis
+
+  ANOVA := Simpler variations of Linear Regression
+
+NOTE : (Test Type Selection MiSconfusion)
+-> When deciding the type of test you gonna perform, if in an altrnative hypothesis its
+   kinda not equal to scenario then its not necessary that all the time you need to go with
+   the `Two-Sided Test`
+
+
+* Linear Reg vs ANOVA :
+  -----------------
+  => ANOVA is a special case of Linea Reg
+  => Linear Reg is a Generalization of ANOVA

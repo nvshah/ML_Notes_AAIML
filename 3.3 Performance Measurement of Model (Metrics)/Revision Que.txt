@@ -1,0 +1,18 @@
+Revision Que
+
+Revision Questions:
+
+    What is Accuracy ?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/2978/accuracy/3/module-3-foundations-of-natural-language-processing-and-machine-learning
+
+    Explain about Confusion matrix, TPR, FPR, FNR, TNR?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/2979/confusion-matrix-tpr-fpr-fnr-tnr/3/module-3-foundations-of-natural-language-processing-and-machine-learning
+
+    What do you understand  about Precision & recall, F1-score? How would you use it?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/2980/precision-and-recall-f1-score/3/module-3-foundations-of-natural-language-processing-and-machine-learning
+
+    What is the ROC Curve and what is AUC (a.k.a. AUROC)?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/2981/receiver-operating-characteristic-curve-roc-curve-and-auc/3/module-3-foundations-of-natural-language-processing-and-machine-learning
+    What is Log-loss and how it helps to improve performance?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/2982/log-loss/3/module-3-foundations-of-natural-language-processing-and-machine-learning
+
+    Explain about R-Squared/ Coefficient of determinationhttps://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/2983/r-squaredcoefficient-of-determination/3/module-3-foundations-of-natural-language-processing-and-machine-learning
+
+    Explain about Median absolute deviation (MAD) ?Importance of MAD?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/2984/median-absolute-deviation-mad/3/module-3-foundations-of-natural-language-processing-and-machine-learning
+
+    Define Distribution of errors?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/2985/distribution-of-errors/3/module-3-foundations-of-natural-language-processing-and-machine-learning

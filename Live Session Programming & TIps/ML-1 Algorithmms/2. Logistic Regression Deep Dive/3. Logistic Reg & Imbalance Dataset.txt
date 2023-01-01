@@ -1,5 +1,6 @@
 3. Logistic Reg & Imbalance Dataset :
  ------------
+ Module 3 LS :- #7
 
  ref : https://www.youtube.com/watch?v=l8Dge0z1Zks
 

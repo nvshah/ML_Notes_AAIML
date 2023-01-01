@@ -4,3 +4,11 @@ Q) Does Sparse Representation benefits whilst using the Cosine similarity over D
    if yes then how ??
 
    sparse Repr for Euc Dist Understood -> as dimen incr, dist makes less sense
+
+
+Q) Why Squared L2 Norm is taken ??
+
+   L2 Norm :- ||X1-X2||
+   Squared L2 Norm :- ||X1-X2||^2
+
+   https://www.quora.com/Why-is-the-squared-L2-norm-sometimes-preferred-to-the-L2-norm-in-machine-learning-to-measure-distances

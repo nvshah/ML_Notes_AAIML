@@ -4,3 +4,8 @@
 - DASK library
 
 - altair library  // plotting purpose
+
+- NLTK - SentimentIntensityAnalyzer
+  (ref : https://realpython.com/python-nltk-sentiment-analysis/)
+
+- OpenCv  // Computer Vision

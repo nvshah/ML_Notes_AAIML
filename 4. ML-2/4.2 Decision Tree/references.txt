@@ -3,3 +3,20 @@ references
 [Decision Tree Material]
 https://homepage.cs.uri.edu/faculty/hamel/courses/2014/spring2014/csc581/lecture-notes/31-decision-trees.pdf
 
+[Max Entropy Decision]
+https://www.youtube.com/watch?v=f6SpsPn6cvs&feature=youtu.be
+
+[DT Interview Que ]
+https://vitalflux.com/decision-tree-algorithm-concepts-interview-questions-set-1/
+
+
+------------
+
+[Log Probabilities]
+https://chrispiech.github.io/probabilityForComputerScientists/en/part1/log_probabilities/
+
+[Decision Tree Recap]
+https://bricaud.github.io/personal-blog/entropy-in-decision-trees/
+
+[Feature Engineering]
+https://towardsdatascience.com/beyond-one-hot-17-ways-of-transforming-categorical-features-into-numeric-features-57f54f199ea4

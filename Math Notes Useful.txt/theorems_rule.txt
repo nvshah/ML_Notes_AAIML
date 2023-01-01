@@ -1,4 +1,8 @@
 
+* Occam's Razor : (Sayings)
+  ---------
+  -> Why to build Complex Models/things when it works with simple one !
+
 * Monotonic Func Rule :
   -----------
 	If g(x) is a monotonic function

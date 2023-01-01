@@ -1,0 +1,13 @@
+gist
+-----
+
+* Applications (GPT) | (BERT vs GPT)
+  ----------------------------------
+=> For Generative Purpose : GPT models are often used
+
+   For Text-Encoding Vector : BERT is often used (as it has ability to look bidirectionally)
+
+* GPT :
+  ----
+  - We have GPT1, GPT2, GPT3 models
+  - GPT is Decoder Only Stack (Transformer)

@@ -1,0 +1,14 @@
+ref
+
+[Bert]
+https://colab.research.google.com/drive/1iyOE_5MZAfRGv427jr6EjWwdsLVd2OJ3
+
+[BERT Question Answering System]
+https://colab.research.google.com/drive/1_vdH4_StKsMGGeJai3n17xF0CgtYk0MI
+
+
+------------------
+Other s (Doubts)
+
+Why Bert fails in Commerical Environment ?
+https://www.kdnuggets.com/2020/03/bert-fails-commercial-environments.html

@@ -15,6 +15,9 @@ https://medium.com/@outside2SDs/an-overview-of-correlation-measures-between-cate
 [Sigmoid Fn Explaination]
 Ronny Restrepo :- http://ronny.rest/blog/post_2017_08_10_sigmoid/
 
+[One vs Rest]
+https://machinelearningmastery.com/one-vs-rest-and-one-vs-one-for-multi-class-classification/#:~:text=One-Vs-Rest%20for%20Multi-Class%20Classification%20One-vs-rest%20%28OvR%20for%20short%2C,the%20multi-class%20dataset%20into%20multiple%20binary%20classification%20problems.
+
 ---------
 mine 
 
@@ -53,6 +56,20 @@ https://medium.com/analytics-vidhya/understanding-the-loss-function-of-logistic-
 [High Dimenn & Linearly Seperable]
 https://stats.stackexchange.com/questions/33437/is-it-true-that-in-high-dimensions-data-is-easier-to-separate-linearly
 
+[IOU - Better Evaluation Metric]
+https://towardsdatascience.com/iou-a-better-detection-evaluation-metric-45a511185be1
+
+[Similarity between 2 Images]
+https://stackoverflow.com/questions/25977/how-can-i-measure-the-similarity-between-two-images
+
+[Why Cosine used]
+https://www.quora.com/Why-is-cosine-used-in-dot-products-and-sine-used-in-cross-products
+
+[Feature Selection - Exhaustive Overview]
+https://medium.com/analytics-vidhya/feature-selection-extended-overview-b58f1d524c1c
+
+[Log probabilities]
+https://chrispiech.github.io/probabilityForComputerScientists/en/part1/log_probabilities/
 -------
 
 questions
@@ -62,3 +79,4 @@ https://stackoverflow.com/questions/17017878/is-scikit-learn-suitable-for-big-da
 
 [Integral Counts for MultiNomial NB]
 https://stats.stackexchange.com/questions/271923/how-to-use-tfidf-vectors-with-multinomial-naive-bayes
+

@@ -1,4 +1,7 @@
 ref -
+[Hypothesis Testing]
+https://www.youtube.com/watch?v=2VE6AZPS6bI&t=1s
+
 
 
 (Probability - Stats)

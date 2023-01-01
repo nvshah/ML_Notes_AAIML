@@ -1,0 +1,18 @@
+Revision Questions
+From AAIML
+
+Revision Questions:
+
+    What is K-means? How can you select K for K-means?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3263/k-means-algorithm/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+
+     How is KNN different from k-means clustering?
+    Explain about Hierarchical clustering?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3271/agglomerative-divisive-dendrograms/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+
+    Limitations of Hierarchical clustering?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3275/limitations-of-hierarchical-clustering/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+
+    Time complexity of Hierarchical clustering?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3274/time-and-space-complexity/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+
+    Explain about DBSCAN?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3282/dbscan-algorithm/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+
+    Advantages and Limitations of DBSCAN?https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/3284/advantages-and-limitations-of-dbscan/6/module-7-data-miningunsupervised-learning-and-recommender-systems-real-world-case-studies
+

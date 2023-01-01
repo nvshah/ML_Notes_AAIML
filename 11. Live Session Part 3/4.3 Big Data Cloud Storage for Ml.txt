@@ -1,0 +1,10 @@
+4.3 Big Data Cloud Storage for Ml
+---------------------------------
+
+video: https://www.youtube.com/watch?v=WUTEK2tqlO4
+Notes:
+https://drive.google.com/file/d/1CBVSKqQlGB_8moBUiR0HNtkDbQ9kaOv6/view
+
+----------
+
+//TODO

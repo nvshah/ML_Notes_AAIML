@@ -1,3 +1,10 @@
 ref course
 ----------
 
+Live Session Videos
+
+[An Overview of ALI Algo]
+https://www.youtube.com/watch?v=ocSnzl7r_wM
+
+[Big Data & Cloud Storage for ML/AI]
+https://www.youtube.com/watch?v=WUTEK2tqlO4

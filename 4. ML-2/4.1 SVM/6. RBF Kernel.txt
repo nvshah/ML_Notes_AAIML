@@ -12,6 +12,8 @@ RBF Kernel
 
 - RBF kernel is also called as Gaussian Kernel
 
+-> The ||X1-X2|| is L2-Norm (ie Eucledian Distance)
+
 ---------------
 
 Radial Basis Function (RBF)

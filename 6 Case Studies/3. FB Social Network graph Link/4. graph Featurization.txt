@@ -1,0 +1,324 @@
+* Featurization
+  -----------
+
+=> Jaccard Distance is used to measure Similarity between 2 Sets (ie Intersection Over Union)
+
+=> Very Imp Featurization in Graph Data is Page Rank
+   Page Rank helps to know us the relative importance of a node in a Graph
+
+=> weakly connected component helps to identify the community
+
+=> Adar Index to predict Link in Social Network
+   Accounts NeighborHood (ie Mututal Friends based deducing)
+
+[NOTE]
+=> SVD helps to get smaller dimen vec for each row in matrix
+   we can get 2*k dimen vec for each data point,
+   where k-dimen from Left Singular Maatrix
+         k-dimen from right singular matrix
+
+   This way 2*k dimen from large d-dimen (d -> 2*k)
+_________________
+
+=> For a graph based ML, Featurization is very imp task 
+
+[WHY] ?
+-> As since now, we have A table form pf data with 3 column
+   1. User(Source)
+   2. User(Dest)
+   3. Edege Present or Not (1/0)
+
+   But We cant do ML just on this,
+   We need to convert here each row (3 col) into features
+   i.e Convert Ui,Uj -> Features  /
+
+   => Pair of Vertices -> Numerical/Categorical Features
+
+   So Given 2 vertices (ie Ui(src) & Uj(dest),
+   We will try to find diff features premised on this Pair
+   &
+   these features may be Categorical or Numerical
+
+--------
+
+[IMP]
+=> For a graph based ML, Featurization is very imp task
+
+* Graph based Featurization :
+  ----
+
+== SEt BASED ==
+
+1) Jaccard Distance :
+   ----
+    -> If 2 people share lots of common followers then there is high chance that both of them
+       share same Interests ie (may follow each other)
+
+    => Jaccard Distance = intersection of followers / union of followers
+
+    => The higher the jaccard distance the more chances of edge lying between given 2 nodes
+
+    -> Jaccard distance is also used in sets, to find how much similar 2 sets may bes
+
+    - we can compute jaccard distance between :-
+          1) followers set of 2 vertices/nodes
+          20 followees set of 2 vertices/nodes
+
+    Interpre :- If any 2 persons have large overlapping for either followers or followee, then there 
+                is high chance for lying edge between these 2 users (ie nodes/vertices)
+
+
+2) Cosine Distance (Otsuka-OChiai coefficient) 
+   -----
+    = X intersect Y / Sqrt(|X| * |Y|)
+
+    For larger Overlapping => Cosine Distance is larger
+
+
+=> Jaccard distance & Otsuka Ochiai Coef, both of them are based on Set Logics
+
+------
+
+== RANKING MEASURES ==
+
+3) Page Rank : (For Directed Graph)
+   -----
+   Code :- nx.pagerank()  // networkx library module
+
+    - One of the best way of Featurizationn for Directed graphs
+
+    - number of links & quality of links matters
+
+    - Underlying Assumptions :
+      "Imp Websites are likely to recieve links from other imp correlated websites"
+
+    Page Rank := Probability of Clicking that Page Randomly by a user
+      \
+       high := means many other page can rely on this page (relatively good)
+
+               Eg Bill gates followed by many imp Enterpreneurs suggests that
+                  Bill gates is imp person
+
+    => Page Rank gives us the Relative importance of the Page as well !
+
+    => You can think whole Web as a Directed Graph
+
+    - If a certain page gets link direction from many other pages then its important website page
+
+    - if a page is imp & its also getting redirection link from several other imp pages then 
+      the given page is more important
+
+    => Criteria :- numbers of link
+                   quality of a link
+                      \
+                       -> To determine how good a Website is !
+
+    core IDea ;- Imp Websites recieves (incoming) more links from other Websites in entire WEB
+
+    All in all : (gist)
+     ---
+      - Given a directed graph : 
+          for each vertex it gives score, representing how imp the particular vertex is in the graph
+
+      => Page Rank can tell us relative importance/score of each pages in the graph
+
+   Page Rank & Followers/Friends Relation
+    ---
+     Eg Let Say bill gates & Me  & some other random normal person
+
+         bill gets is followed by many imp persons such as Mark zuckerbug, Pichhai, Nandela, etc..
+         So chances that bill gates followed by some other person Pj is more than 
+         chances that Pj follows me !!
+         because Bill-Gates is in general Imp person
+
+
+4) Shortest Distance :
+  --------------
+    nx.shortest_path_length()  // networkx
+
+    --------
+
+5) Connected Components :
+
+   nx.weakly_connected_components()  // networkx
+   ---
+   Goal given 2 node/user/vertices :- If they belong to same community (ie Weakly Connected Components or not)
+
+    1) Strongly Connnected Component :-
+       - go from any vertices to any othe vertex in subset(ie Component)
+
+    2) wealky Connected Component ;-
+       - Ignore direction in Directed Graph & then check if every vertex can go to any vertex
+
+       - to trace Community <--**
+
+       - Users with similar interests, or
+         people from same college or 
+         people from same ethnicity or
+         people from same regions 
+            \
+             could probably form 1 community
+
+       => Weakly Connected Component can be thought of as Community sharing something same in region
+       
+       - If 2 users ui & uj belong to same weakly connected component then there is highly chance that
+         they share some interests & thus edge between them high probability
+
+       => Weakly Connected Component can help us detect Community from Graphs
+
+    => Thus Shortest Path & Weakly Connected Component helps to spot out the Community of Users
+
+    [Given 2 User]
+    => detecting Communities & if given 2 users both belong to same communit or not
+       will
+       constitue a new feature for given ui(src) & uj(dest)
+
+
+---------------------
+
+5) Adamic / Adar Index :
+   ------------
+    - For Directed Graph (ie successor concepts)
+    - to predict link in Social Network
+
+    - For given 2 users x & y
+
+        1) let u1 be user belong to common neighbours of x & y, 
+            & u1 itself have large neighbourhood
+           = this imply that u1 might be a celebrity kinda personality as it has massive neighbourhood
+           -> So chances that x & y may relate to each other are less
+         		(as may be celebrity has fan from diff countries, which not imply that those fans should know or follow each other)
+
+       	2) let u2 be user belong to common neighbours of x & y, 
+       	   & u2 have small neighbourhood
+       	   = this can imply that x & y may have good chances to relate with each othe as 
+       	     u2 has small grp means it can be friend circle of college friends or school friends
+
+    => Thus if Adar inndex is large => less chances that given 2 nodes follow each other
+                              small => good chances that given 2 noides follow each other
+
+    In a nutshell :
+
+       - If x & y have a neighbour that has very large neighbourhood, then chances of x following y  is less
+         but if x & y have a neighbour that has very small neighbourhood, then chances of x following y are fairly good
+
+       (MIMP**)
+       => common elements with a large neighbourhoods are lesser significant when predicting connection between 2 nodes
+
+    [GIST]
+    -> Adar Index include Neighborhood for deducing the value
+    -> Adar Index intutively works on focussing on mutual connection study for 2 Users
+       [Accounts Mutual Friends Analysis/Study]
+
+    -> ADAR Index was actually define for Undirected Graph
+
+6) Does person follows Back ???
+   ----------
+    -> If there is edge from a -> b then 
+       find if there is edge from b -> a ???
+
+       why ?? -> because there is very high chance that b follows back to a
+               \
+                how ?
+                 -> most the time a normal person follows a close friends a  lot
+                    & 
+                    also he/she follows some of celebrity (but celebrity are rare)
+                     & in such case There is only 1 directional following ie from Fan -> Celebrity
+
+                    but in normal case :- 
+                      when 2 school friends follow then there is bidirectional Follow Flow
+
+7) Kartz centrality :
+   ---------
+    - Measure Influence
+
+
+
+8) HITS algorithm :
+   ---------
+   nx.hits()   // networkx
+
+   - define for web search
+
+    Hub :- 
+    ---
+     -> Outlinks - links going away
+     -  Lots of Outlinks
+     -> If outlinks or outdegree is large then the page/node is called as Hub
+
+     Generally People starts their internet activity/journey from the Hub & then propogate to the
+     different websites 
+
+     Eg of Hub :- Google (current age), Yahoo (in early days), etc...
+
+       (kinda person who follows to many other)
+
+    Authority :-
+    ---
+     -> lot of inlinks
+
+        (kinda Celebrity profile who has many followers)
+    
+    Iterative Mode :-
+	    1. Authority score 
+	    2. Hub Score
+	    
+	    (After you update authority & hub score then you)
+	    3. Normalize
+
+	=> eventually authority & Hub Score will Converge after performing iterations
+
+
+9) SVD : (singular Value Decomposition)
+   ----
+    matrix factorization can also be used Feature Engineering
+
+    Adjacency Matrix : for each node/vertex i
+
+    via Singular Value Decomposition - we can get 2 k-sized vector for any graph vertex i
+    where k is the # components used for SVD
+
+    So for pair of users ie u1, u2 => we can have 4*k features all in all
+     for each user u1 => 2 * k |-> k from left singular & k from right singular = 2 * k
+     so for 2 users  = 2 * 2 * k = 4 * k features 
+
+   Here,
+   We get two 6-dimensional Vector Repr for ith User => 12 Feature constituing for 1 user
+   hence
+   For Pair of Vertices :- 24 Features
+
+   6-dimen from U    // Left Singular in SVD
+   6-dimen from V.T  // Right Singular in SVD
+
+   Hence we can use 2*6=12 dimen for each user (ie data point)
+
+____________________________
+
+10) Weight Features
+
+** Edge weight ;
+   -------- 
+    is calculated in such way that edge weight decreases as neighbour count goes up !!
+
+     in-link weights
+     out-link weights
+     ...
+
+     You have 6 such edge weight features for single ui
+
+   [Scenario]
+
+   For Celebrity's Network
+     - Any 2 person knowing each other, likelihood is less
+       (because celebrity has very large fan group/followers)
+
+   For Normal Person's Network
+     - Any 2 person knowing each other, chances are more
+       (because normal person group is small & often friends so chances are more knowing each other)
+
+
+-------------
+------------
+
+=> all the 10 diff kinda features are computed & Load in Disk (ie via Pickling or other way)
+   So next time we can do direct modeling on it

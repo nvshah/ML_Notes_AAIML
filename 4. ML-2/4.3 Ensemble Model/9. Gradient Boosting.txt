@@ -15,6 +15,10 @@ Rememebr
 
 => Pseudo-Residual is great way to encorporate any kinda Los func of our choice most the time
    in GB
+
+=> You can have 2 kinda Loss for GBDT :-
+   a. deviance
+   b. exponential  // AdaBoost
 _________________
 
 * Gradient Boosting

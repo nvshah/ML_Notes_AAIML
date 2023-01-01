@@ -1,6 +1,6 @@
 * YOLO V3
 ----------
-
+ref: Module 8 LD :- #11.1
 -------
 => There will always tradeoff between Speed & Performance
 
@@ -126,7 +126,7 @@ Q) Why did DarkNet was invented & ResNet not used ??
     inorder to get the 425 depth out of 1024
 
 
-* COloring :
+* Coloring :
   ----
   - So for given cell, you will check Bounding Boxes related to it are
     resulting to which class (in terms of High Probability)

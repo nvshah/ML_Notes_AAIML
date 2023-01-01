@@ -1,3 +1,10 @@
 ref
 
+material ref :
+
+Slides :-
+https://docs.google.com/presentation/d/1pnYB7oZks2Lz5sHKINUnLJ_yZLOFoIYXnNF_kzDfrAU/edit#slide=id.p
+
+
+Extra-
 https://stats.stackexchange.com/questions/33437/is-it-true-that-in-high-dimensions-data-is-easier-to-separate-linearly

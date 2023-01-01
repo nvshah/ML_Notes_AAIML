@@ -51,3 +51,5 @@ Imp Concepts :-
  - SvD | Truncated SVD
 
  - Kernalized-Logistic Regression
+
+ - Cold Start Problem

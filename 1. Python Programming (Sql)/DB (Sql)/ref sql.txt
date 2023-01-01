@@ -8,6 +8,11 @@ original mysql ref manual
 [Cross-Product]
 https://learnsql.com/blog/join-tables-without-common-column/
 
+[Pandas & Sql]
+RitvikMath Youtube
+
+https://learnsql.com/blog/sql-join-tables-without-join/
+
 
 -----------------
 

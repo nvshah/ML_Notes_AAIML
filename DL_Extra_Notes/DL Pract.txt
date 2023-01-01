@@ -3,3 +3,8 @@ DL Pract
 - SQuAD Dataset
 - Hugging Face for BERT
 - Tensorflow
+
+
+* JAX :- library to perform AutoGradients
+   \
+    This will speedup tensor based machine learning

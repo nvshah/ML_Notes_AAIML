@@ -1,0 +1,17 @@
+ref.txt
+
+[NLP Notebook]
+https://colab.research.google.com/drive/1FCQfzaYb-yyDIuF5RKTFa0VPnsYJZyR8?usp=drive_open
+
+
+-------
+Extra
+
+[Diff betn Stemming & Lemmatization]
+https://blog.bitext.com/what-is-the-difference-between-stemming-and-lemmatization/
+
+
+-----
+Doubts
+
+https://stackoverflow.com/questions/63520893/how-to-get-feature-names-for-a-glove-vectors

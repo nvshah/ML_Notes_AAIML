@@ -1,0 +1,17 @@
+terms
+
+* Test Statistic
+
+- One Sided Test
+- Right Sided Test
+
+
+- Brownian-motion
+
+- Z-test
+- T-test
+- ChiSquare-test
+
+- Contigency Table
+
+- Parametric Test | Non-Parametric Test

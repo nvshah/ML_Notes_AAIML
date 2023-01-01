@@ -1,0 +1,107 @@
+SVM RECAP
+
+REMEMBER :-
+You can have your Hyper-Param Either multiplied to loss or multiplied to Regularizer
+Both of them works & allowed
+
+_____________________________
+
+[Geometrically]
+Key Idea :- Find Hyper-plane that seperates points as widely as posible (ie Margin Maximizing HyperPlane)
+
+[MINE UNDERSTANDING DEDUCING] <--**
+Q) Why SVM focus on finding Margin Maximizer Hyper-Plane ??
+
+ -> Because We have seen in Logistic Regression, that the closer the point to
+    Seperating Hyper-Plane, the lesser confidant we are about its belonging
+    |
+    So SVM take learning from the Logistic Regression & Tries to mitigate that
+    conundrum via finding such seprating plane that has possibly maximum Margin
+
+=> Such plane is called as "Margin-Maximizing Hyper-plane"
+
+NOTE :
+ The margin on both the side of plane must be symmetric ie
+ Equal distance of boundaries on both the side
+ &
+ Hence only we can state total distance between 2 boundaries = 2 / ||w||
+ 
+
+* Hinge Loss :
+  -------
+  -> As the Hinge Loss itself is not differentiable at point 1
+     So there are optimization Hack to achieve this !
+
+* 1 - Zi -> Zeta
+
+  For correct -> Zeta is 0
+  For Incorrect -> Zeta is 1-Zj
+
+  Zeta is the distance of point from correct boundary (ie Support Vectors)
+
+  & This can be represented by max(0, 1-Zi) := Zetai
+
+ In Soft-SVM :-
+
+ [CONSTRAINT-1]
+  Now when we say 1-Zi >= Zetai in constraints, we mean to say that
+  those pts who are far away in -ve direction (ie misclassified)
+
+  Note Zetai is > 0 for Incorrectly classified pts
+  Now
+  Our Prediction would be Zi & we use (1-Zi)
+  Thus
+  1-Zi is the Loss we face for our prediction & that what is the constraints
+
+ [CONSTRAINT-2]
+  Zeta > 0  (ie Positive)
+
+* Soft SVM vs Loss-Minimization :
+  -------
+  REMEMBER :-
+    You can have your Hyper-Param Either multiplied to loss or multiplied to Regularizer
+    Both of them works & allowed
+
+  -> Major difference is of Hyper-Param
+     In Soft SVM := C is used as Hyper-Param with Loss term
+     In Loss-Minima := LMA is used as Hyper-Param with Reg term
+
+
+* Primal Form of SVM :
+  ----
+  Soft SVM or Loss Minima (ie Hinge Loss)
+
+  Given query Point Xq,
+  I want to find the (W*Xq + b) = f(Xq) := Yq
+
+
+* Dual Form of SVM :
+  ----
+  In Optimization Theory this primal form can be represented in different
+  formulation
+
+  1) For every Xi -> ALPHAi
+  2) Xi only occurs in Xi*Xj
+
+[REMEMBER]
+Now In both form we aim to find the Yq, given Xq
+
+  3) F(Xq) := Sum(ALPHAi*yi*(Xi*Xq)) + b
+  4) ALPHAi is > 0 for only Support Vectors
+
+  => To compute/predict for Xq, the only point matters are Support Vectros
+     Hence Algo named Support Vectors Machines
+
+     Non-Support vectors do not change the alog how behaves
+
+  => If someone provides you similarity matrix
+     then in dual form it makes sense
+     As
+     We have some formulation in terms of 2 points in equation
+
+  => Dual Form accounts the reln betn the points in terms of Similarity
+
+REMEMBER :
+The main reason we get into primal to dual form is because we can
+leverage the Kernalization (ie Similarity Manipulation) whilst solving the
+optimization Problem

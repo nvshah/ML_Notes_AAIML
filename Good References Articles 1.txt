@@ -1,6 +1,7 @@
 Good References Articles
 
-[Integral basics] https://www.mathcs.emory.edu/~cheung/Courses/170/Syllabus/07/rectangle-method.html
+[Integral basics]
+https://www.mathcs.emory.edu/~cheung/Courses/170/Syllabus/07/rectangle-method.html
 
 [Sigmoid Fn Explaination]
 Ronny Restrepo :- http://ronny.rest/blog/post_2017_08_10_sigmoid/

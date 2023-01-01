@@ -1,0 +1,8 @@
+1. ML Search Engine for Q&A
+--------------------------
+ref: Module 10 :- 1.1
+video: https://www.youtube.com/watch?v=J_0ms1ayqKE
+ref:
+https://www.elastic.co/blog/text-similarity-search-with-vectors-in-elasticsearch
+https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/
+https://www.microsoft.com/en-us/research/publication/diskann-fast-accurate-billion-point-nearest-neighbor-search-on-a-single-node/

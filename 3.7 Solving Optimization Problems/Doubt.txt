@@ -1,0 +1,9 @@
+Doubt
+
+Q) Does Gradient Descent is one of the case of Langrange Multiplier ?
+
+
+Q) Does it is possible that via Gradient Descent the the variable val is changing very slightly
+   after 100 iterations
+   But later as we continue the iterations
+   It again start changing drastically (let say after 150 iterations) once again !

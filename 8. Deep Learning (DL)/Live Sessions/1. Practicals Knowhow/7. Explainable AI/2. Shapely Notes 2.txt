@@ -1,5 +1,10 @@
 2. Shapely Notes 2
 ------------------
+ref: Module 8 LS :- #15.15
+ref:
+https://drive.google.com/file/d/1Oc3gsx00ieNmHhmNwlPqKok3P8999o-m/view
+
+_________________
 
 => Most problem in Algo that have Exponential T.C. are solved using Approximate Algortihms
 

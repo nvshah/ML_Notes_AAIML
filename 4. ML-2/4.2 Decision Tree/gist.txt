@@ -2,22 +2,25 @@ gist DT
 
 -------------
 
+Brief Aim :
+-> Minimize the Entropy as we build Decision Tree // Down the Level
+   (Lesser the Random Data is, more its easy to deduce/predict the output)
+
+-> This implies to
+
 - KL-divergence is often referred to as relative entropy
 
 => Computing logs take more time complexity than computing squares
-
 -> Entropy & Gini Impurity can be calculated when Y takes multiple vals i.e (Y1, Y2, Y3,...)
-
 => IN DT you get Axis-Parallel Tessellation of Space
-
 => Feature will only be imp or useful when it reduces the entropy going down level in DT
-
 -> Median Absolute Error is more Robust to Outliers	
 
 -------------
 
 -> Entropy Concepts are widely used in Information Theory as well
 
+=> You should eye towards High Info Gain Going down (ie Constructing) DT
 ------------
 
 -> DT is nested if-else or Tree like structure model
@@ -73,3 +76,13 @@ Python :
    \
     Eg sqrt(), log2(),
        [ randomly picks the bunch of features ]
+
+
+-------
+Params (useful)
+
+=> There are multiple ways to avoid over fitting
+   1. Reduce the `max_depth` parameter
+   2. increase the `min_samples_leaf`
+
+- `max_features`

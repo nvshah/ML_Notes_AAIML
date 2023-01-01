@@ -1,5 +1,9 @@
 Tips ML
 
+* Occam's Razor :
+  ----
+  -> Why to need build complex things/model when it works with simple one
+
 => Time & Space Complexity matters most when comes to Prodcutionization of Code
 
 => If D_train & D_test have considerably diff distribution, then your model will fail on Test-Set
@@ -69,3 +73,10 @@ Tips ML
 
 [*IMP*]
 FACT :- Mostly in E-Commerce the distribution is Power-Law Distribution
+
+=> Quadratic Optimization are more complex & heavy than Linear Optimizations
+     |
+     When unknown terms are Quadratic (is Squared)
+
+[Jaccard Distance & Sets]
+=> Jaccard Distance is used to measure Similarity between 2 Sets (ie Intersection Over Union)

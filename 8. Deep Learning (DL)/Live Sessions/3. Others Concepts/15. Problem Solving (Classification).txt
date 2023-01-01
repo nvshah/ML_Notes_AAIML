@@ -1,6 +1,9 @@
 15. Problem Solving (Classification)
 -----------------------------------
+ref: Module 8 LS:- #15.9
 ref : https://drive.google.com/file/d/1pnQk1TtrEHRphutGEEZUQPUOIfhlPKax/view
+
+________________
 
 1)
 -> Gaussian NB assumes Conditional Probab of Feature to be Normal (Gaussian) Distributed, not features themselves

@@ -1,0 +1,20 @@
+Revision Topic
+
+* ROC & AUC (Mine Understanding)
+  ----------
+  -> Used esp for Binary Classif (0-1)
+
+  - Now in realtime we dont get exact ans in terms of 0-1,
+    Often we get the probabilities (ie between 0-1)
+
+    So now we need to approximate the prediction either 0 or 1 from probability
+    |
+    For this we need some thresold ie to determine & so that we can compare
+    our probability with this thresold to decide either class is 0 or 1
+
+  -> ROC is all about experimenting with the different thresolds
+     |
+     & Then with these trial & error we need to learn the behavior of model
+       based on accumulated observations from above experiments
+
+       FPR, TPR for each experiment is useful in deducing the 

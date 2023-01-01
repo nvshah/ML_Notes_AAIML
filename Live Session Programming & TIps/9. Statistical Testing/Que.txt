@@ -1,0 +1,7 @@
+Que
+
+Q) What is P-Val
+ The p-value, or probability value, tells you how likely it is that
+ your data could have occurred under the null hypothesis.
+ It does this by calculating the likelihood of your test statistic,
+ which is the number calculated by a statistical test using your data.

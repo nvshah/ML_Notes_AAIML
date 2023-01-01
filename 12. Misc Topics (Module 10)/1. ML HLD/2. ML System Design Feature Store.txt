@@ -1,0 +1,8 @@
+2. ML System Design Feature Store
+-------------------------------
+
+ref: Module 10 S :- #1.2
+video: https://www.youtube.com/watch?v=ZxHo9WGn6KQ
+ref :
+
+https://medium.com/data-for-ai/comprehensive-and-comparative-list-of-feature-store-architectures-for-data-scientists-and-big-data-86ea8c4d853b

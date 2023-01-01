@@ -1,0 +1,126 @@
+1. Performnace Metrics DD1
+
+Module 3 LS :- #3
+
+---------------
+
+=> You dont select the Performance Metric based on the Model but based on the Business Usecase
+
+=> The metric will not give prob score but its model that can give you probability
+   metric will provided info abt how good model is !
+
+=> False Positivies :- Type1 Error
+   False Negatives :- Type2 Error
+
+=> When you define your custom metric then you need to give justification so that
+   Business folks can get idea about it !
+
+___________________________________________________________________________________________
+
+
+1) Accuracy : (Confusion Metric)
+-----------
+ - Actual | Positive
+ - Confusion Metrics
+   TP | FN | TN | FP
+
+ What are disadvantages of Confusion Metrics ? (Where you can't use CM)
+ -> Does not use Class Probabilities
+ -> Imbalanced Classes
+    (If everyhting is predicted to be 1 class)
+
+ -> If you have to compare 2 models you cannot use it
+
+ -> So Its extremely hard to compare 2 models using confusion matrix
+
+ -> It doesnt work for Multi-Class Classif
+    or it would be complex
+    So often CM is used for Binary class
+
+ -> Checking for if Model Overfitting or Underfitting is hard
+    As it doesnt give us Single Metric
+
+ Biggest Advantage of Confusion Matrix (In which Situation You use it)
+ ->
+
+ Accuracy :-  // uses metric from CM to compute
+ ________
+   - Dont work for Imbalance Data
+   - Cost of making a mistake is high ! (In such case Accuracy may not work)
+     because It doesnt account False-Negative
+
+   -> If you have perfectly balanced dataset where cost of making mistake is not High
+      then your Accuracy is decent Metric
+
+   -> You cannot use upsampling & downsampling alongwith accuracy as metric purposefully
+
+Upsampling & Downsampling :
+  - Can be used to deal with Imbalanced Dataset
+
+ Precision & Recall
+ __________________
+  -> application : IRV, Search Engine
+
+     IRV :- Information Retrieval
+
+  -> Precision-Recall biased towards 1 class !
+  -> Works for Imbalacned Dataset also
+
+ F1 Score
+ _________
+ -> Advantage of F1 Score is that it accounts 2 metrics & gives us single metric
+    So
+    While comparing model its easy for us to judge the performance
+    (rather than comparing precision & recall scores seperately)
+
+ -> 1 Metric is easy way to choose model !
+
+ -> harmonic Mean of Precision & Recall
+
+ Q) Why Harmonic Mean ??
+    - Harmonic Mean reduces the impact of High Precision & High Recall (because of inverse in eqn)
+
+    - Harmonic mean is closest to minimum value of inputted param
+
+ => Thus when F1-Score is Low we can say either both of them is low or one of them is low
+    because Harmonic mean tends towards Minimum value of input params
+
+
+2) Log Loss :
+------------
+-> Binary settings
+-> Its come very much from Entropy concept
+-> Log Loss is what we minimized for Logistic Regression
+
+-> LogLoss penalizes even small deviation in probabilities
+
+-> If you use log loss then there are models that directly optimize for Log-Loss
+
+Where you should not
+-> Interpretability is not much good
+-> When probability is not important
+
+When is probability not important ?
+-> When ranking or search results we just care about the order of an results rather than the probability
+   of the results
+
+   When we want Order as our major criteria in such case Probability is not much important
+   & Thus LogLoss can be avoid in such case
+
+
+3) AUC-ROC Curve :
+-----------------
+-> Probabilistic Interpretation :
+   - How much % chance for trained model to predict correct classification (for +ve or -ve points)
+
+ -> Scale Invariant
+ -> Used when you are considering & ant to use order of your data
+
+ -> Highly impacted by Imbalanced Data
+
+ What is AUC vs ROC ?
+ -> AUC is Area under the Curve &
+    What is this curve :- that is ROC Curve !
+
+ What is ROC Cuve ?
+ -> Plot of TPR vs FPR is called an ROC curve

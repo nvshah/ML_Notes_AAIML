@@ -1,5 +1,12 @@
 1. Intro Problem
 --------
+ref: Module 9 :- #2
+ref
+https://drive.google.com/file/d/1QiEgrF7OMNgAkoO4f7pm6vWpVb7Em2cW/view
+sullychain :- https://github.com/SullyChen/Autopilot-TensorFlow  <--** [Used in Course]
+
+NOTE: Code used in the Study :- from sullychain (Autopilot Tensorflow)
+---------------------------------
 
 -> Used Generally
    - Cameras [Front, Rear, Side]

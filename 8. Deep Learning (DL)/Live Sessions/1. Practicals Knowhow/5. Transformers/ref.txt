@@ -1,0 +1,7 @@
+ref.txt
+
+[Transformer From Scratch 1]
+https://colab.research.google.com/drive/1e_-pzjZTlLPcNcMpJjoOFS4wy2X3zJZl
+
+[Transformer from Scratch 2]
+https://colab.research.google.com/github/dlmacedo/starter-academic/blob/master/content/courses/deeplearning/notebooks/tensorflow/transformer.ipynb

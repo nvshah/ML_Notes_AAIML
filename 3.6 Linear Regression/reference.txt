@@ -2,3 +2,10 @@ reference
 
 [Need for Regularization]
 https://www.youtube.com/watch?v=iUm2Z1SKuGk
+
+----------------
+
+Tools Articles
+
+[Immersive Linear Algebra]
+http://immersivemath.com/ila/index.html

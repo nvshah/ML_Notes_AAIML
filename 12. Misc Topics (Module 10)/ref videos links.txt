@@ -1,0 +1,15 @@
+ref videos links
+
+* ML HLD
+  1.1 https://www.youtube.com/watch?v=J_0ms1ayqKE
+  1.2 https://www.youtube.com/watch?v=ZxHo9WGn6KQ
+
+
+
+
+
+-------
+Articles
+
+https://medium.com/data-for-ai/comprehensive-and-comparative-list-of-feature-store-architectures-for-data-scientists-and-big-data-86ea8c4d853b
+https://www.elastic.co/blog/text-similarity-search-with-vectors-in-elasticsearch

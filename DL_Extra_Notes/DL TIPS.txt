@@ -52,3 +52,21 @@ DL TIPS
 -> Convolution is concept borrowed from Signal Processing
 
 -> YOLO helps to do Object Detection pretty well via Bounding Box
+
+[LIME & SHAP]
+=> Techniques like LIME & SHAP, helps to give us Feature Importance or identify which fetaures
+   are dependent or strong ones!
+
+
+**-->
+[NOTE] | [IMP]
+=> For any Deep Learning Model if you want some kinda Confidence Interval as Output
+   then Dropout is the cheap core Idea/Option !
+
+   So Remember if you need some kinda Confidence Interval in output then
+   Dropouts is the Core/Basic/Cheap Idea (At first cut in mind)
+
+
+* JAX :- library to perform AutoGradients
+   \
+    This will speedup tensor based machine learning

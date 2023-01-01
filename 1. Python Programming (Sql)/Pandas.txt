@@ -58,6 +58,8 @@ ref : https://pbpython.com/pandas-qcut-cut.html
 * df.apply()
     .applymap()
 
+* df.sparse.to_coo()  // Sparse Matrix
+
 ------
 EXTRA
 

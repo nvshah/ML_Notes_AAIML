@@ -6,8 +6,23 @@ Formula :-
 	I(Y, f) = H_D(Y) - sum(Di/D * H_Di(Yi))  
 	  \
 	   Y is predicted varaible
-	   f - feature on split
+	   f - feature (to be) on split
 	   H_D = total entropy of parent
 	   H_Di = entropy of child nodes
 
-	Info Gain breaking dataset using feature for Y
+	Info Gain breaking dataset using feature [f] for target [y]
+
+
+=> Thus Info Gain for each such feature is computed & maximal corresp feature is
+   selected to split current Dataset
+
+=> NOTE
+   We want Info Gain To be maximum
+   |
+   Info gain Would be maximumn when going down next level, the Entropy
+   reduces to maximum (ie Entropy is minimal down next level)
+   |
+   This Implies that After this decision we want optimal reduction in Entropy
+   i.e Reduce Randomization among each splitted Dataset (all in all)
+
+

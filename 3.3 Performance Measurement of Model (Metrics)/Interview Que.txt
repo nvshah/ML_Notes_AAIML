@@ -1,0 +1,9 @@
+Interview Que
+
+
+    Which is more important to you– model accuracy, or model performance?
+    Can you cite some examples where a false positive is important than a false negative?
+    Can you cite some examples where a false negative important than a false positive?
+    Can you cite some examples where both false positive and false negatives are equally important?
+    What is the most frequent metric to assess model accuracy for classification problems?
+    Why is Area Under ROC Curve (AUROC) better than raw accuracy as an out-of- sample evaluation metric?

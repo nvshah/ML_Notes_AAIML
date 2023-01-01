@@ -1,0 +1,11 @@
+Algo Ref
+
+[One vs Rest]
+https://machinelearningmastery.com/one-vs-rest-and-one-vs-one-for-multi-class-classification/#:~:text=One-Vs-Rest%20for%20Multi-Class%20Classification%20One-vs-rest%20%28OvR%20for%20short%2C,the%20multi-class%20dataset%20into%20multiple%20binary%20classification%20problems.
+
+[SVM Max Margin Distance]
+https://math.stackexchange.com/questions/1175056/svm-maximum-margin-distance
+
+
+[Feature Engineering]
+https://towardsdatascience.com/beyond-one-hot-17-ways-of-transforming-categorical-features-into-numeric-features-57f54f199ea4

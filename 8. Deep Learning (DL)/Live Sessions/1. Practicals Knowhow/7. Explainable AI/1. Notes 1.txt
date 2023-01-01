@@ -1,5 +1,10 @@
 1. Notes 1
 ----------
+ref: Module 8 LS :- #15.14
+ref:
+https://drive.google.com/file/d/1FX4khyhPqVX9G7iaZnJERBWkUQDSVJdE/view
+
+_________________
 
 Motif behing Explainable AI ??
 

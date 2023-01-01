@@ -4,3 +4,10 @@ q) does all the intermediate computed results info in ML process are pickled to 
    ie does pascal source code is compatible with major kinda computed results ??
 
    or which are such other files extension format that are used to cache store the Intermediate results via pickling ??
+
+
+Q) sklearn difference between accuracy_score() & score() ??
+
+   -> One is Training Score (ie scroe())
+      &
+      other helps to check Testing score (ie accuracy_score())

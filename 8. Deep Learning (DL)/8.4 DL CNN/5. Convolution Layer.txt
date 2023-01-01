@@ -1,5 +1,8 @@
 5. Convolution Layer
 -------------------
+ref :
+[Convolution Networks Pool] https://cs231n.github.io/convolutional-networks/#pool
+[DL Tutorials] http://www.iro.umontreal.ca/~bengioy/talks/DL-Tutorial-NIPS2015.pdf
 
 -----
 (GIST)

@@ -3,6 +3,9 @@ algo ML-2 Imp Points
 => SoftMax is a Generalization of Logistic Regression to a MultiClass Setup
    (ie from 2 class to more class setup)
 
+=> REMEMBER :-
+  You can have your Hyper-Param Either multiplied to loss or multiplied to Regularizer
+  Both of them works & allowed
 _________________________________________
 
 - Hyper-param & CV
@@ -166,3 +169,20 @@ Train - Test Split :
   ---
   Intutively means
   You define new distance metric (ie func) that compute distance between 2 points !
+
+
+_________
+
+* You can pose your Linear Regression from a stats point
+  via considering bias (as a error with normal distribution)
+
+  Then you can also compute the Confidence Interval this way
+
+  Remember that Squared Loss in Linear Regression comes from MLE (ie Maximum Likelihood Estimation)
+
+  MLE of Linear Regression
+     |
+     -> Sigma^2 := Avg Error Square
+
+=> So One way to compute Confidence Interval from the statistical standpoint
+   is to pose this error as some form of Distribution (ie most often Normal Distribution)

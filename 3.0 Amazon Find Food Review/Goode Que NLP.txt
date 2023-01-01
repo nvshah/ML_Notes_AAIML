@@ -7,3 +7,30 @@ Q) How to implement Sparse Matrix ??
        row_no -> col_no: val
 
 Q) How to store very expnesive Sparse Matrix in Distributed system like Spark ??
+
+Q) Lemmatization
+Lemmatisation is the algorithmic process of determining the lemma of a word based on its intended meaning.
+Unlike stemming, lemmatization depends on correctly identifying the intended part of speech and meaning of a word
+in a sentence, as well as within the larger context surrounding that sentence,
+such as neighboring sentences or even an entire document.
+
+
+Q) Diff betwn Lemmatization & Stemming
+https://stackoverflow.com/questions/1787110/what-is-the-difference-between-lemmatization-vs-stemming
+
+
+Q) What is Diff between { TFIDF, BOW } & {Word2Vec, Glove} ??
+
+   -> TFIDF, BOW :- Accounts Local Context &
+                    Find Features accordingly
+                    & They provide then numeric/decimal val to those features for each sentence
+                      (Which we called it Weights ie TFIDF Weights to each words)
+
+   -> Word2Vec, Glove :
+       |
+       -> here Global context is accounted (alongwith local context)
+          +
+          So Vector for each word is discovered (either via Word2Vec & GLOVE)
+          &
+          then if we need to account Local context info then we can provide
+          the weights to those vector representation via either {TFIDF, BOW}

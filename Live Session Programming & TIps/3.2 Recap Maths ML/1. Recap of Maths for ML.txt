@@ -1,0 +1,150 @@
+1. Recap of Maths for ML
+-----------------------
+ref : https://drive.google.com/file/d/1sJpDoUOuF4q133pAoIw-cWVjsiEYB67i/view
+
+_________________________
+
+=> VIF can be used to check the linear dependency among the variables
+
+=> Something being perpendicular is importance
+   Perpendicular := Angle := Dot Product !
+
+=> Your Plane would be Perpendiculat to W (ie Normal)
+
+=> Everything becomes easy when W becomes unit vector
+
+** Occam's Razor :
+   - Why to build a complex model when simple model works
+
+=> Inorder to avoid the Quadratic Optimization (like in Finding HyperSpeher)
+   We can use Feature Engineering (ie like RBF Kernel)
+    or
+   We can change the axis
+
+------------------------------
+
+* Classifying/Seprating Point :
+  ---
+  - Line, Circle, Rectangle
+  - Distance helps us to identify this things
+
+
+* Eqn of a Line :
+----------------
+  Y = mx + c
+  c changes := parallel lines
+  m changes := 2 diff lines at diff angles (but intercept remains same)
+
+* General Form <-> Slope-Intercept Form
+
+* Eqn of Plane
+
+* Vector Notation
+
+
+* When you focus on direction :- Dot product (Angles) is useful
+
+* W is a vector perpendiculat to Plane
+
+  Wx + W0 = 0
+    -> If W is unit vector then W0 tells how far the Plane is from Origin >
+
+
+* Direction & Offset | Plane :
+  ----
+  -> First thing is if we know the direction of Normal then we can find the Planes
+     in its perpendicular direction
+
+     & then if Norm of W is 1 then distance from origin is its offset
+
+  So With plane you need to Know 2 things
+  1. Perpendicularity
+  2. How far it is from origin
+
+
+* Half Spaces :
+  -----
+  Negative Half Space
+  Positive Half Space
+  On the Plane itself
+
+  Now Point on the plane will equal to 0
+  in -ve half, it would be -ve val
+     +ve half, it would be +ve val
+
+
+Q) Why do we need W0 ??
+  ---
+  Remember :
+  -> With only direction of Normal (ie that is perpendicular to Plane), We cannot uniquely determine the Plane
+     We can only determine the Space & Direction
+
+  -> Inorder to uniquely determine the Plane, we need to find the distance as well
+     In such case this W0 would be helpful !
+
+  Thus Plane can be uniquely determined by 2 things :
+  a) Direction (ie of Normal, so that we can get perpendicular to it to know the Plane's Space)
+
+  b) Distance (ie by Intercept, distance from reference point ie Origin)
+
+
+Q) Distance of Point from Plane
+
+
+[IMP---]
+Q) Why Cos(Theta) is used and not Tan(Theta) ??
+
+  -> because Tan(theta) goes from -inf to +inf
+     whereas
+     cos(theta) goes from -1 to +1
+  -> & In optimization you generally want limited range
+
+  -> Also Tan(theta) has Discontinuity
+  -> Also if you take Dot Product the formula turns out to be in terms of Cos(theta)
+
+[GOOD----]
+Q) Dot Product & Cross Product ?
+
+   Dot Prod -> results in scaler
+   Cross Prod -> result in vector
+
+   Scalars are easier to manipulate
+   Vectors are cumbersome to operate on !
+
+
+* Projection of Vector onto another Vector ?
+
+
+* Distance from Non-Linear or Non-Plane Surface ?
+
+  -> 1. We need to first draw a tangent at that point
+     2. then we can consider that tangenent direction as Plane
+     &
+     3. then can find perpendicular distance (ie via Cos() approach or dot product approach)
+
+
+--------------------
+
+Q) Find HyperSphere Eqn to seperate +ve & -ve pts ?
+
+   -> By Finding Spehere/Circle we meant to find
+
+      radius (r) & center (c) with some constraints !
+
+   => These are Quadratic Optimization as unknown terms involves Sqaure
+      So we wont use this in more cases
+
+
+=> Quadratic Optimization is more complex & heavy than Linear Optimization
+
+
+NOTE :- Whenever we need Ball or Circle like things to seperate the classes
+        We can apply Feature Engineering
+        or
+        Change the Axis
+
+        Inorder to avoid the Higher complexity (like Quadratic Complexity)
+
+-> Feature Eng like RBF Kernel can solve such things
+
+

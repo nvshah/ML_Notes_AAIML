@@ -1,6 +1,8 @@
 2. bERT (Bidirectional Encoder Representation From Transformers)
 ----------
+ref : Module 8 LS :- #9.1
 
+ref: https://drive.google.com/file/d/1f5YsP9XygDM9YFJxMpViXvex-xu6JY7g/view
 
 ---------
 # Terms (related)

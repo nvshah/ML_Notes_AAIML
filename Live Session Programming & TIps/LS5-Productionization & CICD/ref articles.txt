@@ -5,3 +5,7 @@ https://machinelearningmastery.com/gentle-introduction-autocorrelation-partial-a
 
 [ML in Real Time]
 Chip Huyen Blog
+
+
+[Pract Time Series Forecasting]
+https://drive.google.com/file/d/1uKesFvRBycdqwJSOWDfQ52GqsnJttr_2/view

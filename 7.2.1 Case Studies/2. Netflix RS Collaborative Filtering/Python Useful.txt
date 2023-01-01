@@ -2,6 +2,10 @@ Python Useful
 
 ref : http://surpriselib.com/
 
+Sparse csr Matrix
+https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.sparse.csr_matrix.html
+----------------
+
 * Scipy.sparse 
           \ 
            csr_matrix()   // create/convert sparse Matrix

@@ -1,0 +1,95 @@
+4.6 Spark Session 3
+
+ipynb: https://drive.google.com/file/d/1nqnk9icqjqigBI3zk2YSh7u5V2hwudvH/view
+Notes: https://drive.google.com/file/d/1ZY6bgis1B_WQRq4hd542BjgkRWjnCb2B/view
+---------
+Python Pract
+
+pyspark.mllib   // package that holds popular ml algo impl
+LabeledPoint()
+sc.parallelize()
+SpareseVector()
+
+pyspark.ml.Pipeline
+pyspark.ml.evaluation.RegressionEvaluator
+
+spark.createDataframe()
+
+ParamGridBuilder()  // Most common for pipeline
+
+---------
+REMEMBER
+
+=> Always try to break your stuffs in trivially parallelizable things
+   (esp when you are dealing with Spark, Hadoop)
+
+   Try to parallelize as simply as possible !
+   Try to map your task to simply trivially parallelizable things
+
+=> Sparks Dataframe is built on top of RDD (Resilent Distributed Dataset)
+
+=> Spark is creating RDD & Dataframe as its needs !
+
+=> Sparks Computation is a DAG model
+
+=> Most of Spark's Streaming is used by Analyst
+
+________
+
+=> 'BisectingKMeans' is kinda/(sort of) 'Hierarchical Clustering'
+
+* PySpark's MlLib :
+  ----
+  - Module of PySpark
+
+  - `pyspark.mllib`
+
+  => You dont have to worry about how specific algo is implemented in `MLLib`
+     |
+     You can find most popular algo in MlLib (PySpark)
+
+  - Many Matrix (basics) one are avaialble
+    So basic linear algebra can be performed easily
+
+  - MLLib has provision for basic statistics, tree, regression ,calssification, ...
+  -> Most of popular algo are readily available in this package (MlLib)
+
+* MultiNomial Logisctic Reg := is nothing but what being done by Softmax Classifier in DL
+
+
+* Random Forest & Spark
+  -------
+  -> RF can works well with Spark because RF is trivially Parallelizable
+
+
+* Pipeline :
+  -----
+  Raw Data (Training) -> Tokenizer -> Count Vectorize -> Logistic Regression -> class labels
+
+
+* Spark & Vram :
+  ----
+  -> If data has to be moved from the boxes in Spark cluster
+     then
+     It has to moved to the network (from VRam) & then pass it towards the network
+     &
+     this can be time taking !
+
+* KNN & Spark :
+  ----
+  PySpark Code for KNN
+
+  => because KNN is trivially Parallelizable
+  => So It works well with Spark
+
+
+=> XGBoost can be run on Spark !
+   |
+   XGBoost does parallelization (with spark) at individual tree level
+   &
+   break each nodes into sub-trees
+   or assign each node to individual sub-tree for computation
+
+=> Thus time taken by GBDT is much more than RF
+   as RF can build each of Decsion Tree parallely
+   RF :- Trivialy Paralleizable

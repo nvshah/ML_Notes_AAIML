@@ -1,5 +1,9 @@
-1. Notes (Part 1)
+1. Entity Embeddings @Linkedin, Amazon Part 1
 -----------------
+ref: Module 8 LS :- #15.18
+
+https://drive.google.com/file/d/17aZiYUHMP7zxn2YCWoEUdVYV0KsWgSDd/view
+_______________
 
 => In W2V & BERT your entity are Words
 

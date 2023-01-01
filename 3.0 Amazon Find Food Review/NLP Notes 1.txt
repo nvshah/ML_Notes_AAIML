@@ -260,7 +260,9 @@ Q) Why Log in IDF ??
 
         Note when tfidf val for all words in sentence is 1, ( Weighted Avg is = Avg W2V )
 
+----------------
 
+* The good Competitor Solution Alternative to Word2Vec is `Glove`
 
 
 

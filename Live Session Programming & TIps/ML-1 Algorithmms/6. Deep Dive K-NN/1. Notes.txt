@@ -2,8 +2,9 @@
 ---------
 ref: https://drive.google.com/file/d/1uOXN6ZqrnYgPCfoDhje741X_rZCn1d4u/view?usp=drive_open
 
+Module 3 Live session :- (Deep Dive KNN) // 12.2
 
-(Deep Dive KNN) // 12.2
+__
 
 => When we do use Euc Dist, then curse of dimen crops in (& KNN we cannot use for High-Dimen)
 

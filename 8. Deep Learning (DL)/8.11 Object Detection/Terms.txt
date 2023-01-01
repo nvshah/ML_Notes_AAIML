@@ -14,3 +14,5 @@ Terms
 
 - Multi-Scale Prediction
 - FPN
+
+- Tiny Yolo V3

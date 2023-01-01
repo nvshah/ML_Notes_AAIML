@@ -68,17 +68,22 @@ TIP :- For Simplification You can assume plane passes through an Origin so b = 0
      - both are almost overlapping
      - cosine dist between them is less
 
+* Maximum Likelihood Estimation :
+  ----
+  -> Estimating the class based on high probability
+
+
 
 __________
 
 * Optimization Problem :
   ------------
    - maximization or minimization
-   - Gradient Descent or SGD
+   - Gradient Descent or SGD   <----------*****
    - slope & tangent
    - Objective Function
    - Constraints
-   - Lagrange Multiplier
+   - Lagrange Multiplier   <---------******
    - Eigen Value & Eigen Vectors
    - Steepest Ddescent
 
@@ -133,3 +138,6 @@ __________
   ----
   -> Unlike Random/Grid Search What Bayesian Optimisation does is it consider previous
      Experiment & some bayes theorem to pick next candidate for Hyper-Parameter
+
+[VIF]
+=> VIF can be used to check the linear dependency among the variables

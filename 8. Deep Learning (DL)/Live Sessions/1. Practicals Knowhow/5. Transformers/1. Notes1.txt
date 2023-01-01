@@ -1,5 +1,10 @@
 1. Notes1
 
+Code WalkThrough: Transformers from Scratch - 1
+
+ref: Module 8 LS :- #15.7
+https://colab.research.google.com/drive/1e_-pzjZTlLPcNcMpJjoOFS4wy2X3zJZl
+
 -------
 
 -> [None] is meant for BatchSize while programming

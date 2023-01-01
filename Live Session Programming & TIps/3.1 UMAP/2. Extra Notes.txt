@@ -1,0 +1,16 @@
+2. Extra Notes
+------------
+
+* TSNE (Optimization) :- Barns Hut
+  UMAP (Optimization) :- Graph Optimization
+
+* TSNE vs UMAP
+
+  Perplexity <-> Neigbors
+
+  -> In UMAP, lot of seprability can be seen
+  -> In UMAP, inter-cluster distance also preserved well (ie Global Structure)
+
+=> All the Optimization under TSNE & UMAP, are mostly Convex so they have
+   multiple optima
+   Therefor its Not a Deterministic

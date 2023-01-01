@@ -1,5 +1,8 @@
 ref
 
+[Neural Network]
+https://en.wikipedia.org/wiki/Rectifier_(neural_networks)
+
 - Saddle Point (https://en.wikipedia.org/wiki/Saddle_point )
 
 - Grad + Momentum 
@@ -19,3 +22,22 @@ ref
 
 - Word2Vec (**IMP**)
     https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/
+
+
+----------------
+Books
+
+[ImageNet Classif]
+http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf
+
+[Batch Normalization]
+https://arxiv.org/pdf/1502.03167v3.pdf
+
+[ADAM PDF Book paper Published]
+https://arxiv.org/pdf/1412.6980.pdf
+
+-----------------
+Videos
+
+[Adagrad- Dense & Sparse Features]
+https://www.youtube.com/watch?v=c86mqhdmfL0

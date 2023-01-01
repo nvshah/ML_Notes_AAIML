@@ -1,3 +1,7 @@
+* Entropy
+
+ref :
+https://bricaud.github.io/personal-blog/entropy-in-decision-trees/
 
 --------------
 - Entropy has its origin in ThermoDynamics in Physics

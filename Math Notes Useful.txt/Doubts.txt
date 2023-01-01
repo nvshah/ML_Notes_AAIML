@@ -1,3 +1,8 @@
 Doubts
 
-Distance of Poinnt from a Plane ?? Why divide by norm of a vector ??
+Q) Distance of Poinnt from a Plane ?? Why divide by norm of a vector ??
+
+
+Q) Why Squared of L2 Norm is considered ??
+
+   https://www.quora.com/Why-is-the-squared-L2-norm-sometimes-preferred-to-the-L2-norm-in-machine-learning-to-measure-distances

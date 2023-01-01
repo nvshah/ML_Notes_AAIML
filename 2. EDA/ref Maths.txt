@@ -1,0 +1,141 @@
+ref Maths
+
+[Immersive Linear Algebra]
+http://immersivemath.com/ila/index.html
+
+[Dot Product Viz]
+http://www.falstad.com/dotproduct/
+
+[Vector Calculator]
+https://www.mathsisfun.com/algebra/vector-calculator.html
+
+
+[Magnitude & Direction of Vector]
+https://www.mathwarehouse.com/vectors/
+
+[Vector Projection]
+https://onlinemschool.com/math/library/vector/projection/
+
+[Vector Basics]
+https://tutorial.math.lamar.edu/classes/calcii/vectors_basics.aspx
+https://machinelearningmastery.com/gentle-introduction-vectors-machine-learning/
+https://www.quora.com/What-is-the-significance-of-unit-vectors
+
+[Vector Projection]
+https://flexbooks.ck12.org/cbook/ck-12-precalculus-concepts-2.0/section/7.5/primary/lesson/vector-projection-pcalc/
+https://medium.com/linear-algebra-basics/scalar-projection-vector-projection-5076d89ed8a8
+
+[Euc Dist vs Consine Dist]
+https://www.baeldung.com/cs/euclidean-distance-vs-cosine-similarity
+
+[Dot Product of Orthogonal Vector]
+https://towardsdatascience.com/why-is-the-inner-product-of-orthogonal-vectors-zero-88469043decf
+https://betterexplained.com/articles/vector-calculus-understanding-the-dot-product/
+
+[Gemoteric Intution Algebra]
+https://medium.com/@leenabora1/algebraic-geometric-and-linear-algebraic-intuition-of-dot-product-and-how-to-apply-this-to-cd03bd7ec11a
+
+[Unit Vector]
+http://www.algebralab.org/lessons/lesson.aspx?file=Trigonometry_TrigVectorUnits.xml
+
+[Graphical Intution Eqn of Plane]
+https://math.stackexchange.com/questions/1770206/geometric-intuition-of-the-equation-of-a-plane
+[3D Coordinate Geometry - Eqn of Plane]
+https://brilliant.org/wiki/3d-coordinate-geometry-equation-of-a-plane/
+https://solitaryroad.com/c401.html#:~:text=The%20normal%20form%20of%20the%20equation%20of%20a,equation%20is%20best%20understood%20in%20its%20vector%20version.
+
+[Normal Vector]
+https://www.storyofmathematics.com/normal-vector/
+
+[Matrices]
+http://www.datasciencecourse.org/notes/matrices/
+
+[Math Insight Distance Point]
+https://mathinsight.org/distance_point_plane_examples
+
+[Distance of Point from Plane]
+https://mathworld.wolfram.com/Point-PlaneDistance.html
+
+[Distance of a Point from the Line]
+https://www.toppr.com/guides/maths/straight-lines/distance-of-point-from-a-line
+https://www.intmath.com/plane-analytic-geometry/perpendicular-distance-point-line.php
+https://brilliant.org/wiki/dot-product-distance-between-point-and-a-line/
+
+
+
+[L0, L1, L2 Norm]
+https://montjoile.medium.com/l0-norm-l1-norm-l2-norm-l-infinity-norm-7a7d18a4f40c
+
+[10 Eg of Linear Algebra in ML]
+https://machinelearningmastery.com/examples-of-linear-algebra-in-machine-learning/
+
+[Vector Eqn of an Ellipsis]
+https://math.stackexchange.com/questions/489973/vector-equation-of-an-ellipse-in-mathbbr3
+
+[Direction of Vector]
+https://www.mathsisfun.com/algebra/trig-four-quadrants.html
+
+[Coordinate Geometry - Intercept Form]
+http://www.nabla.hr/CG-LinesPlanesIn3DA2.htm
+
+--
+
+[Why Cosine used]
+https://www.quora.com/Why-is-cosine-used-in-dot-products-and-sine-used-in-cross-products
+
+[Find angles between 3 Points]
+https://math.stackexchange.com/questions/361412/finding-the-angle-between-three-points
+
+[Angle between 2 Vector Formula]
+https://www.toppr.com/guides/physics-formulas/angle-between-two-vectors-formula
+
+[Dot Product Conceptual Proof]
+https://www.quora.com/Can-anyone-provide-a-conceptual-proof-for-the-Dot-product-of-two-vectors
+
+[Z-Score vs T-Score]
+https://math.stackexchange.com/questions/1350635/when-do-i-use-a-z-score-vs-a-t-score-for-confidence-intervals
+
+
+------------
+
+[Derivation of Dot Product Formula]
+https://www.youtube.com/watch?v=tO-i5St2UL4
+
+[Vector Multiplication Doubt]
+https://www.youtube.com/watch?v=ISdbjm-3jP8
+
+[Unit Vector]
+https://www.khanacademy.org/math/precalculus/vectors-precalc/unit-vectors/v/unit-vector-intro
+
+[Gravity Dot Product]
+https://www.youtube.com/watch?v=5DZ6WXs7x-k
+
+[Projection Vector Proof]
+https://www.youtube.com/watch?v=aTBtgW7U-Y8
+https://www.youtube.com/watch?v=MdfArHlKWZc
+https://www.youtube.com/watch?v=fqPiDICPkj8
+
+[Intercept Form of an Eqn (Additional Video)]
+https://www.youtube.com/watch?v=1rJ5c95MWBQ
+
+[Unit Vector Parallel to Another Vector]
+https://www.youtube.com/watch?v=h429gJjtv80
+
+[Vector Eqn of an Ellipse]
+https://www.youtube.com/watch?v=9faWW1298CU
+[Explain Eqn of an Ellipse]
+https://www.youtube.com/watch?v=5TQMJ09MLWM
+
+
+[ChebyShevs InEquality]
+https://www.youtube.com/watch?v=GMDvuzfNxzI&feature=youtu.be
+
+[Pareto Distb]
+https://www.youtube.com/watch?v=TcEWRykSgwE
+https://www.youtube.com/watch?v=BZMBdRfbk6A
+
+[Example Distb]
+https://youtu.be/EAynHZE-lK4
+
+[Z vs T Statistics]
+https://www.youtube.com/watch?v=5ABpqVSx33I

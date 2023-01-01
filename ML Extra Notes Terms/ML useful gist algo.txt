@@ -45,3 +45,6 @@
 
 * LinearRegression -> Ordinary Least Square (OLS)
   SGDRegressor -> SGD approach (ie stepsize + learning rate)
+
+
+=> We generally use SMO(sequential minimal optimization) algorithm to solve SVM problem.

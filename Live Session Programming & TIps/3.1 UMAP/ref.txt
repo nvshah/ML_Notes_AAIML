@@ -1,0 +1,18 @@
+ref
+
+https://distill.pub/2016/misread-tsne/
+https://towardsdatascience.com/t-distributed-stochastic-neighbor-embedding-t-sne-bb60ff109561
+
+https://en.wikipedia.org/wiki/Topology
+https://pair-code.github.io/understanding-umap/
+
+https://towardsdatascience.com/umap-dimensionality-reduction-an-incredibly-robust-machine-learning-algorithm-b5acb01de568
+https://umap-learn.readthedocs.io/en/latest/parameters.html
+https://pypi.org/project/umap-learn/
+
+PDF----
+[NOTES AAIML UMAP]
+https://drive.google.com/file/d/1PBBoG8qWcSPQIOqTdVJAQbMqqK3hb32E/view
+
+https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf
+https://arxiv.org/pdf/1802.03426.pdf

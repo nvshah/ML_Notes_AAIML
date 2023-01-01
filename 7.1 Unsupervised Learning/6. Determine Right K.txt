@@ -1,5 +1,6 @@
 * Determine Right K
   -----------------
+  book ref : https://cs.wmich.edu/alfuqaha/summer14/cs6530/lectures/ClusteringAnalysis.pdf
 
  -> In K-means or K-mediod, K is Hyper-Parameter :
 

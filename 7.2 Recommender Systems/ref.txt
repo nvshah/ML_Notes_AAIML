@@ -20,3 +20,12 @@ http://surpriselib.com/
 
 [Yehaudi koren Factor in Neighbors]
 https://courses.ischool.berkeley.edu/i290-dm/s11/SECURE/a1-koren.pdf
+
+
+
+-------------
+Python Packages Pract
+
+https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.NMF.html
+https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html
+https://scikit-learn.org/stable/auto_examples/decomposition/plot_faces_decomposition.html#sphx-glr-auto-examples-decomposition-plot-faces-decomposition-py

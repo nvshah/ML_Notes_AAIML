@@ -1,5 +1,8 @@
 1. Notes 1
 ----------
+ref: Module 8 LS :- #15.17
+
+___________
 
 -> state of the art for RecSys := Matrix Factorization
 

@@ -1,5 +1,6 @@
 2. Pose Estimation Details
 ---------------
+ref : https://drive.google.com/file/d/11_EtY3v9YjwwQAGhmJ3urf4PLzC5nbQn/view
 
 => Blaze Pose is Pose Estmation Research work to run on smart-phone
 

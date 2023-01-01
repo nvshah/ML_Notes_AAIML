@@ -1,7 +1,14 @@
 3. Object Detection Yolo V3 Part2
 -----------------------------
-
+ref: Module 8 LD :- #11.2
 -------------
+ref :
+
+https://pjreddie.com/darknet/yolo/
+
+_______________
+
+
 => Anchor Box will be much closer to Bounding Box (actual) ideally,
 
 => DarkNet Convo is initialized using ImageNet trained Weights
@@ -37,9 +44,9 @@ _____________
 
   - These initial Anchor Boxes are also known as "Prior"
      |
-     because they hint that its high chances you will find the Objects within these regions where prior boexes are located
+     because they hint that its high chances you will find the Objects within these regions where prior boxes are located
 
-  - So using this prior info to encode othr bounding boxes gives you less error
+  - So using this prior info to encode other bounding boxes gives you less error
 
 [**IMP]
 Q) Why Anchor Boxes are used ?
@@ -65,6 +72,12 @@ Q) How do we derive Anchor Boxes ??
  => Hierarchical Representation
    ---
    -> In the classes there may be some classes which have hierarchical representation
+
+      What do you mean by Hierarchical Classes ?
+       - Let say there are 2 diff classes Person & Women
+         |
+         But Women is inherently Person so there is relation between these 2 classes yet both are
+         categorize differently here in Object Detection
 
       In such case if we use Softmax-classifier then it may not work
       Eg
@@ -109,6 +122,8 @@ Q) How do we derive Anchor Boxes ??
     for Box-Coordinates predictions you will use Squared Loss (because those are numbers)
     ie via Linear Regression
 
+    t_h & t_w defines the area
+
  2. Log Loss for P0
     As it is a just a Binary classif kinda thing
 
@@ -130,8 +145,10 @@ Q) How do we derive Anchor Boxes ??
 
 => So what you try to minimize is the prediction probability for Bounding Box & actual Box's Ground Truth
 
+* DarkNet & ImageNet :
+--------------------
 [NOTE]
-=> DarkNet Convo is initialized using ImageNet trained Weights
+=> DarkNet Convo Layer is only initialized using ImageNet trained Weights
    all rest
    is work-around via training & loss & BackProp
    |
@@ -147,12 +164,42 @@ Q) How do we derive Anchor Boxes ??
 ------------------
  - Instead of 1 Grid Size (ie 13*13), Try to predict with multiple Grid Sizes
  - to detect smaller Objects
+
+ -> NOTE:
+    When we have 13*13*1024,
+     each cell in it can become valid candidate/center for bounding boxes
+     We can only detect the large objects in it
+
+ -> Approach ;
+    Instead of predicting for 1 grid size, (ie 13*13)
+    why do we not predict for another grid size as well
+
+    Idea:
+    So Just as we are creating the cells & Bounding Boxes via 13*13  grid of cells,
+    if we create it via 26*26 or 52*52 grid cells then my each cell size will be smaller !
+
+    Thus not only I want to predict the Bounding Boxes via 13*13 grid,
+    But also via 26*26 & 52*52 grids as well
+
+ -> At each layer in DarkNet-53 (ie YOLO V3),
+    We've Stride 2 Convolution so we will get size divided by 2 as we progress
+
+    Last Layer :- 13 * 13
+    Last 2nd layer :- 26 * 26
+    Last 3rd layer :- 52 * 52
+
  - So it is meant for multiple grid sizes
 
  -> To get Bounding Boxes at different granularity (ie 13*13, 26*26, 52*52, etc...)
 
 * Feature Pyramid Networks (FPN)
   ----------------------
+  - Analogous to concept of Image Pyramid Networks :
+    (ie Halfing the Image as we go further !)
+
+  - We will have seperate newtworks for different grid sizes,
+    to predict bounding boxes individually
+
   - Borrow Information from smaller Grid Sizes to Predict Larger Grid Sizes in Multi-Scale Prediction
     (during DarkNet Striding2)
 
@@ -167,7 +214,7 @@ Q) How do we derive Anchor Boxes ??
   -> Info is Borrowed from smaller grid size info to large grid size
 
   Motif behind '1024 3*3' Convolution :-
-    - So that I can learn from neighbors as well
+    - So that I can learn from neighbors (surrounding cells) as well
     - So to predict the bounding box for this cell, I must learn from surroundings as well.
 
 [**IMP]
@@ -193,3 +240,12 @@ Non-max Suppression
  - To get best bounding box for my object
 
  - To get reasonable numbers of Boxes
+
+ Eg (multiple boxes for same car in image)
+ -> For every pair of boxes, we will compute IOU, & Pick Box with max-IOU
+ -> So anything that has not max-IOU we will skip/drop
+
+    So instead of 3 Boxes we will have 1 clean box which will be the best bounding box for that object
+    at moment
+
+ -> Strategy to reduce from 10K to more reasonable number of Boxes

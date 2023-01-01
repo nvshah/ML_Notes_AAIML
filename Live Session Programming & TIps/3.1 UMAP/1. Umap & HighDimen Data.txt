@@ -1,0 +1,112 @@
+Umap & HighDimen Data
+---------------------
+
+-> UMAP for Visualizing High Dimen Data
+
+-> Umap is SOTA
+
+=> With TSNE the major drawback is number of experiment you need to do & put more time efforts
+   inorder to get better mappings / results
+
+_________________
+
+
+- It overcome problem/drawback of TSNE
+
+* TSNE Drawbacks
+  - Non-Deterministic
+  - takes a lot of time
+  - doesnt preserve the global structure well
+
+-> Umap can avoid some of the drawbacks of TSNE & not all
+
+Perplexity := #neighbors whose distance we want to preserve
+
+* TSNE : (Recap)
+  ----
+  - Neighborhood Preservation System
+
+* Maths (Research Paper) :
+
+  Q. What is the probability that Xj & Xi are the neighbors ?
+
+  - RBF Kernel / Normalizer
+
+
+  Pij -> High dimen space
+  Qij -> 2 dimen space
+
+* To measure difference between 2 Distribution :- KL Divergence
+
+  - If Pij is larger I am giving more weightage to preserve the similarities
+    &
+    If Pij is smaller I am giving less weightage to preserve the similarities between Pi & Pj
+
+
+For Pij := It uses Gaussian Kernel
+    Qij := It uses T Distributed Kernel with Degree of Freedom  = 1
+
+
+
+*----------------
+
+* UMAP (Uniform Manifold Approximation & Projection)
+------------
+- topology perspective
+  algorithmic specific
+
+Assumption :
+  - Points lie on (manifold) surface & at a uniform distance from one another
+
+* UMAP Algorithm
+  -----------
+
+  1. For all pts, find nearest neighbors (k)
+  2. Build a Graph using Xi's
+  3. Using Optimization Framework, Find similar graph
+
+=> When considering KNN, if distance is large in a group, then TSNE wont regards it
+   but
+   Despite of distance if its neighbor then UMPA will try to preserve it !
+
+=> Though the distance may be very large (ie Weight of an edge less),
+   where TSNE doesnt preserve
+   but UMAP will tends to preserve in such case for given K (under K neighbors)
+
+   Thus UMAP would preserve the neighbors even if distance is large
+
+* Min-Dist :
+  ----
+  -> Providing some room or freedom to spread or increase gap, whilst projecting into lower dimen space
+
+  -> How much far you can go while preserving the distance, whilst going from n dimen to d dimen (ie lower)
+
+  -> Points which are closer (in original dimen)
+     We are allowing to go far from original gap (ie to spread apart but max upto {min_dist})
+
+ => UMAP better preserves global structure
+    (ie Inter-Cluster distance are being tried to preserved well in case of UMAP)
+
+NOTE :
+
+-> While you can get Global Preservation with TSNE, the time it takes is large
+   (& very high perplexity value)
+   whereas
+   UMAP attempts the same in lesser time
+
+
+-> UMAP is faster because it accounts Edges
+
+
+* HyperParameters :
+  a. #neighbors
+  b. min-dist
+
+
+* Non-Deterministic :
+-----------------
+=> All the Optimization under TSNE & UMAP, are mostly Convex so they have
+   multiple optima
+   Therefor its Not a Deterministic
+
+

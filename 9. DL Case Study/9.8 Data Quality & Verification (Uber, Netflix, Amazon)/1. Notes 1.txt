@@ -1,5 +1,10 @@
-Notes 1
+Data Quality & Verification @ Uber, Netflix, Amazon
 --------
+ref: Module 9 LS :- #7.4
+
+https://drive.google.com/file/d/1OarnIT6AYQIHwW_V_5fmnUoUcNG3f0mx/view
+
+______________
 
 -> Netflix uses Amazon EWS
 

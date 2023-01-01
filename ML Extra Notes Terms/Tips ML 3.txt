@@ -51,3 +51,16 @@ Tips ML 3
 [RANSAC]
 -> Ransac can make robust model, It cannot train model for you
    So if you have too many outliers use RANSAC
+
+
+* Fourier Transform :
+  -----
+  -> For given repeating time series, what Fourier Transform says
+     that I can represent it in terms of sin & cosine
+
+
+______________
+
+* Featurization Tips :
+  ---
+  Very Imp Featurization in Graph Data is Page Rank

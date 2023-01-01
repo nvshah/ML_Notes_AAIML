@@ -1,5 +1,6 @@
 * Clustering Applications
   --------
+  book ref : https://cs.wmich.edu/alfuqaha/summer14/cs6530/lectures/ClusteringAnalysis.pdf
 
 => Clustering was not algorithmm intended or rooted from ML perspective
    instead it was actyally used lot in data mining application

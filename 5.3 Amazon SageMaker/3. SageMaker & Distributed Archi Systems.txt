@@ -1,5 +1,7 @@
-3. SageMaker & Distributed Archi Systems
-------------------------
+3. SageMaker 3 : Distributed Training & Deep Learning
+---------------------------
+Miscellaneous 5 :- #19 (ie 2.19)
+____
 
 -> Libraries like XgBoost has inherently Distributed Functionality
 - XgBoost, Pytorch, Tensorflow, such packages are implicitly distributed

@@ -1,0 +1,26 @@
+ref
+
+9.1 [Recommended System for Youtube]
+https://www.youtube.com/watch?v=zq9kWp87ZvM
+
+[ML Matrix Factorization using side Info]
+https://www.youtube.com/watch?v=HdI5lmOKNTs
+_________
+
+9.1 [Youtube RS Notes]
+https://drive.google.com/file/d/1SdRPgsII6TkXo7aiuSJ1H3knGxObh-OT/view
+
+9.2 [Interview Que on Clustering & MF]
+https://drive.google.com/file/d/1DMe9X284Yrw41imhrWJGtiFZ9pM_v48c/view
+
+9.3 [Interview Que on Clustering]
+https://drive.google.com/file/d/1iWlX-FLonRjRuXxrg7LuXc7vxwbLEeTM/view
+
+9.4 [interview Que RS]
+https://drive.google.com/file/d/1r-Vy4CWlhaIf0wWc5xr_mB9KiZCtvBWz/view
+
+9.5 [Scenario based Interview Que]
+https://drive.google.com/file/d/18ag6pDPhhgHH9csOOdBenxWkQ7qmzAxJ/view
+
+9.6 [Yotube Tiktok Feed RecSys]
+https://drive.google.com/file/d/1KJryu3DCCYDOfEVWj43nlHCa00W5vS-T/view

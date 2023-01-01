@@ -7,3 +7,8 @@ Q. LogisticRegression vs SGDClassifier
    - https://stackoverflow.com/questions/43961225/sgdclassifier-vs-logisticregression-with-sgd-solver-in-scikit-learn-library
 
    
+Q) sklearn difference between accuracy_score() & score() ??
+
+   -> One is Training Score (ie scroe())
+      &
+      other helps to check Testing score (ie accuracy_score())

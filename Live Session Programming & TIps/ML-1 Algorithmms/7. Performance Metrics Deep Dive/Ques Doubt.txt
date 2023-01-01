@@ -1,0 +1,16 @@
+Ques Doubt
+
+Q) Why HM in F1-Score ??
+
+   What is AM, GM, HM ??
+
+=> Harmonic Mean is closer to minimum value of (input paramters)
+
+   Generally AM > GM > HM
+   &
+   HM is closer to min(p1, p2)  // p1 & p2 are 2 param on which HM is computed !
+
+
+Q) What is AUC vs ROC ?
+   or
+   Why AUC & ROC is used

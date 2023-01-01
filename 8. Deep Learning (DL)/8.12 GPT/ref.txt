@@ -1,0 +1,36 @@
+ref
+
+[Notes GPT]
+https://drive.google.com/file/d/13Qpgvgav78aarA-4z3nOLS8KKtxd3mvY/view
+
+--------------------
+* Other Articles
+
+https://pub.towardsai.net/crazy-gpt-3-use-cases-232c22142044
+
+[GPT Playground]
+https://colab.research.google.com/github/ilopezfr/gpt-2/blob/master/gpt-2-playground_.ipynb
+
+Github
+jalammar.github.io/illustrated-gpt2/
+
+Research Paper
+Language Models are Unsupervised Multitask Learners
+
+GPT-2 | Pract | Transformer
+Hugging Face
+
+-----------------
+Que
+
+https://datascience.stackexchange.com/questions/85486/what-is-the-difference-between-gpt-blocks-and-transformer-decoder-blocks
+
+Q. What is Pretraining in Neural Network
+https://stats.stackexchange.com/questions/193082/what-is-pre-training-a-neural-network#:~:text=You%20want%20to%20train%20a,by%20initializing%20the%20weights%20randomly.&text=The%20first%20network%20is%20your,network%20you%20are%20fine%2Dtuning.
+
+
+---------------
+VIDEOS
+
+[GPT-3]
+https://www.youtube.com/watch?v=PqbB07n_uQ4

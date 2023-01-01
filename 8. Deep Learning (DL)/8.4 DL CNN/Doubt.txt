@@ -24,3 +24,6 @@ Q1) Derivative of Max-Pooling
     Ans :-
     ---
     ref : https://towardsdatascience.com/forward-and-backward-propagation-of-pooling-layers-in-convolutional-neural-networks-11e36d169bec
+
+
+Q2) How to build the Face Recognition System

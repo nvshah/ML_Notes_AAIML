@@ -1,5 +1,8 @@
 ref
 
+[Calibration of Model Concept]
+https://www.youtube.com/watch?v=FkfDlOnQVvQ
+
 [calibration plots] http://scikit-learn.org/stable/modules/calibration.html   
 
 [RANSAC] Refer: https://en.wikipedia.org/wiki/Random_sample_consensus   

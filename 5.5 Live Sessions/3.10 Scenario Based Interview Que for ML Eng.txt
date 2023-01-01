@@ -1,0 +1,32 @@
+3.10 Scenario Based Interview Que for ML Eng
+-----------------------------------------
+
+=> 2D Gaussian is like a Symmetric Hill !
+
+=> CSR Matrix
+
+------------------
+
+Q3) Blur an GrayScale Image
+
+   -> Box-Blur Kernel or Gaussian-Kernel
+
+
+Q4) GroupBy + Sum | via Map-Reduce | on Spark or Hadoop ?
+
+   - Let say you want to group by & sum then your 100TB of
+     data on Spark or Hadoop
+
+   - Map & reduce is common operation needed
+
+   Map & Reduce Operation are supported on Spark or Hadoop like platform/System
+
+   Steps
+   a. local aggregation by customer_id
+   b. reduce will then merge those aggregated info
+
+
+Q5) Write a func to add 2 Sparse Tensors
+
+  -> CSR Matrix
+     Tuple & Dict based approach

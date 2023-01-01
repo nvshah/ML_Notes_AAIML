@@ -34,7 +34,7 @@ time based splitting
 KNN regression
 
 Weighted KNN
-Voronoi diagram
+Voronoi diagram  <--
 
 KD tree, BST
 LSH

@@ -1,6 +1,9 @@
 12. ADAM  
 -------
 
+ref :
+[ADAM PDF Book paper Published]
+https://arxiv.org/pdf/1412.6980.pdf
 
 ------
 

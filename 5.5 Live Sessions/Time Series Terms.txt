@@ -1,0 +1,10 @@
+Time Series Terms
+
+- Moving Window
+- ARIMAA
+
+- Exponential Moving Avg
+
+- Recurrent Dropouts
+
+- change point

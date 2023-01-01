@@ -1,0 +1,6 @@
+doubts
+
+Q) Diff between MultiHead Attention vs Masked MultiHead Attention ??
+
+-> Multi-Head looks at all the words in the input
+   Masked Multi-head only looks at the 1 -> n-1 words in the input

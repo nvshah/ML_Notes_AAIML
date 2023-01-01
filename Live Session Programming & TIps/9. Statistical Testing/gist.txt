@@ -1,0 +1,180 @@
+gist
+
+REMEMBER :-
+=> Test Statistics defines your P-val (Given Null & Alternative Hypothesis)
+
+=> Always choose your null hypothesis that you can simulate (in case of Permutatation testing)
+=> You must also consider the distribution of your Test-Statistics whilst choosing the Null Hypothesis
+
+-> Generally alpha is choosen = 5%
+
+=> Permutation test, we can use for median as well
+
+-> ANOVA is a simpler version of Linear Regression !
+   ANOVA is a special case of Linea Reg
+
+   Linear Reg is a Generalization of ANOVA
+
+-> The test of independence we perform are affectively measuring the Correlation (not causality)
+________________
+
+Imp Terminologies
+
+Test Statistics (T)
+Null Hypothesis (H0)
+Alternative Hypothesis (Ha)
+
+Distribution of Test statistics &
+P-val
+Level of Significance
+
+
+-----------------------------------------------------------------
+Every Statistical Test will have following things
+ - Test Statistics := used to determine the decision of the test-outcome
+ - Null Hypothesis := H0  (default assumption)  | Environment 1
+ - Alternative Hypothesis := Ha  (claimed assumption) | Environment 2
+
+ - P-val := Distb of test stats helps to derive the p-val
+
+=> To compute the p-val, you need to identify first which sided test would it be
+   (ie left ended or right ended) based on the test stats distribution
+   &
+   then You need the T_obs inorder to find the p-val from it !
+------------------------------------------------------------------
+
+
+* Hypothesis Testing includes below things at its core :
+
+  - Test Staistsics (You rely to come to decision)
+  - P-Val (Computation that we carried out in such testing)
+  - alpha (a benchmark to which p-val would be compared)
+
+  -> Consider Distribution of Test-Statistics (IMP***)
+
+  => You have to always think (whilst doing p-val)
+   that if you are doing
+   1 sided test or
+   2 sided test
+   depending on understanding what is your Null Hypothesis & What is your Alternative Hypothesis
+
+* P-val :
+  ----
+  is all about Observing value as extrem as T_obs
+
+  As extreme as values depends on the Alternative Hypothesis !
+  &
+  Also How T behaves under Null Hypothesis
+
+* When to reject Null & not ? (2 Universe way Understanding)
+  _________________________
+
+  -> Let say there are 2 Universe
+     1 of Null Hypothesis
+     &
+     another of an alternative hypothesis
+
+     Now if you get very lower probability for your test statistics then your alpha (ie benchmark)
+     then you dont want to live in the world where there are less chances !
+     So
+     Thus we reject the Null Hypothesis in such case
+     &
+     Move to another (ie alternative) Universe !
+
+  REMEMBER :
+  -> We are not questioning the ground truth
+     We are just using the ground truth to conclude if alternative hypothesis is better or not
+
+
+* Test Technique :
+--------------
+=> Z-test or T-test are more powerful when dataset is smaller & has some assumptions (ie it meets some conditions)
+   Whereas
+   Permutation Test is preferred when dataset is large & there is no assumptions
+
+
+* Comparing K Groups of Data :- is what ANNOVA technique is used for
+
+
+* Compare Means ?? (which Test)
+  -----------------
+  If sample sizes are small :- T-test
+  else :- Z-test
+
+=> For medians, we can use Permutation test
+=> For comparing Proportions : Z-Proportional Test
+
+
+* Chi-Squre Test :
+  ----
+  - Use to compare 2 categorical variables are independent or not !
+
+* Degree of Freedoms:
+  ----
+  - terms is used when data is relatively small in size
+  - think it as parameter of distribution
+
+* Non-Parametric test:
+  ------------
+  -> When we say statistical tests is non-parametric we mean that
+     It makes no assumption about the Population Distribution
+
+  The fact that test is non-parametric means that it makes no assumption about population distribution
+___________________________
+
+* Summary (Which Test to use when ??) | Big Picture
+
+
+1. Z-test :
+   If you want to compare Means of Obsv ie 2 Samples (let say Covid Drug1 or Drug2)
+   &
+   If you have Population Standard Deviation or
+   Your samples are large enough that you can estimate population Standard Deviation
+
+   Then You can use the Z-test
+
+2. T-test:
+   You are given 2 samples
+   Sample sizes are small
+   &
+   You want to compare means of these 2 samples (ie Medicines 1 vs Medicines 2)
+
+   As we do not have large samples we can end up using T-test
+
+3. Z-Proportion Test
+   If you want to compare ratios or proportions
+   i.e like how many people purchase from my website as compare to number of people came to my website
+
+   then you can consider Z-Proportion test (as long as you have more than 30 observations)
+
+
+For all the above tests, it holds true based on CLT.
+So their Population mean & standard deviation needs to be finite
+&
+All the obsv are random & independent
+
+4. test of independence (Chi-Square Test)
+
+   Eg Doesn gender impact purchase/premium subscription
+   - It makes no assumptions
+   - If you want to do test of independence !
+
+5. ANOVA
+
+   - If you want to compute or compare K-Group means
+     &
+     You know that each of group's population are Gaussian distributed
+     & also have similar variances
+
+     then you can use ANOVA
+
+6. Konglomorov Smirnow test (KS-Test)
+
+   -> If you want to compare 2 distribution
+
+7. Permutation Resampling test :
+
+   If you want to compare 99 Percentile of something
+   or
+   If you want to compare medians between groups
+   then Permutation Resampling test is useful

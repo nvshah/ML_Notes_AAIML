@@ -1,0 +1,3 @@
+terms new
+
+RDD  // Resilent Distributed Dataset  (Sparks DF are built on RDD)

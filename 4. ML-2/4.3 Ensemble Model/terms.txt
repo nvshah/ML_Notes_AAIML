@@ -34,3 +34,5 @@ terms
 - AdaBoost | Weighted Model
 - StackingClassifier | MetaClassifier
 - Cascading Models	
+
+- lightGBM

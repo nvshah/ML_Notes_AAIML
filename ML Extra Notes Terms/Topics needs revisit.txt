@@ -1,6 +1,7 @@
 Topics needs revisit
 
 -> Calibration
+   Maximum Likelihood Estimation
 
 -> T Distribution
 
@@ -34,3 +35,9 @@ Topics needs revisit
 yet to watch (youtube)
 
 - Constrained Optimization + Langrange (Khann Academy)
+
+
+-----------
+Topics to Revisit
+
+MLE (Maximum Likelihood Estimation)
