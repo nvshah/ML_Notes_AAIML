@@ -1,8 +1,19 @@
 SVM RECAP
 
+
+libsvm is one of the best library for training SVM
+
+
 REMEMBER :-
 You can have your Hyper-Param Either multiplied to loss or multiplied to Regularizer
 Both of them works & allowed
+
+If you dont know best kernel - Use RBF-Kernel (2 HyperParam : C, SIGMA)
+C := For Loss Func (Soft-Margin)
+SIGMA := Controls Distance in RBF Kernel
+
+NOTE :
+  -> In your algo you dont have way to control your #Support-Vectors in traditional standard
 
 _____________________________
 
@@ -105,3 +116,104 @@ REMEMBER :
 The main reason we get into primal to dual form is because we can
 leverage the Kernalization (ie Similarity Manipulation) whilst solving the
 optimization Problem
+
+=> Similarity is the pivotal thing for Dual Form transition
+
+=> Even at RunTime we can substitute our Xi_T*Xj into K(Xi, Xj)
+
+* Soft SVM Idea & Logistic Reg :
+  -----------
+  Soft SVM idea is very similar to Logistic Reg, except that it is Margin Maximization based concept
+
+* Similarity Concept :
+  -----
+  - helps us to deal with formulation at Run-Time as well very easily
+  - If Simple Dot product is used then its similar to Linear SVM !
+
+* Linear SVM :
+  -> In Linear SVM you try to find Margin-Maximization in a Space of your Xi's
+  Similarly
+     In Logistic Regression you try to find Loss in space of your Xi's
+
+     (Hence most often Linear SVM & Logistic Reg provides close results)
+
+  => Margin Maximization is good idea but its not world changing Idea
+     The world changing Idea is Kernelization (ie Changing Space for your model)
+
+     Kernel SVM := Changing Space := Derive new Features -> Feature Transformation
+
+* Kernel SVM :
+  ----
+  Kernelization helps SVM to deal with Non-Linea Seperable Points
+
+  - Kernalization does Implicit Feature Transform for us
+  - Question is abt finding right kernels
+
+  Hence Explicit Feature Transform in SVM is replaced by Finding Right Kernel
+
+
+* RBF-Kernel :
+  ----
+  - Accounts distance between 2 Points
+  - As Distance Increases K-val (ie Kernel Similarity) Falls Exponentially
+    Hence as point moves farther away it makes simiarity closer to 0
+    (ie Distance tends to Infinity)
+
+  - HyperParam :- SIGMA
+      |
+      -> SIGMA helps to narrow/expand the Viccinity Criteria of Neighbors in RBF-Kernel
+         Hence
+         deciding the Similarity/DisSimilarity in case of RBF-Kernel
+         It's Analogous to K in KNN
+
+Kernel are like Similarity Func
+Distance are like DisSimilarity Functions
+
+REMEMBER : MIMP Task in ML is Featurization
+
+* There are other special types of Kernel (ie Domain Specific)
+  ---
+  Feature Transform + Domain Knowledge := Domain Specific Kernel
+  Eg
+  1. String Kernels
+  2. Genome Kernels
+
+
+* SVM vs Logistic :
+  ----------
+  In case of Logistic Reg, to deal with little bit complex algo
+  We use transformation such as log(), x^2, x^3, ...
+
+  Now In case of SVM, we use diff kernels that share same purpose as above transformation
+  But in this case there are domain-specific as well !
+
+
+* Complexities :
+
+  Run Time Complexity for SVM depends on #Support-Vectors
+
+NOTE :
+  -> In your algo you dont have way to control your #Support-Vectors in traditional standard SVM
+
+
+* SVR (Support Vector Regression)
+  --------------
+  -> In case of SVR, EPSILON is hyper Param
+     &
+     Main Aim :- the absolute diff between actual & pred should be less than EPSILON (ie HyperParam)
+
+  -> RBF SVR works actually like K-NN
+
+----------------------------------
+PRACT
+
+There are specialized algo such as SMO-SVM
+
+
+---------------
+
+* CASES
+
+- Kernel Tricks takes point Xi (d-dimen) into another dimension d` & thus give another point Xi`
+- Impact of Outliers is minimal as SVM relies on Support Vectors more than exact point whilst prediction
+- large dimension point are good for SVM

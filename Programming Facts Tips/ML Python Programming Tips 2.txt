@@ -11,6 +11,17 @@ ML Python Programing Tips 2
 * Data can be present in 2 forms mostly :-
     1) Sqlite
     2) Csv files
+    3) hdf files (HDFStore)
+
+=> You can store your experimentation/findings in intermediate results files
+   So that you dont need to perform same computation !
+
+   You can store such results findings in files such as pickles/ hdf
+
+* Other formats
+  ---
+   - hdf format // hierarchical
+
 
 
 => slmultilearn only uses dense matrix & not sparse matrix

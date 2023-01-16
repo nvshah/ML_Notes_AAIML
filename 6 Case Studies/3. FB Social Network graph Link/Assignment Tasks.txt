@@ -1,0 +1,35 @@
+Assignment Tasks
+
+1) Featurization : Preferential Attachment (ie Score Val based on InDegrees of Users-Pair)
+
+2) Featurization : SVD based vec-repr value
+
+    - via SVD of User-User Adj-Matrix, we can have 2 k-dimen vec repr for each user
+
+    What is User-User Adj Matrix
+     - For each user we can show vector representing info about edge existence with all other users in
+       the graph
+
+     Now #users in graph is very large so repr this info consumes long sparse dimen vector for each user
+     Hence
+     We can use SVD to consolidate this info in smaller dimen via obtaining 2 k-dimen vector
+     (k is rank in SVD)
+
+     & then manipulating this 2 vectors to get some derived feature value)
+            \
+             Manipulation Eg :- Cosine Dist between these 2 vectros (ie Dot Product )
+
+    => We will get 2 k-dimen repr of Graph vertex i via SVD
+
+     So for Pair there will be all in all 12*2 = 24 dimen vector // 6+6 dimen for each user
+
+REMEMBER :
+  * SVD :
+  ---
+  For any item, we have
+  1) k-dimen from Left Singular Matrix  (ROW_i)
+  2) k-dimen from right Sinular Matrix as well (COL_i)
+
+  hence we have double info (ie 2 k-dimen vec)
+
+  This gives us 2 representation of single entity

@@ -2,6 +2,8 @@ Pandas
 
 ref : https://pbpython.com/pandas-qcut-cut.html
 
+https://sparkbyexamples.com/pandas/pandas-add-column-based-on-another-column/
+
 -------
 
 *-> 

@@ -1,6 +1,38 @@
 gist recommended pred
 
+Look Files in follow order
+
+1. FB_EDA
+2. FB_featurization
+3. FB_Models
+
+-> Pre-Featuriezed Data is stored in HDF file format (Hierarchical Data Format)
+
+EDA :- helps to analyze the stats & also to create negative samples for out classif task
+       Negative samples = mising link between 2 users
+       Positive samples = present link between 2 users
+
+Featurization :-
+ -> Helps to create vector repr for each sample
+    because with just samples we cant do ML,
+    We need some dimensions or vector representation of our sample (ie Pair of User)
+
+
 --------
+
+NOTE :-
+We are given some computed files already
+We are given some preprocessed & EDA attempted files already
+
+We create DiGraph based on Train Data but
+Test Data may containes some new Persons which may not be seen in Train Data (Graph)
+  \
+   So for such new people we dont have clue regarding their social connections
+
+REMEMBER
+( Pre-Featuriezed Data is stored in HDF file format (Hierarchical Data Format) )
+
+
 intermediate files (temporary files) jupyter NB :- EDA-Basic Stats
 
 Very Imp Featurization in Graph Data is Page Rank
@@ -82,4 +114,12 @@ The Big challange is : Featurization Technique !!
    6) Follows Back
 
 
-  
+* SVD :
+  ---
+  For any item, we have
+  1) k-dimen from Left Singular Matrix  (ROW_i)
+  2) k-dimen from right Sinular Matrix as well (COL_i)
+
+  hence we have double info (ie 2 k-dimen vec)
+
+  This gives us 2 representation of single entity

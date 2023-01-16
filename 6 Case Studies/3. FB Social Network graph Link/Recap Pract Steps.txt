@@ -1,0 +1,73 @@
+Recap Pract Steps
+
+NOTE :-
+-> Some files are preprocessed & given
+-> some states are saved & provided inorder to avoid computational complexity
+
+---
+
+=> In Graph Based ML Tasks, Featurization is the MIMP task
+
+EDA :-
+  helps to analyze the stats & also to create negative samples for out classif task
+  Negative samples = mising link between 2 users
+  Positive samples = present link between 2 users
+
+Featurization :-
+ -> Helps to create vector repr for each sample
+    because with just samples we cant do ML,
+    We need some dimensions or vector representation of our sample (ie Pair of User)
+
+We create DiGraph based on Train Data but
+Test Data may containes some new Persons which may not be seen in Train Data (Graph)
+  \
+   So for such new people we dont have clue regarding their social connections
+
+
+----
+
+* EDA
+  ----
+  CSV Data -> Graph Data Object (via Network X)
+
+  We need to add some data points with not having edges to balance the data set (train)
+
+
+* Featurization :
+  ----
+
+  SVD :
+  -> Adjacecy Matrix can be helpful to arrive at SVD for users pairs
+
+     Because in our case we have User's Pairs
+     Now
+     One User can have multiple other users as opponent
+     So For single user (= Row)
+        Other Users forms a Column in Adj Matrix Representation
+
+  SVD based vec-repr value
+
+    - via SVD of User-User Adj-Matrix, we can have 2 k-dimen vec repr for each user
+
+    What is User-User Adj Matrix
+     - For each user we can show vector representing info about edge existence with all other users in
+       the graph
+
+     Now #users in graph is very large so repr this info consumes long sparse dimen vector for each user
+     Hence
+     We can use SVD to consolidate this info in smaller dimen via obtaining 2 k-dimen vector
+     (k is rank in SVD)
+
+     & then manipulating this 2 vectors to get some derived feature value)
+            \
+             Manipulation Eg :- Cosine Dist between these 2 vectros (ie Dot Product )
+
+  * SVD :
+  ---
+  For any item, we have
+  1) k-dimen from Left Singular Matrix  (ROW_i)
+  2) k-dimen from right Sinular Matrix as well (COL_i)
+
+  hence we have double info (ie 2 k-dimen vec)
+
+  This gives us 2 representation of single entity

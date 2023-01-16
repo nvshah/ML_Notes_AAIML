@@ -292,6 +292,11 @@ _________________
 
    Hence we can use 2*6=12 dimen for each user (ie data point)
 
+   u_s_1  // Get Source Node repr from Left Singular Matrix (U) - 1st dimen vec val
+   u_d_2  // Get Destination Node repr from Left Singular Matrix (U) - 2nd dimen vec val
+
+   v_d_1  // Get Destination Node repr from Right Singular Matrix (V) - 1st dimen val in compressed vector of size k
+
 ____________________________
 
 10) Weight Features

@@ -1,3 +1,5 @@
+* MIMP Task in entire ML is Feature Transformation !
+
 * For any alogo what we see :- 
 
    - Hyper-param  (Bias-Variance Tradeoff)

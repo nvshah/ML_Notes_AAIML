@@ -34,3 +34,15 @@ Amazing Tips-Facts
   k-features from Right Singular Matrix
 
   Hence 2*k features all in all for Single Data Point
+
+
+* SVD & Adj-Matrix :
+  ----
+  -> Adj-Matrix is helpful to derive SVD
+  -> For single row(item) in Adj-Matrix, We have reln matrix for all other items as a column
+     &
+     thus let say if we have c-columns
+
+     Then with the help of SVD we can reduce it to 2*k where k is dimen to reduce
+
+  -> Note we will get 2 vectors representation for Single Row Item
